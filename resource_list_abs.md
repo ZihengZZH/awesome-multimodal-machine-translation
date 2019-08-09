@@ -26,36 +26,45 @@
 
 **2018**
 
-* LIUM-CVC Submissions for WMT18 Multimodal Translation Task
+* Findings of the Third Shared Task on Multimodal Machine Translation [[pdf](http://statmt.org/wmt18/pdf/WMT029.pdf)]
+  * Barrault et al., (2018)
+  * WMT'18
+  * We present the results from the third shared task on multimodal machine translation. In this task a source sentence in English is supplemented by an image and participating systems are required to generate a translation for such a sentence into German, French or Czech. The image can be used in addition to (or instead of) the source sentence. This year the task was extended with a third target language (Czech) and a new test set. In addition, a variant of this task was introduced with its own test set where the source sentence is given in multiple languages: English, French and German, and participating systems are required to generate a translation in Czech. Seven teams submitted 45 different systems to the two variants of the task. Compared to last year, the performance of the multimodal submissions improved, but text-only systems remain competitive.
+
+* LIUM-CVC Submissions for WMT18 Multimodal Translation Task [[pdf](http://statmt.org/wmt18/pdf/WMT065.pdf)]
   * Caglayan et al., (2018)
   * WMT'18
   * This paper describes the multimodal Neural Machine Translation systems developed by LIUM and CVC for WMT18 Shared Task on Multimodal Translation. This year we propose several modifications to our previous multimodal attention architecture in order to better integrate convolutional features and refine them using encoder-side information. Our final constrained submissions ranked first for English -> French and second for English -> German language pairs among the constrained submissions to the automatic evaluation metric METEOR.
 
-* The MeMAD Submission to the WMT18 Multimodal Translation Task
+* The MeMAD Submission to the WMT18 Multimodal Translation Task [[pdf](http://statmt.org/wmt18/pdf/WMT066.pdf)]
   * Gronroos et al., (2018)
   * WMT'18
   * This paper describes the MeMAD project entry to the WMT Multimodal Machine Translation Shared Task. We propose adapting the Transformer neural machine translation (NMT) architecture to a multi-modal setting. In this paper, we also describe the preliminary experiments with text-only translation systems leading us up to this choice. We have the top scoring system for both English-to-German and English-to-French, according to the automatic metrics for flickr18. Our experiments show that the effect of the visual features in our system is small. Our largest gains come from the quality of the underlying text-only NMT system. We find that appropriate use of additional data is effective.
 
-* The AFRL-Ohio State WMT18 Multimodal System: Combining Visual with Traditional
+* The AFRL-Ohio State WMT18 Multimodal System: Combining Visual with Traditional [[pdf](http://statmt.org/wmt18/pdf/WMT067.pdf)]
   * Gwinnup et al., (2018)
   * WMT'18
   * AFRL-Ohio State extends its useage of visual domain-driven machine translation for use as a peer with traditional machine translation systems. As a peer, it is enveloped into a system combination of neural and statistical MT systems to present a composite translation.
 
-* CUNI System for the WMT18 Multimodal Translation Task
+* CUNI System for the WMT18 Multimodal Translation Task [[pdf](http://statmt.org/wmt18/pdf/WMT068.pdf)]
   * Helcl et al., (2018)
   * WMT'18
+  * We present our submission to the WMT18 Multimodal Translation Task. The main feature of our submission is applying a self-attentive network instead of a recurrent neural network. We evaluate two methods of incorporating the visual features in the model: first, we include the image representation as another input to the network; second, we train the model to predict the visual features and use it as an auxiliary objective. For our submission, we acquired both textual and multimodal additional data. Both of the proposed methods yield significant improvements over recurrent networks and self-attentive textual baselines.
 
-* Sheffield Submissions for WMT18 Multimodal Translation Shared Task
+* Sheffield Submissions for WMT18 Multimodal Translation Shared Task [[pdf](http://statmt.org/wmt18/pdf/WMT069.pdf)]
   * Lala et al., (2018)
   * WMT'18
+  * This paper describes the University of Sheffield's submissions to the WMT18 Multimodal Machine Translation shared task. We participated in both task 1 and 1b. For task 1, we build on a standard sequence to sequence attention-based neural machine translation system (NMT) and investigate the utility of multimodal re-ranking approaches. More specifically, n-best translation candidates from this system are re-ranked using novel multimodal cross-lingual word sense disambiguation models. For task 1b, we explore three approaches: (i) re-ranking based on cross-lingual word sense disambiguation (as for task 1), (ii) re-ranking based on consensus of NMT n-best lists from German-Czech, French-Czech and English-Czech systems, and (iii) data augmentation by generating English source data through machine translation from French to English and from German to English followed by hypothesis selection using a multimodal-reranker.
 
-* Ensemble Sequence Level Training for Multimodal MT: OSU-Baidu WMT18 Multimodal Translation System Report
+* Ensemble Sequence Level Training for Multimodal MT: OSU-Baidu WMT18 Multimodal Translation System Report [[pdf](http://statmt.org/wmt18/pdf/WMT070.pdf)]
   * Zheng et al., (2018)
   * WMT'18
+  * This paper describes multimodal machine translation systems developed jointly by Oregon State University and Baidu Research for WMT 2018 Shared Task on multimodal translation. In this paper, we introduce a simple approach to incorporate image information by feeding image features to the decoder side. We also explore different sequence level training methods including scheduled sampling and reinforcement learning which lead to substantial improvements. Our systems ensemble several models using different architectures and training methods and achieve the best performance for three subtasks: En-De and En-Cs in task 1 and (En+De+Fr)-Cs task 1B.
 
-* UMONS Submission for WMT18 Multimodal Translation Task
+* UMONS Submission for WMT18 Multimodal Translation Task [[pdf](http://statmt.org/wmt18/pdf/WMT071.pdf)]
   * Delbrouck et al., (2018)
   * WMT'18
+  * This paper describes the UMONS solution for the Multimodal Machine Translation Task presented at the third conference on machine translation (WMT18). We explore a novel architecture, called deepGRU, based on recent findings in the related task of Neural Image Captioning (NIC). The models presented in the following sections lead to the best METEOR translation score for both constrained (English, image) -> German and (English, image) -> French sub-tasks.
 
 **2019**
 

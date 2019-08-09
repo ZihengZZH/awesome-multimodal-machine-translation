@@ -11,9 +11,14 @@
 | :-:  | --      | --    | --    | --    |
 | 2014 | Mao et al., | arXiv | Explain Images with Multimodal Recurrent Neural Networks | [[pdf](https://arxiv.org/pdf/1410.1090.pdf)] |
 | 2016 | Caglayan et al., | WMT'16 | Does Multimodality Help Human and Machine for Translation and Image Captioning? | [[pdf](https://arxiv.org/pdf/1605.09186.pdf)] |
-| 2018 | | WMT'18 | 
-| 2018 | | WMT'18 | 
-| 2018 | | WMT'18 | 
+| 2018 | Barrault et al., | WMT'18 | Findings of the Third Shared Task on Multimodal Machine Translation | [[pdf](http://statmt.org/wmt18/pdf/WMT029.pdf)] |
+| 2018 | Caglayan et al., | WMT'18 | LIUM-CVC Submissions for WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT065.pdf)] |
+| 2018 | Gronroos et al., | WMT'18 | The MeMAD Submission to the WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT066.pdf)] |
+| 2018 | Gwinnup et al., | WMT'18 | The AFRL-Ohio State WMT18 Multimodal System: Combining Visual with Traditional | [[pdf](http://statmt.org/wmt18/pdf/WMT067.pdf)] |
+| 2018 | Helcl et al., | WMT'18 | CUNI System for the WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT068.pdf)] | 
+| 2018 | Lala et al., | WMT'18 | Sheffield Submissions for WMT18 Multimodal Translation Shared Task | [[pdf](http://statmt.org/wmt18/pdf/WMT069.pdf)] |
+| 2018 | Zheng et al., | WMT'18 | Ensemble Sequence Level Training for Multimodal MT: OSU-Baidu WMT18 Multimodal Translation System Report | [[pdf](http://statmt.org/wmt18/pdf/WMT070.pdf)] |
+| 2018 | Delbrouck et al., | WMT'18 | UMONS Submission for WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT071.pdf)] |
 | 2019 | Caglayan et al., | NAACL-HLT'19 | Probing the Need for Visual Context in Multimodal Machine Translation | [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] |
 | 2019 | Su et al., | CVPR'19 | Unsupervised Multi-modal Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1811.11365.pdf)] |
 | 20019| Ive et al., | ACL'19 | Distilling Translations with Visual Awareness | [[pdf](https://arxiv.org/pdf/1906.07701.pdf)] |
