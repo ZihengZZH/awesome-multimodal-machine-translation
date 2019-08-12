@@ -1,16 +1,21 @@
 # Resource List
 
-* Papers
+* Paper
 * Datasets
+* Metrics
 * Tutorials
 
-## Papers
-
+## Paper
 
 | Year | Authors | Conf. | Title | Links |
 | :-:  | --      | --    | --    | --    |
+| 2011 | Jia et al., | ICCV'11 | Learning Cross-modality Similarity for Multinomial Data | [[pdf](https://people.eecs.berkeley.edu/~trevor/iccv11-mm.pdf)] | 
 | 2014 | Mao et al., | arXiv | Explain Images with Multimodal Recurrent Neural Networks | [[pdf](https://arxiv.org/pdf/1410.1090.pdf)] |
+| 2014 | Kiros et al., | arXiv | Unifying Visual-Semantic Embeddings with Multimodal Neural Language Models | [[pdf](https://arxiv.org/pdf/1411.2539.pdf)] | 
 | 2016 | Caglayan et al., | WMT'16 | Does Multimodality Help Human and Machine for Translation and Image Captioning? | [[pdf](https://arxiv.org/pdf/1605.09186.pdf)] |
+| 2016 | Caglayan et al., | arXiv | Multimodal Attention for Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1609.03976.pdf)] |
+| 2016 | Huang et al., | WMT'16 | Attention-based Multimodal Neural Machine Translation | [[pdf](https://www.aclweb.org/anthology/W16-2360)] |
+| 2017 | Delbrouck et al., | ICLR'17 | Multimodal Compact Bilinear Pooling for Multimodal Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1703.08084.pdf)] |
 | 2018 | Barrault et al., | WMT'18 | Findings of the Third Shared Task on Multimodal Machine Translation | [[pdf](http://statmt.org/wmt18/pdf/WMT029.pdf)] |
 | 2018 | Caglayan et al., | WMT'18 | LIUM-CVC Submissions for WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT065.pdf)] |
 | 2018 | Gronroos et al., | WMT'18 | The MeMAD Submission to the WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT066.pdf)] |
@@ -21,13 +26,26 @@
 | 2018 | Delbrouck et al., | WMT'18 | UMONS Submission for WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT071.pdf)] |
 | 2019 | Caglayan et al., | NAACL-HLT'19 | Probing the Need for Visual Context in Multimodal Machine Translation | [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] |
 | 2019 | Su et al., | CVPR'19 | Unsupervised Multi-modal Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1811.11365.pdf)] |
-| 20019| Ive et al., | ACL'19 | Distilling Translations with Visual Awareness | [[pdf](https://arxiv.org/pdf/1906.07701.pdf)] |
-
+| 2019 | Ive et al., | ACL'19 | Distilling Translations with Visual Awareness | [[pdf](https://arxiv.org/pdf/1906.07701.pdf)] |
+| 2019 | Calixto et al., | ACL'19 | Latent Variable Model for Multi-modal Translation | [[pdf](https://www.aclweb.org/anthology/P19-1642)] | 
 
 ## Datasets
 
 | Dataset | Authors | Paper | Links |
 | --      | --      | --    | --    |
 | Flickr30K | Young et al., | From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions | [[pdf](https://www.aclweb.org/anthology/Q14-1006)] [[web](http://shannon.cs.illinois.edu/DenotationGraph/)] |
-| Flickr30K Entities | Plummer et al., | Flickr30K Entities: Collecting Region-to-Phrase Correspondences for Richer Image-to-Sentence Models | [[pdf](https://arxiv.org/pdf/1505.04870.pdf)][[web](http://bryanplummer.com/Flickr30kEntities/)]| 
+| Flickr30K Entities | Plummer et al., | Flickr30K Entities: Collecting Region-to-Phrase Correspondences for Richer Image-to-Sentence Models | [[pdf](https://arxiv.org/pdf/1505.04870.pdf)] [[web](http://bryanplummer.com/Flickr30kEntities/)] [[github](https://github.com/BryanPlummer/flickr30k_entities)] | 
 | Multi30K | Elliott et al., | Multi30K: Multilingual English-German Image Descriptions | [[pdf](https://arxiv.org/pdf/1605.00459.pdf)] [[github](https://github.com/multi30k/dataset)] |
+
+## Metrics
+
+| Metric | Authors | Paper | Links |
+| --     | --      | --    | --    |
+| BLEU | Papineni et al., | BLEU: a Method for Automatic Evaluation of Machine Translation | [[pdf](https://www.aclweb.org/anthology/P02-1040)] |
+
+## Tutorials
+
+| Year | Authors | Title | Links |
+| :-:  | --      | --    | --    |
+| 2018 | Barrault | Introduction to Multimodal Machine Translation | [[pdf](https://www.clsp.jhu.edu/wp-content/uploads/sites/75/2018/06/2018-06-22-Barrault-Multimodal-MT.pdf)] |
+
