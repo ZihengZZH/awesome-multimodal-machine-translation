@@ -1,19 +1,20 @@
-# Resource List w/ abstract
+**Resource List w/ abstract**
 
-* Paper
-* Datasets
-* Tutorials
+- [Paper](#paper)
+- [Datasets](#datasets)
+- [Metrics](#metrics)
+- [Tutorials](#tutorials)
 
 ## Paper
 
-**2011**
+**2011** {#1}
 
 * Learning Cross-modality Similarity for Multinomial Data [[pdf](https://people.eecs.berkeley.edu/~trevor/iccv11-mm.pdf)]
   * Jia et al., (2011)
   * ICCV'11
   * Many applications involve multiple-modalities such as text and images that describe the problem of interest. In order to leverage the information present in all the modalities, one must model the relationships between them. While some techniques have been proposed to tackle this problem, they either are restricted to words describing visual objects only, or require full correspondences between the different modalities. As a consequence, they are unable to tackle more realistic scenarios where a narrative text is only loosely related to an image, and where only a few image-text pairs are available. In this paper, we propose a model that addresses both these challenges. Our model can be seen as a Markov random field of topic models, which connects the documents based on their similarity. As a consequence, the topics learned with our model are shared across connected documents, thus encoding the relations between different modalities. We demonstrate the effectiveness of our model for image retrieval from a loosely related text.
 
-**2014**
+**2014** {#2}
 
 * Explain Images with Multimodal Recurrent Neural Networks [[pdf](https://arxiv.org/pdf/1410.1090.pdf)]
   * Mao et al., (2014)
@@ -25,7 +26,7 @@
   * arXiv
   * Inspired by recent advances in multimodal learning and machine translation, we introduce an encoder-decoder pipeline that learns (a): a multimodal joint embedding space with images and text and (b): a novel language model for decoding distributed representations from our space. Our pipeline effectively unifies joint image-text embedding models with multimodal neural language models. We introduce the structure-content neural language model that disentangles the structure of a sentence to its content, conditioned on representations produced by the encoder. The encoder allows one to rank images and sentences while the decoder can generate novel descriptions from scratch. Using LSTM to encode sentences, we match the state-of-the-art performance on Flickr8K and Flickr30K without using object detections. We also set new best results when using the 19-layer Oxford convolutional network. Furthermore we show that with linear encoders, the learned embedding space captures multimodal regularities in terms of vector space arithmetic e.g. \* image of a blue car \* - "blue" + "red" is near images of red cars. Sample captions generated for 800 images are made available for comparison.
 
-**2016**
+**2016** {#3}
 
 * Does Multimodality Help Human and Machine for Translation and Image Captioning? [[pdf](https://arxiv.org/pdf/1605.09186.pdf)]
   * Caglayan et al., (2016)
@@ -35,28 +36,36 @@
 * Multimodal Attention for Neural Machine Translation [[pdf](https://arxiv.org/pdf/1609.03976.pdf)]
   * Caglayan et al., (2016)
   * arXiv
-  * The attention mechanism is an important part of the neural machine translation (NMT) where it was reported to produce richer source representation compared to fixed-length encoding sequence-to-sequence models. Recently, the effectiveness of attention has also been explored in the context of image captioning. In this work, we assess the feasibility of a multimodal attention mechanism that simultaneously focus over an image and its natural language description for generating a description in another language. We train several variants of our proposed attention mechanism on the Multi30K multilingual image captioning dataset. We show that a dedicated attention for each modality achieves up to 1.6 points in BLEU and METEROR compared to a textual NMT baseline.
+  * The attention mechanism is an important part of the neural machine translation (NMT) where it was reported to produce richer source representation compared to fixed-length encoding sequence-to-sequence models. Recently, the effectiveness of attention has also been explored in the context of image captioning. In this work, we assess the feasibility of a multimodal attention mechanism that simultaneously focus over an image and its natural language description for generating a description in another language. We train several variants of our proposed attention mechanism on the Multi30K multilingual image captioning dataset. We show that a dedicated attention for each modality achieves up to 1.6 points in BLEU and METEOR compared to a textual NMT baseline.
 
 * Attention-based Multimodal Neural Machine Translation [[pdf](https://www.aclweb.org/anthology/W16-2360)]
   * Huang et al., (2016)
   * WMT'16
   * We present a novel neural machine translation (NMT) architecture associating visual and textual features for translation tasks with multiple modalities. Transformed global and regional visual features are concatenated with text to form attend-able sequences which are dissipated over parallel long short-term memory (LSTM) threads to assist the encoder generating a representation for attention-based decoding. Experiments show that the proposed NMT outperform the text-only baseline.
 
-**2017**
+**2017** {#4}
 
 * Zero-resource Machine Translation by Multimodal Encoder-decoder Network with Multimedia Pivot [[pdf](https://arxiv.org/pdf/1611.04503.pdf)]
   * Nakayama et al., (2017)
   * arXiv
   * We propose an approach to build a neural machine translation system with no supervised resources (i.e., no parallel corpora) using multimodal embedded representation over texts and images. Based on the assumption that text documents are often likely to be described with other multimedia information (i.e., images) somewhat related to the content, we try to indirectly estimate the relevance between two languages. Using multimedia as the *pivot*, we project all modalities into one common hidden space where samples belonging to similar semantic concepts should come close to each other, whatever the observed space of each sample is. This modality-agnostic representation is the key to bridging the gap between different modalities. Putting a decoder on top of it, our network can flexibly draw the outputs from any input modality. Notably, in the testing phase, we need only source language texts as the input for translation. In the experiment, we tested our method on two benchmarks to show that it can achieve reasonable translation performance. We compared and investigated several possible implementations and found that an end-to-end model that simultaneously optimized both rank loss in multimodal encoders and cross-entropy loss in decoders performed the best.
 
-**2017**
-
 * Multimodal Compact Bilinear Pooling for Multimodal Neural Machine Translation [[pdf](https://arxiv.org/pdf/1703.08084.pdf)]
   * Delbrouck et al., (2017)
   * ICLR'17
   * In state-of-the-art Neural Machine Translation, an attention mechanism is used during decoding to enhance the translation. At every step, the decoder uses this mechanism to focus on different parts of the source sentence to gather the most useful information before outputting its target word. Recently, the effectiveness of the attention mechanism has also been explored for multimodal tasks, where it becomes possible to focus on both sentence parts and image regions. Approaches to pool two modalities usually include element-wise product, sum or concatenation. In this paper, we evaluate the more advanced Multimodal Compact Bilinear pooling method, which takes teh outer product of two vectors to combine the attention features for the two modalities. This has been previously investigated for visual question answering. We try out this approach for multimodal image caption translation and show improvements compared to basic combination methods.
 
-**2018**
+* Unraveling the Contribution of Image Captioning and Neural Machine Translation for Multimodal Machine Translation [[pdf](https://ufal.mff.cuni.cz/pbml/108/art-lala-madhyastha-wang-specia.pdf)]
+  * Lala et al., (2017)
+  * PBML'17
+  * Recent work on multimodal machine translation has attempted to address the problem of producing target language image descriptions based on both the source language description and the corresponding image. However, existing work has not been conclusive on the contribution of visual information. This paper presents an in-depth study of the problem by examining the differences and complementarities of two related but distinct approaches to this task: text-only neural machine translation and image captioning. We analyse the scope for improvement and the effect of different data and settings to build models for these tasks. We also propose ways of combining these two approaches for improved translation quality.
+
+* Findings of the Second Shared Task on Multimodal Machine Translation and Multilingual Image Description
+  * Elliott et al., (2017)
+  * WMT'17
+  * We present the results from the second shared task on multimodal machine translation and multilingual image description. Nine teams submitted 19 systems to two tasks. The multimodal translation task, in which the source sentence is supplemented by an image, was extended with a new language (French) and two new test sets. The multilingual image description task was changed such that at test time, only the image is given. Compared to last year, multimodal systems improved, but text-only systems remain competitive.
+
+**2018** {#9}
 
 * Findings of the Third Shared Task on Multimodal Machine Translation [[pdf](http://statmt.org/wmt18/pdf/WMT029.pdf)]
   * Barrault et al., (2018)
@@ -98,7 +107,12 @@
   * WMT'18
   * This paper describes the UMONS solution for the Multimodal Machine Translation Task presented at the third conference on machine translation (WMT18). We explore a novel architecture, called deepGRU, based on recent findings in the related task of Neural Image Captioning (NIC). The models presented in the following sections lead to the best METEOR translation score for both constrained (English, image) -> German and (English, image) -> French sub-tasks.
 
-**2019**
+* A Visual Attention Grounding Neural Model for Multimodal Machine Translation [[pdf](https://www.aclweb.org/anthology/D18-1400)]
+  * Zhou et al., (2018)
+  * ACL'18
+  * We introduce a novel multimodal machine translation model that utilizes parallel visual and textual information. Our model jointly optimizes the learning of a shared visual-language embedding and a translator. The model leverages a visual attention grounding mechanism that links the visual semantics with the corresponding textual semantics. Our approach achieves competitive state-of-the-art results on the Multi30K and the Ambiguous COCO datasets. We also collected a new multilingual multimodal product description dataset to simulate a real-world international online shopping scenario. On this dataset, our visual attention grounding model outperforms other methods by a large margin. 
+
+**2019** {#4}
 
 * Probing the Need for Visual Context in Multimodal Machine Translation [[pdf](https://arxiv.org/pdf/1903.08678.pdf)]
   * Caglayan et al., (2019)
@@ -144,8 +158,29 @@
   * Papineni et al., (2002)
   * Human evaluations of machine translation are extensive but expensive. Human evaluations can take months to finish and involve human labor that cannot be reused. We propose a method of automatic machine translation evaluation that is quick, inexpensive, and language-independent, that correlates highly with human evaluation, and that has little marginal cost per run. We present this method as an automated understudy to skilled human judges which substitutes for them when there is need for quick or frequent evaluations.
 
+* METEOR [[pdf](http://www.cs.cmu.edu/~alavie/METEOR/pdf/Banerjee-Lavie-2005-METEOR.pdf)] [[web](http://www.cs.cmu.edu/~alavie/METEOR/)]
+  * METEOR: An Automatic Metric for MT Evaluation with Improved Correlation with Human Judgments
+  * Banerjee et al., (2005)
+  * We describe METEOR, an automatic metric for machine translation evaluation that is based on a generalized concept of unigram matching between the machine-produced translation and human-produced reference translations. Unigrams can be matched based on their surface forms, stemmed forms, and meanings; furthermore, METEOR can be easily extended to include more advanced matching strategies. Once all generalized unigram matches between the two strings have been found, METEOR computes a score for this matching using a combination of unigram-precision, unigram-recall, and a measure of fragmentation that is designed to directly capture how well-ordered the matched words in the machine translation are in relation to the reference. We evaluate METEOR by measuring the correlation between the metric scores and human judgments of translation quality. We compute the Pearson R correlation value between its scores and human quality assessment of teh LDC TIDES 2003 Arabic-to-English and Chinese-to-English datasets. We perform segment-by-segment correlation, and show that METEOR gets an R correlation value of 0.347 on the Arabic data and 0.331 on the Chinese data. This is shown to be an improvement on using simply unigram-precision, unigram-recall and their harmonic F1 combination. We also perform experiments to show the relative contributions of the various mapping modules.
+
+* METEOR 1.5 [[pdf](https://www.cs.cmu.edu/~alavie/METEOR/pdf/meteor-1.5.pdf)] [[web](http://www.cs.cmu.edu/~alavie/METEOR/)]
+  * METEOR Universal: Language Specific Translation Evaluation for Any Target Language
+  * Denkowski et al., (2014)
+  * This paper describes METEOR Universal, released for the 2014 ACL Workshop on Statistical Machine Translation. METEOR Universal brings language specific evaluation to previously unsupported target language by (1) automatically extracting linguistic resources (paraphrase tables and function word lists) from the bitext used to train MT systems and (2) using a universal parameter set learned from pooling human judgments of translation quality from several language directions. METEOR Universal is shown to significantly outperform baseline BLEU on two new languages, Russian (WMT13) and Hindi (WMT14).
+
+* TER [[pdf](https://www.cs.umd.edu/~snover/pub/amta06/ter_amta.pdf)]
+  * A study of Translation Edit Rate with Targeted Human Annotation
+  * Snover et al., (2006)
+  * We examine a new, intuitive measure for evaluating machine-translation output that avoids the knowledge intensiveness of more meaning-based approaches, and the labor-intensiveness of human judgments. Translation Edit Rate (TER) measures the amount of editing that a human would have to perform to change a system output so it exactly matches a reference translation. We show that the single-reference variant of TER correlates as well with human judgments of MT quality as the four-reference variant of BLEU. We also define a human-targeted TER (or HTER) and show that it yields higher correlations with human judgments than BLEU - even when BLEU is given human-targeted references. Our results indicate that HTER correlates with human judgments better than HMETEOR and the four-reference variants of TER, and HTER correlate with human judgments as well as - or better than - a second human judgment does.
+
 ## Tutorials
 
+* Multimodal Learning and Reasoning [[pdf](https://github.com/MultimodalNLP/MultimodalNLP.github.io/raw/master/mlr_tutorial.pdf)]
+  * Elliott et al., University of Amsterdam (2016)
+
+* Multimodal Machine Translation [[pdf](https://mtm2017.unbabel.com/assets/images/slides/lucia_specia.pdf)]
+  * Lucia Specia, University of Sheffield (2017)
+
 * Introduction to Multimodal Machine Translation [[pdf](https://www.clsp.jhu.edu/wp-content/uploads/sites/75/2018/06/2018-06-22-Barrault-Multimodal-MT.pdf)]
-  * Barrault, University of Le Mans (2018)
+  * Loic Barrault, University of Le Mans (2018)
 
