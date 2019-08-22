@@ -26,7 +26,19 @@
   * arXiv
   * Inspired by recent advances in multimodal learning and machine translation, we introduce an encoder-decoder pipeline that learns (a): a multimodal joint embedding space with images and text and (b): a novel language model for decoding distributed representations from our space. Our pipeline effectively unifies joint image-text embedding models with multimodal neural language models. We introduce the structure-content neural language model that disentangles the structure of a sentence to its content, conditioned on representations produced by the encoder. The encoder allows one to rank images and sentences while the decoder can generate novel descriptions from scratch. Using LSTM to encode sentences, we match the state-of-the-art performance on Flickr8K and Flickr30K without using object detections. We also set new best results when using the 19-layer Oxford convolutional network. Furthermore we show that with linear encoders, the learned embedding space captures multimodal regularities in terms of vector space arithmetic e.g. \* image of a blue car \* - "blue" + "red" is near images of red cars. Sample captions generated for 800 images are made available for comparison.
 
-**2016** {#3}
+**2015** {#2}
+
+#### Multimodal Convolutional Neural Networks for Matching Image and Sentence [[pdf](http://openaccess.thecvf.com/content_iccv_2015/papers/Ma_Multimodal_Convolutional_Neural_ICCV_2015_paper.pdf)] <!-- omit in toc -->
+  * Ma et al., (2015)
+  * ICCV'15
+  * In this paper, we propose multimodal convolutional neural networks (m-CNNs) for matching image and sentence. Our m-CNN provides an end-to-end framework with convolutional architectures to exploit image representation, word composition, and the matching relations between the two modalities. More specifically, it consists of one image CNN encoding the image content and one matching CNN modeling the joint representation of image and sentence. The matching CNN composes different semantic fragments from words and learns the inter-modal relations between image and the composed fragments at different levels, thus fully exploit the matching relations between image and sentence. Experimental results demonstrate that the proposed m-CNNs can effectively capture the information necessary for image and sentence matching. More specifically, our proposed m-CNNs significantly outperform the state-of-the-art approaches for bidirectional image and sentence retrieval on the Flickr8K and Flickr30K datasets.
+
+#### Deep Captioning with Multimodal Recurrent Neural Networks (m-RNN) [[pdf](https://arxiv.org/pdf/1412.6632.pdf)] [[github](https://github.com/mjhucla/mRNN-CR)] <!-- omit in toc -->
+  * Mao et al., (2015)
+  * ICLR'15
+  * In this paper, we present a multimodal Recurrent Neural Network (m-RNN) model for generating novel image captions. It directly models the probability distribution of generating a word given previous words and an image. Image captions are generated according to this distribution. The model consists of two sub-networks: a deep recurrent neural network for sentences and a deep convolutional network for images. These two sub-networks interact with each other in a multimodal layer to form the whole m-RNN model. The effectiveness of our model is validated on four benchmark datasets (IAPR TC-12, Flickr8K, Flickr30K and MS COCO). Our model outperforms the state-of-the-art methods. In addition, we apply the m-RNN model to retrieval tasks for retrieving images or sentences, and achieves significant performance improvement over the state-of-the-art methods which directly optimize the ranking objective function for retrieval. The project page of this work is: http://www.stat.ucla.edu/~junhua.mao/m-RNN.html.
+
+**2016** {#5}
 
 #### Does Multimodality Help Human and Machine for Translation and Image Captioning? [[pdf](https://arxiv.org/pdf/1605.09186.pdf)] <!-- omit in toc -->
   * Caglayan et al., (2016)
@@ -43,7 +55,17 @@
   * WMT'16
   * We present a novel neural machine translation (NMT) architecture associating visual and textual features for translation tasks with multiple modalities. Transformed global and regional visual features are concatenated with text to form attend-able sequences which are dissipated over parallel long short-term memory (LSTM) threads to assist the encoder generating a representation for attention-based decoding. Experiments show that the proposed NMT outperform the text-only baseline.
 
-**2017** {#6}
+#### Review Networks for Caption Generation [[pdf](https://arxiv.org/pdf/1605.07912.pdf)] [[github](https://github.com/kimiyoung/review_net)] <!-- omit in toc -->
+  * Yang et al., (2016)
+  * NIPS'16
+  * We propose a novel extension of the encoder-decoder framework, called a review network. The review network is generic and can enhance any existing encoder-decoder model: in this paper, we consider RNN decoders with both CNN and RNN encoders. The review network performs a number of review steps ith attention mechanism on the encoder hidden states, and outputs a thought vector after each review step; the thought vectors are used as the input of the attention mechanism in the decoder. We show that conventional encoder-decoders are a special case of our framework. Empirically, we show that our framework improves over state-of-the-art encoder-decoder systems on the tasks of image captioning and source code captioning.
+
+#### Hierarchical Attention Networks for Document Classification [[pdf](https://www.cs.cmu.edu/~./hovy/papers/16HLT-hierarchical-attention-networks.pdf)] <!-- omit in toc -->
+  * Yang et al., (2016)
+  * NAACL-HLT'16
+  * We propose a hierarchical attention network for document classification. Our model has two distinctive characteristics: (i) it has a hierarchical structure that mirrors the hierarchical structure of documents; (ii) it has two levels of attention mechanisms applied at the word and sentence-level, enabling it to attend differentially to more and less important content when constructing the document representations. Experiments conducted on six large scale text classification tasks demonstrate that the proposed architecture outperform previous methods by a substantial margin. Visualization of the attention layers illustrates that the model selects qualitatively informative words and sentences.
+
+**2017** {#7}
 
 #### A Teacher-Student Framework for Zero-Resource Neural Machine Translation [[pdf](https://arxiv.org/pdf/1705.00753.pdf)] <!-- omit in toc -->
   * Chen et al., (2017)
@@ -75,7 +97,12 @@
   * NIPS'17
   * The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.
 
-**2018** {#11}
+#### Deliberation Networks: Sequence Generation Beyond One-Pass Decoding [[pdf](https://papers.nips.cc/paper/6775-deliberation-networks-sequence-generation-beyond-one-pass-decoding.pdf)] [[github](https://github.com/ustctf/delibnet)] <!-- omit in toc -->
+  * Xia et al., (2017)
+  * NIPS'17
+  * The encoder-decoder framework has achieved promising progress for many sequence generation tasks, including machine translation, text summarization, dialog system, image captioning, etc. Such a framework adopts an one-pass forward process while decoding the generating a sequence, but lacks the deliberation process: A generated sequence is directly used as final output without further polishing. However, deliberation is a common behaviour in human's daily life like reading news and writing papers/articles/books. In this work, we introduce the deliberation process into the encoder-decoder framework and propose deliberation networks for sequence generation. A deliberation network has two levels of decoders, where the first-pass decoder generates a raw sequence and the second-pass decoder polishes and refines the raw sentence with deliberation. Since the second-pass deliberation decoder has global information about what the sequence to be generated might be, it has the potential to generate a better sequence by looking into future words in the raw sentence. Experiments on neural machine translation and text summarization demonstrate the effectiveness of the proposed deliberation networks. On the WMT 2014 English-to-French translation task, our model establishes a new state-of-the-art BLEU score of 41.5.
+
+**2018** {#15}
 
 #### Findings of the Third Shared Task on Multimodal Machine Translation [[pdf](http://statmt.org/wmt18/pdf/WMT029.pdf)] <!-- omit in toc -->
   * Barrault et al., (2018)
@@ -117,6 +144,16 @@
   * WMT'18
   * This paper describes the UMONS solution for the Multimodal Machine Translation Task presented at the third conference on machine translation (WMT18). We explore a novel architecture, called deepGRU, based on recent findings in the related task of Neural Image Captioning (NIC). The models presented in the following sections lead to the best METEOR translation score for both constrained (English, image) -> German and (English, image) -> French sub-tasks.
 
+#### Input Combination Strategies for Multi-Source Transformer Decoder [[pdf](https://www.aclweb.org/anthology/W18-6326)] <!-- omit in toc -->
+  * Libovicky et al., (2018)
+  * WMT'18
+  * In multi-source sequence-to-sequence tasks, the attention mechanism can be modelled in several ways. This topic has been thoroughly studies on recurrent architectures. In this paper, we extend the previous work to the encoder-decoder attention in the Transformer architecture. We propose four different input combination strategies for the encoder-decoder attention: serial, parallel, flat, and hierarchical. We evaluate our methods on tasks of multimodal translation and translation with multiple source languages. The experiments show that the models are able to use multiple sources and improve over single source baselines.
+
+#### Multi-encoder Transformer Network for Automatic Post-Editing [[pdf](https://www.aclweb.org/anthology/W18-6470)] <!-- omit in toc -->
+  * Shin et al., (2018)
+  * WMT'18
+  * This paper describes the POSTECH's submission to the WMT 2018 shared task on Automatic Post-Editing (APE). We propose a new neural end-to-end post-editing model based on the transformer network. We modified the encoder-decoder attention to reflect the relation between the machine translation input, the source and the post-edited translation in APE problem. Experiments on WMT17 English-German APE data set show an improvement in both TER and BLEU score over the best result of WMT17 APE shared task. Our primary submission achieves -4.52 TER and +6.81 BLEU score on PBSMT task and -0.13 TER and +0.40 BLEU score for NMT task compared to the baseline.
+
 #### A Visual Attention Grounding Neural Model for Multimodal Machine Translation [[pdf](https://www.aclweb.org/anthology/D18-1400)] <!-- omit in toc -->
   * Zhou et al., (2018)
   * ACL'18
@@ -132,7 +169,17 @@
   * arXiv
   * We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pretrain deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).
 
-**2019** {#7}
+#### Improving Neural Machine Translation with Conditional Sequence Generative Adversarial Nets [[pdf](https://arxiv.org/pdf/1703.04887.pdf)] <!-- omit in toc -->
+  * Yang et al., (2018)
+  * NAACL-HLT'18
+  * This paper proposes an approach for applying GAN to NMT. We build a conditional sequence generative adversarial net which comprises of two adversarial sub models, a generator and a discriminator. The generator aims to generate sentences which are hard to be discriminated from human-translated sentences (i.e. the golden target sentences); And the discriminator makes efforts to discriminate the machine-generated sentences from human-translated ones. The two sub models play a mini-max game and achieve the win-win situation when they reach a Nash Equilibrium. Additionally, the static sentence-level BLEU is utilized as the reinforced objective for the generator, which biases the generation towards high BLEU points. During training, both the dynamic discriminator and the static BLEU objective are employed to evaluate the generated sentences and feedback the evaluations to guide the learning of the generator. Experimental results show that the proposed model consistently outperforms the traditional RNNSearch and the newly emerged state-of-the-art Transformer on English-German and Chinese-English translation tasks.
+
+#### Adversarial Neural Machine Translation [[pdf](https://arxiv.org/pdf/1704.06933.pdf)] <!-- omit in toc -->
+  * Wu et al., (2018)
+  * NAACL-HLT'18
+  * In this paper, we study a new learning paradigm for Neural Machine Translation (NMT). Instead of maximizing the likelihood of the human translation as in previous work, we minimize the distinction between human translation and the translation given by an NMT model. To achieve this goal, inspired by the recent success of Generative Adversarial Networks (GAN), we employ an adversarial training architecture and name it as Adversarial-NMT. In Adversarial-NMT, the training of the NMT model is assisted by an adversary, which is an elaborately designed Convolutional Neural Network (CNN). The goal of the adversary is to differentiate the translation result generated by the NMT model from that by human. The goal of the NMT model is to produce high quality translations so as to cheat the adversary. A policy gradient method is leveraged to co-train the NMT model and the adversary. Experimental results on English -> French and German -> English translation tasks show that Adversarial-NMT can achieve significantly better translation quality than several strong baselines.
+
+**2019** {#8}
 
 #### Probing the Need for Visual Context in Multimodal Machine Translation [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] <!-- omit in toc -->
   * Caglayan et al., (2019)
@@ -144,7 +191,7 @@
   * CVPR'19
   * Unsupervised neural machine translation (UNMT) has recently achieved remarkable results with only large monolingual corpora in each language. However, the uncertainty of associating target with source sentences makes UNMT theoretically an ill-posed problem. This work investigates the possibility of utilizing images for disambiguation to improve the performance of UNMT. Our assumption is intuitively based on the invariant property of image, i.e., the description of the same visual content by different languages should be approximately similar. We propose an unsupervised multi-modal machine translation (UMNMT) framework based on the language translation cycle consistency loss conditional on the image, targeting to learn the bidirectional multi-modal and uni-modal, our inference model can translate with or without the image. On the widely used Multi30K dataset, the experimental results of our approach are significantly better than those of the text-only UNMT on the 2016 test dataset.
 
-#### Distilling Translations with Visual Awareness [[pdf](https://arxiv.org/pdf/1906.07701.pdf)] <!-- omit in toc -->
+#### Distilling Translations with Visual Awareness [[pdf](https://arxiv.org/pdf/1906.07701.pdf)] [[github](https://github.com/ImperialNLP/MMT-Delib)] <!-- omit in toc -->
   * Ive et al., (2019)
   * ACL'19
   * Previous work on multimodal machine translation has shown that visual information is only needed in very specific cases, for example in the presence of ambiguous words where the textual context is not sufficient. As a consequence, models tend to learn to ignore this information. We propose a translate-and-refine approach to this problem where images are only used by a second stage detector. This approach is trained jointly to generate a good first draft translation and to improve over this draft by (i) making better use of the target language textual context (both left and right-side contexts) and (ii) making use of visual context. This approach leads to the state of the art results. Additionally, we show that it has the ability to recover from erroneous or missing words in the source language.
@@ -156,7 +203,7 @@
 
 #### From Words to Sentences: A Progressive Learning Approach for Zero-resource Machine Translation with Visual Pivots [[pdf](https://arxiv.org/pdf/1906.00872.pdf)] <!-- omit in toc -->
   * Chen et al., (2019)
-  * arXiv
+  * IJCAI'19
   * The neural machine translation model has suffered from the lack of large-scale parallel corpora. In contrast, we humans can learn multi-lingual translations even without parallel texts by referring our languages to the external world. To mimic such human learning behaviour, we employ images as pivots to enable zero-resource translation learning. However, a picture tells a thousand words, which makes multi-lingual sentences pivoted by the same image noisy as mutual translations and thus hinders the translation model learning. In this work, we propose a progressive learning approach for image pivoted zero-resource machine translation. Since words are less diverse when grounded in the image, we first learn word-level translation with image pivots, and then progress to learn the sentence-level translation by utilizing the learned word translation to suppress noises in image-pivoted multi-lingual sentences. Experimental results on two widely used image-pivot translation datasets, IAPR-TC12 and Multi30K, show that the proposed approach significantly outperforms other state-of-the-art methods.
 
 #### Look Back and Predict Forward in Image Captioning [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_Look_Back_and_Predict_Forward_in_Image_Captioning_CVPR_2019_paper.pdf)] <!-- omit in toc -->
@@ -168,6 +215,11 @@
   * Dai et al., (2019)
   * ACL'19
   * Transformers have a potential of learning longer-term dependency, but are limited by a fixed-length context in the setting of language modelling. We propose a novel neural architecture *Transformer-XL* that enables learning dependency beyond a fixed length without disrupting temporal coherence. It consists of a segment-level recurrence mechanism and a novel positional encoding scheme. Our method not only enables capturing longer-term dependency, but also resolves the context fragmentation problem. As a result, Transformer-XL learns dependency that is 80% longer than RNNs and 450% longer than vanilla Transformers, achieves better performance on both short and long sequences, and is up to 1800+ times faster than vanilla Transformers during evaluation. Notably, we improve the state-of-the-art results of bpc/perplexity to 0.99 on en-wiki8, 1.08 on text8, 18.3 on WikiText-103, 21.8 on One Billion Word, and 54.5 on Penn Treebank (without finetuning). When trained only on WikiText-103, Transformer-XL manages to generate reasonably coherent, novel text articles with thousands of tokens. Our code, pretrained models, and hyperparameters are available in both Tensorflow and PyTorch.
+
+#### Hierarchical Transformers for Multi-Document Summarization [[pdf](https://www.aclweb.org/anthology/P19-1500)] [[github](https://github.com/nlpyang/hiersumm)] <!-- omit in toc -->
+  * Liu et al., (2019)
+  * ACL'19
+  * In this paper, we develop a neural summarization model which can effectively process multiple input documents and distill abstractive summaries. Our model augments a previously proposed Transformer architecture with the ability to encode documents in a hierarchical manner. We represent cross-document relationships via an attention mechanism which allows to share information as opposed to simply concatenating text spans and processing them as a flat sequence. Our model learns latent dependencies among textual units, but also take advantage of explicit graph representations focusing on similarity or discourse relations. Empirical results on the WikiSum dataset demonstrate that the proposed architecture brings substantial improvements over several strong baselines.
 
 ## Datasets
 
@@ -223,4 +275,7 @@
 
 #### Introduction to Multimodal Machine Translation [[pdf](https://www.clsp.jhu.edu/wp-content/uploads/sites/75/2018/06/2018-06-22-Barrault-Multimodal-MT.pdf)] <!-- omit in toc -->
   * Loic Barrault, University of Le Mans (2018)
+
+#### Understanding Visual Scenes [[pdf](http://tcci.ccf.org.cn/conference/2017/dldoc/invtalk01_mL.pdf)] <!-- omit in toc -->
+  * Mirella Lapata, University of Edinburgh (2018)
 
