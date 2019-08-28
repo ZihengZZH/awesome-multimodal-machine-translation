@@ -38,7 +38,7 @@
   * ICLR'15
   * In this paper, we present a multimodal Recurrent Neural Network (m-RNN) model for generating novel image captions. It directly models the probability distribution of generating a word given previous words and an image. Image captions are generated according to this distribution. The model consists of two sub-networks: a deep recurrent neural network for sentences and a deep convolutional network for images. These two sub-networks interact with each other in a multimodal layer to form the whole m-RNN model. The effectiveness of our model is validated on four benchmark datasets (IAPR TC-12, Flickr8K, Flickr30K and MS COCO). Our model outperforms the state-of-the-art methods. In addition, we apply the m-RNN model to retrieval tasks for retrieving images or sentences, and achieves significant performance improvement over the state-of-the-art methods which directly optimize the ranking objective function for retrieval. The project page of this work is: http://www.stat.ucla.edu/~junhua.mao/m-RNN.html.
 
-**2016** {#5}
+**2016** {#6}
 
 #### Does Multimodality Help Human and Machine for Translation and Image Captioning? [[pdf](https://arxiv.org/pdf/1605.09186.pdf)] <!-- omit in toc -->
   * Caglayan et al., (2016)
@@ -65,7 +65,12 @@
   * NAACL-HLT'16
   * We propose a hierarchical attention network for document classification. Our model has two distinctive characteristics: (i) it has a hierarchical structure that mirrors the hierarchical structure of documents; (ii) it has two levels of attention mechanisms applied at the word and sentence-level, enabling it to attend differentially to more and less important content when constructing the document representations. Experiments conducted on six large scale text classification tasks demonstrate that the proposed architecture outperform previous methods by a substantial margin. Visualization of the attention layers illustrates that the model selects qualitatively informative words and sentences.
 
-**2017** {#7}
+#### Image Captioning with Semantic Attention [[pdf](http://openaccess.thecvf.com/content_cvpr_2016/papers/You_Image_Captioning_With_CVPR_2016_paper.pdf)] <!-- omit in toc -->
+  * You et al., (2016)
+  * CVPR'16
+  * Automatically generating a natural language description of an image has attracted interests recently both because of its importance in practical applications and because it connects two major artificial intelligence fields: computer vision and natural language processing. Existing approaches are either top-down, which start from a gist of an image and convert it into words, or bottom-up, which come up with words describing various aspects of an image and then combine them. In this paper, we propose a new algorithm that combines both approaches through a model of semantic attention. Our algorithm learns to selectively attend to semantic concept proposals and fuse them into hidden states and outputs of recurrent neural networks. The selection and fusion form a feedback connecting the top-down and bottom-up computation. We evaluate our algorithm on two public benchmarks: Microsoft COCO and Flickr30K. Experimental results show that our algorithm significantly outperforms the state-of-the-art approaches consistently across different evaluation metrics.
+
+**2017** {#8}
 
 #### A Teacher-Student Framework for Zero-Resource Neural Machine Translation [[pdf](https://arxiv.org/pdf/1705.00753.pdf)] <!-- omit in toc -->
   * Chen et al., (2017)
@@ -102,7 +107,12 @@
   * NIPS'17
   * The encoder-decoder framework has achieved promising progress for many sequence generation tasks, including machine translation, text summarization, dialog system, image captioning, etc. Such a framework adopts an one-pass forward process while decoding the generating a sequence, but lacks the deliberation process: A generated sequence is directly used as final output without further polishing. However, deliberation is a common behaviour in human's daily life like reading news and writing papers/articles/books. In this work, we introduce the deliberation process into the encoder-decoder framework and propose deliberation networks for sequence generation. A deliberation network has two levels of decoders, where the first-pass decoder generates a raw sequence and the second-pass decoder polishes and refines the raw sentence with deliberation. Since the second-pass deliberation decoder has global information about what the sequence to be generated might be, it has the potential to generate a better sequence by looking into future words in the raw sentence. Experiments on neural machine translation and text summarization demonstrate the effectiveness of the proposed deliberation networks. On the WMT 2014 English-to-French translation task, our model establishes a new state-of-the-art BLEU score of 41.5.
 
-**2018** {#15}
+#### Imagination improves Multimodal Translation [[pdf](https://arxiv.org/pdf/1705.04350.pdf)] <!-- omit in toc -->
+  * Elliott et al., (2017)
+  * arXiv
+  * We decompose multimodal translation into two sub-tasks: learning to translate and learning visually grounded representations. In a multitask learning framework, translations are learned in an attention-based encoder-decoder, and grounded representations are learned through image representation prediction. Our approach improves translation performance compared to the state of the art on the Multi30K dataset. Furthermore, it is equally effective if we train the image prediction task on the external MS COCO dataset, and we find improvements if we train the translation model on the external News Commentary parallel text.
+
+**2018** {#16}
 
 #### Findings of the Third Shared Task on Multimodal Machine Translation [[pdf](http://statmt.org/wmt18/pdf/WMT029.pdf)] <!-- omit in toc -->
   * Barrault et al., (2018)
@@ -179,7 +189,12 @@
   * NAACL-HLT'18
   * In this paper, we study a new learning paradigm for Neural Machine Translation (NMT). Instead of maximizing the likelihood of the human translation as in previous work, we minimize the distinction between human translation and the translation given by an NMT model. To achieve this goal, inspired by the recent success of Generative Adversarial Networks (GAN), we employ an adversarial training architecture and name it as Adversarial-NMT. In Adversarial-NMT, the training of the NMT model is assisted by an adversary, which is an elaborately designed Convolutional Neural Network (CNN). The goal of the adversary is to differentiate the translation result generated by the NMT model from that by human. The goal of the NMT model is to produce high quality translations so as to cheat the adversary. A policy gradient method is leveraged to co-train the NMT model and the adversary. Experimental results on English -> French and German -> English translation tasks show that Adversarial-NMT can achieve significantly better translation quality than several strong baselines.
 
-**2019** {#8}
+#### Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering [[pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Anderson_Bottom-Up_and_Top-Down_CVPR_2018_paper.pdf)] <!-- omit in toc -->
+  * Anderson et al., (2018)
+  * CVPR'18
+  * Top-down visual attention mechanisms have been used extensively in image captioning and visual question answering (VQA) to enable deeper image understanding through fine-grained analysis and even multiple steps of reasoning. In this work, we propose a combined bottom-up and top-down attention mechanism that enables attention to be calculated at the level of objects and other salient image regions. This is the natural basis for attention to be considered. Within our approach, the bottom-up mechanism (based on Faster R-CNN) proposes image regions, each with an associated feature vector, while the top-down mechanism determines feature weightings. Applying this approach to image captioning, our results on the MSCOCO test server establish a new state-of-the-art for the task, achieving CIDEr / SPICE / BLEU-4 scores of 117.9, 21.5 and 36.9, respectively. Demonstrating the broad applicability of the method, applying the same approach to VQA we obtain first place in the 2017 VQA Challenge.
+
+**2019** {#9}
 
 #### Probing the Need for Visual Context in Multimodal Machine Translation [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] <!-- omit in toc -->
   * Caglayan et al., (2019)
@@ -215,6 +230,11 @@
   * Dai et al., (2019)
   * ACL'19
   * Transformers have a potential of learning longer-term dependency, but are limited by a fixed-length context in the setting of language modelling. We propose a novel neural architecture *Transformer-XL* that enables learning dependency beyond a fixed length without disrupting temporal coherence. It consists of a segment-level recurrence mechanism and a novel positional encoding scheme. Our method not only enables capturing longer-term dependency, but also resolves the context fragmentation problem. As a result, Transformer-XL learns dependency that is 80% longer than RNNs and 450% longer than vanilla Transformers, achieves better performance on both short and long sequences, and is up to 1800+ times faster than vanilla Transformers during evaluation. Notably, we improve the state-of-the-art results of bpc/perplexity to 0.99 on en-wiki8, 1.08 on text8, 18.3 on WikiText-103, 21.8 on One Billion Word, and 54.5 on Penn Treebank (without finetuning). When trained only on WikiText-103, Transformer-XL manages to generate reasonably coherent, novel text articles with thousands of tokens. Our code, pretrained models, and hyperparameters are available in both Tensorflow and PyTorch.
+
+#### XLNet: Generalized Autoregressive Pretraining for Language Understanding [[pdf](https://arxiv.org/pdf/1906.08237.pdf)] [[github](https://github.com/zihangdai/xlnet)] <!-- omit in toc -->
+  * Yang et al., (2019)
+  * arXiv
+  * With the capability of modeling bidirectional contexts, denoising autoencoding based pretraining like BERT achieves better performance than pretraining approaches based on autoregressive language modeling. However, relying on corrupting the input with masks, BERT neglects dependency between the masked positions and suffers from a pretrain-finetune discrepancy. In light of those pros and cons, we propose XLNet, a generalized autoregressive pretraining method that (1) enables learning bidirectional contexts by maximizing the expected likelihood over all permutations of the factorization order and (2) overcomes the limitations of BERT thanks to its autoregressive formulation. Furthermore, XLNet integrates ideas from Transformer-XL, the state-of-the-art autoregressive model, into pretraining. Empirically, XLNet outperforms BERT on 20 tasks, often by a large margin, and achieves state-of-the-art results on 18 tasks including question answering, natural language inference, sentiment analysis, and document ranking.
 
 #### Hierarchical Transformers for Multi-Document Summarization [[pdf](https://www.aclweb.org/anthology/P19-1500)] [[github](https://github.com/nlpyang/hiersumm)] <!-- omit in toc -->
   * Liu et al., (2019)

@@ -22,6 +22,7 @@
 | 2018 | Yang et al., | NAACL-HLT'18 | Improving Neural Machine Translation with Conditional Sequence Generative Adversarial Nets | [[pdf](https://arxiv.org/pdf/1703.04887.pdf)] |
 | 2018 | Wu et al., | NAACL-HLT'18 | Adversarial Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1704.06933.pdf)] |
 | 2019 | Dai et al., | ACL'19 | Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context | [[pdf](https://arxiv.org/pdf/1901.02860.pdf)] [[github](https://github.com/kimiyoung/transformer-xl)] |
+| 2019 | Yang et al., | arXiv | XLNet: Generalized Autoregressive Pretraining for Language Understanding | [[pdf](https://arxiv.org/pdf/1906.08237.pdf)] [[github](https://github.com/zihangdai/xlnet)] |
 | 2019 | Liu et al., | ACL'19 | Hierarchical Transformers for Multi-Document Summarization | [[pdf](https://www.aclweb.org/anthology/P19-1500)] [[github](https://github.com/nlpyang/hiersumm)] | 
 
 #### Multimodal Language Models
@@ -34,6 +35,8 @@
 | 2015 | Ma et al., | ICCV'15 | Multimodal Convolutional Neural Networks for Matching Image and Sentence | [[pdf](http://openaccess.thecvf.com/content_iccv_2015/papers/Ma_Multimodal_Convolutional_Neural_ICCV_2015_paper.pdf)] |
 | 2015 | Mao et al., | ICLR'15 | Deep Captioning with Multimodal Recurrent Neural Networks (m-RNN) | [[pdf](https://arxiv.org/pdf/1412.6632.pdf)] [[github](https://github.com/mjhucla/mRNN-CR)] |
 | 2016 | Yang et al., | NIPS'16 | Review Networks for Caption Generation | [[pdf](https://arxiv.org/pdf/1605.07912.pdf)] [[github](https://github.com/kimiyoung/review_net)] |
+| 2016 | You et al., | CVPR'16 | Image Captioning with Semantic Attention | [[pdf](http://openaccess.thecvf.com/content_cvpr_2016/papers/You_Image_Captioning_With_CVPR_2016_paper.pdf)] |
+| 2018 | Anderson et al., | CVPR'18 | Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering | [[pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Anderson_Bottom-Up_and_Top-Down_CVPR_2018_paper.pdf)] |
 | 2019 | Qin et al., | CVPR'19 | Look Back and Predict Forward in Image Captioning | [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_Look_Back_and_Predict_Forward_in_Image_Captioning_CVPR_2019_paper.pdf)] |
 
 #### Multimodal Machine Translation
@@ -47,6 +50,7 @@
 | 2017 | Delbrouck et al., | ICLR'17 | Multimodal Compact Bilinear Pooling for Multimodal Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1703.08084.pdf)] |
 | 2017 | Lala et al., | PBML'17 | Unraveling the Contribution of Image Captioning and Neural Machine Translation for Multimodal Machine Translation | [[pdf](https://ufal.mff.cuni.cz/pbml/108/art-lala-madhyastha-wang-specia.pdf)] |
 | 2017 | Chen et al., | arXiv | A Teacher-Student Framework for Zero-Resource Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1705.00753.pdf)] |
+| 2017 | Elliott et al., | arXiv | Imagination improves Multimodal Translation | [[pdf](https://arxiv.org/pdf/1705.04350.pdf)] |
 | 2017 | Elliott et al., | WMT'17 | Findings of the Second Shared Task on Multimodal Machine Translation and Multilingual Image Description | [[pdf](https://arxiv.org/abs/1710.07177)] |
 | 2018 | Barrault et al., | WMT'18 | Findings of the Third Shared Task on Multimodal Machine Translation | [[pdf](http://statmt.org/wmt18/pdf/WMT029.pdf)] |
 | 2018 | Caglayan et al., | WMT'18 | LIUM-CVC Submissions for WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT065.pdf)] |

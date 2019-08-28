@@ -45,9 +45,12 @@ According to the category introduced in [the PPT of Barrault](https://www.clsp.j
 
 | Authors | Paper | BLEU (EnDe) | METEOR (En-De) | BLEU (EnFr) | METEOR (En-Fr) | Links |
 | --      | --    | :--:        | :--:           | :--:        | :--:           | --    |
+| Elliott et al., 2017 | Imagination improves Multimodal Translation | 36.8\* | 55.8\* | - | - | [[pdf](https://arxiv.org/pdf/1705.04350.pdf)] 
 | Helcl et al., 2018 | CUNI System for the WMT18 Multimodal Translation Task | 30.2 | 51.7 | 40.4 | 60.7 | [[pdf](http://statmt.org/wmt18/pdf/WMT068.pdf)] | 
 
 > The dataset used in the evaluation is assumed Multi30K, unless indicated. Furthermore, the framework is generally evaluated on the year's MWT shared task, e.g. 2018 framework on WMT'18. Only the best results are recorded, and more comprehensive results refer to original paper.
+
+> Elliott et al., 2017 reported their translation results only on Multi30K En2De.
 
 ### Visual Pivot
 
