@@ -26,7 +26,7 @@
   * arXiv
   * Inspired by recent advances in multimodal learning and machine translation, we introduce an encoder-decoder pipeline that learns (a): a multimodal joint embedding space with images and text and (b): a novel language model for decoding distributed representations from our space. Our pipeline effectively unifies joint image-text embedding models with multimodal neural language models. We introduce the structure-content neural language model that disentangles the structure of a sentence to its content, conditioned on representations produced by the encoder. The encoder allows one to rank images and sentences while the decoder can generate novel descriptions from scratch. Using LSTM to encode sentences, we match the state-of-the-art performance on Flickr8K and Flickr30K without using object detections. We also set new best results when using the 19-layer Oxford convolutional network. Furthermore we show that with linear encoders, the learned embedding space captures multimodal regularities in terms of vector space arithmetic e.g. \* image of a blue car \* - "blue" + "red" is near images of red cars. Sample captions generated for 800 images are made available for comparison.
 
-**2015** {#2}
+**2015** {#3}
 
 #### Multimodal Convolutional Neural Networks for Matching Image and Sentence [[pdf](http://openaccess.thecvf.com/content_iccv_2015/papers/Ma_Multimodal_Convolutional_Neural_ICCV_2015_paper.pdf)] <!-- omit in toc -->
   * Ma et al., (2015)
@@ -37,6 +37,11 @@
   * Mao et al., (2015)
   * ICLR'15
   * In this paper, we present a multimodal Recurrent Neural Network (m-RNN) model for generating novel image captions. It directly models the probability distribution of generating a word given previous words and an image. Image captions are generated according to this distribution. The model consists of two sub-networks: a deep recurrent neural network for sentences and a deep convolutional network for images. These two sub-networks interact with each other in a multimodal layer to form the whole m-RNN model. The effectiveness of our model is validated on four benchmark datasets (IAPR TC-12, Flickr8K, Flickr30K and MS COCO). Our model outperforms the state-of-the-art methods. In addition, we apply the m-RNN model to retrieval tasks for retrieving images or sentences, and achieves significant performance improvement over the state-of-the-art methods which directly optimize the ranking objective function for retrieval. The project page of this work is: http://www.stat.ucla.edu/~junhua.mao/m-RNN.html.
+
+#### A Survey of Current Datasets for Vision and Language Research [[pdf](https://aclweb.org/anthology/D15-1021)]<!-- omit in toc -->
+  * Ferraro et al., (2015)
+  * EMNLP'15
+  * Integrating vision and language has long been a dream in work of artificial intelligence (AI). In the past two years, we have witnessed an explosion of work that brings together vision and language from images to videos and beyond. The available corpora have played a crucial role in advancing this area of research. In this paper, we propose a set of quality metrics for evaluating and analyzing the vision & language datasets and categorize them accordingly. Our analyses show that the most recent datasets have been using more complex language and more abstract concepts, however, there are different strengths and weaknesses in each
 
 **2016** {#6}
 
@@ -70,7 +75,7 @@
   * CVPR'16
   * Automatically generating a natural language description of an image has attracted interests recently both because of its importance in practical applications and because it connects two major artificial intelligence fields: computer vision and natural language processing. Existing approaches are either top-down, which start from a gist of an image and convert it into words, or bottom-up, which come up with words describing various aspects of an image and then combine them. In this paper, we propose a new algorithm that combines both approaches through a model of semantic attention. Our algorithm learns to selectively attend to semantic concept proposals and fuse them into hidden states and outputs of recurrent neural networks. The selection and fusion form a feedback connecting the top-down and bottom-up computation. We evaluate our algorithm on two public benchmarks: Microsoft COCO and Flickr30K. Experimental results show that our algorithm significantly outperforms the state-of-the-art approaches consistently across different evaluation metrics.
 
-**2017** {#8}
+**2017** {#9}
 
 #### A Teacher-Student Framework for Zero-Resource Neural Machine Translation [[pdf](https://arxiv.org/pdf/1705.00753.pdf)] <!-- omit in toc -->
   * Chen et al., (2017)
@@ -111,6 +116,11 @@
   * Elliott et al., (2017)
   * arXiv
   * We decompose multimodal translation into two sub-tasks: learning to translate and learning visually grounded representations. In a multitask learning framework, translations are learned in an attention-based encoder-decoder, and grounded representations are learned through image representation prediction. Our approach improves translation performance compared to the state of the art on the Multi30K dataset. Furthermore, it is equally effective if we train the image prediction task on the external MS COCO dataset, and we find improvements if we train the translation model on the external News Commentary parallel text.
+
+#### Doubly-Attentive Decoder for Multi-modal Neural Machine Translation [[pdf](https://arxiv.org/pdf/1702.01287.pdf)] [[github](https://github.com/iacercalixto/MultimodalNMT)] <!-- omit in toc -->
+  * Calixto et al., (2017)
+  * arXiv
+  * We introduce a Multi-modal Neural Machine Translation model in which a doubly-attentive decoder naturally incorporates spatial visual features obtained using pre-trained convolutional neural networks, bridging the gap between image description and translation. Our decoder learns to attend to source-language words and parts of an image independently by means of two separate attention mechanisms as it generates words in the target language. We find that our model can efficiently exploit not just back-translated in-domain multi-modal data but also large general-domain text-only MT corpora. We also report state-of-the-art results on the Multi30K data set.
 
 **2018** {#16}
 
@@ -194,7 +204,7 @@
   * CVPR'18
   * Top-down visual attention mechanisms have been used extensively in image captioning and visual question answering (VQA) to enable deeper image understanding through fine-grained analysis and even multiple steps of reasoning. In this work, we propose a combined bottom-up and top-down attention mechanism that enables attention to be calculated at the level of objects and other salient image regions. This is the natural basis for attention to be considered. Within our approach, the bottom-up mechanism (based on Faster R-CNN) proposes image regions, each with an associated feature vector, while the top-down mechanism determines feature weightings. Applying this approach to image captioning, our results on the MSCOCO test server establish a new state-of-the-art for the task, achieving CIDEr / SPICE / BLEU-4 scores of 117.9, 21.5 and 36.9, respectively. Demonstrating the broad applicability of the method, applying the same approach to VQA we obtain first place in the 2017 VQA Challenge.
 
-**2019** {#9}
+**2019** {#13}
 
 #### Probing the Need for Visual Context in Multimodal Machine Translation [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] <!-- omit in toc -->
   * Caglayan et al., (2019)
@@ -240,6 +250,26 @@
   * Liu et al., (2019)
   * ACL'19
   * In this paper, we develop a neural summarization model which can effectively process multiple input documents and distill abstractive summaries. Our model augments a previously proposed Transformer architecture with the ability to encode documents in a hierarchical manner. We represent cross-document relationships via an attention mechanism which allows to share information as opposed to simply concatenating text spans and processing them as a flat sequence. Our model learns latent dependencies among textual units, but also take advantage of explicit graph representations focusing on similarity or discourse relations. Empirical results on the WikiSum dataset demonstrate that the proposed architecture brings substantial improvements over several strong baselines.
+
+#### Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation [[pdf](https://arxiv.org/pdf/1906.05683.pdf)] <!-- omit in toc -->
+  * Pourdamghani et al., (2019)
+  * ACL'19
+  * Given a rough, word-by-word gloss of a source language sentence, target sentence natives can uncover the latent, fully-fluent rendering of the translation. In this work we explore this intuition by breaking translation into a two step process: generating a rough gloss by means of a dictionary and then "translate" the resulting pseudo-translation, or 'Translationese' into a fully fluent translation. We build our Translationese decoder once from a mish-mash of parallel data that has the target language in common and then can build dictionaries on demand using unsupervised techniques, resulting in rapidly generated unsupervised neural MT systems for mangy source languages. We apply this process to 14 test languages, obtaining better or comparable translation results on high-resource languages than previously published unsupervised MT studies, and obtaining good quality results for low-resource languages that have never been used in an unsupervised MT scenario.
+
+#### Debiasing Word Embedding Improves Multimodal Machine Translation [[pdf](https://arxiv.org/pdf/1905.10464.pdf)] <!-- omit in toc -->
+  * Hirasawa et al., (2019)
+  * ACL'19
+  * In recent years, pretrained word embeddings have proved useful for multimodal neural machine translation (NMT) models to address the shortage of available datasets. However, the integration of pretrained word embeddings has not yet been explored extensively. Further, pretrained word embeddings in high dimensional spaces have been reported to suffer from the hubness problem. Although some debiasing techniques have been proposed to address this problem for other natural language processing tasks, they have seldom been studied for multimodal NMT models. In this study, we examine various kinds of word embeddings and introduce two debiasing techniques for three multimodal NMT models and two language pairs - English-German translation and English-French translation. With our optimal settings, the overall performance of multimodal models was improved by up to +1.62 BLEU and +1.14 METEOR for English-German translation and +1.40 BLEU and +1.13 METEOR for English-French translation.
+
+#### Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods [[pdf](https://arxiv.org/pdf/1907.09358.pdf)] <!-- omit in toc -->
+  * Mogadala et al., (2019)
+  * arXiv
+  * Integration of vision and language tasks has been a significant growth in the recent times due to surge of interest from multi-disciplinary communities such as deep learning, computer vision, and natural language processing. In this survey, we focus on then different vision and language integration tasks in terms of their problem formulation, methods, existing datasets, evaluation measures, and comparison of results achieved with the corresponding state-of-the-art methods. This goes beyond earlier surveys which are either task-specific or concentrate only on one type of visual content i.e., image or video. We then conclude the survey by discussing some possible future directions for integration of vision and language research. 
+
+#### An Error Analysis for Image-based Multi-modal Neural Machine Translation [[pdf](https://link.springer.com/content/pdf/10.1007%2Fs10590-019-09226-9.pdf)] <!-- omit in toc -->
+  * Calixto et al., (2019)
+  * Springer 
+  * In this article, we conduct an extensive quantitative error analysis of different multi-modal neural machine translation (MNMT) models which integrate visual features into different parts of both the encoder and the decoder. We investigate the scenario where models are trained on an in-domain training data set of parallel sentence pairs with images. We analyse two different types of MNMT models, that use global and local image features: the latter encode an image globally, i.e. there is one feature vector representing an entire image, whereas the former encode spatial information, i.e. there are multiple feature vectors, each encoding different portions of the image. We conduct an error analysis of translation generated by different MNMT models as well as text-only baselines, where we study how multi-modal models compares when translating both visual and non-visual terms. In general, we find that the additional multi-modal signals consistently improve translations, even more so when using simpler MNMT models that use global visual features. We also find that not only translations of terms with a strong visual connotation are improved, but almost all kinds of errors decreased when using multi-modal models.
 
 ## Datasets
 

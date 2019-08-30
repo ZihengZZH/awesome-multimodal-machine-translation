@@ -21,10 +21,11 @@ According to the category introduced in [the PPT of Barrault](https://www.clsp.j
 | Caglayan et al., 2019| Probing the Need for Visual Context in Multimodal Machine Translation | - | - | - |68.8 | [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] |
 | Su et al., 2019 | Unsupervised Multi-modal Neural Machine Translation | 25.0\* | - | 40.1\* | - | [[pdf](https://arxiv.org/pdf/1811.11365.pdf)] |
 | Ive et al., 2019 | Distilling Translations with Visual Awareness | 27.7 | 46.5 | 37.8 | 57.2 | [[pdf](https://arxiv.org/pdf/1906.07701.pdf)] |
+| Hirasawa et al., 2019 | Debiasing Word Embedding Improves Multimodal Machine Translation | 36.4\* | 55.2\* | 58.5\* | 73.6\* | [[pdf](https://arxiv.org/pdf/1905.10464.pdf)] |
 
 > The dataset used in the evaluation is assumed Multi30K, unless indicated. Furthermore, the framework is generally evaluated on the year's MWT shared task, e.g. 2018 framework on WMT'18. Only the best results are recorded, and more comprehensive results refer to original paper.
 
-> Zhou et al., 2018 experimented their models on IKEA dataset. Su et al., 2019 reported their experimental results in En-Fn and En-De separately, whose unweighted averages are shown in the table. 
+> Zhou et al., 2018 experimented their models on IKEA dataset. Su et al., 2019 reported their experimental results in En-Fn and En-De separately, whose unweighted averages are shown in the table. Hirasawa et al., 2019 reported their results on uni-directional translation tasks: En2Ge and En2Fr.
 
 ### Integration of Visual information
 
@@ -32,14 +33,18 @@ According to the category introduced in [the PPT of Barrault](https://www.clsp.j
 | --      | --    | :--:        | :--:           | :--:        | :--:           | --    |
 | Huang et al., 2016 | Attention-based Multimodal Neural Machine Translation | 36.5 | 54.1 | - | - | [[pdf](https://www.aclweb.org/anthology/W16-2360)] |
 | Lala et al., 2017 | Unraveling the Contribution of Image Captioning and Neural Machine Translation for Multimodal Machine Translation | 39.1 | 36.8 | - | - | [[pdf](https://ufal.mff.cuni.cz/pbml/108/art-lala-madhyastha-wang-specia.pdf)] | 
+| Calixto et al., 2017 | Doubly-Attentive Decoder for Multi-modal Neural Machine Translation | 39.0 | 56.8 | - | - | [[pdf](https://arxiv.org/pdf/1702.01287.pdf)] [[github](https://github.com/iacercalixto/MultimodalNMT)] |
 | Gronroos et al., 2018 | The MeMAD Submission to the WMT18 Multimodal Translation Task | 38.5 | 56.6 | 44.1 | 64.3 | [[pdf](http://statmt.org/wmt18/pdf/WMT066.pdf)] |
 | Lala et al., 2018 | Sheffield Submissions for WMT18 Multimodal Translation Shared Task | 30.5 | 50.7 | 38.8 | 59.8 | [[pdf](http://statmt.org/wmt18/pdf/WMT069.pdf)] |
 | Zheng et al., 2018 | Ensemble Sequence Level Training for Multimodal MT: OSU-Baidu WMT18 Multimodal Translation System Report | 32.3 | 50.9 | 39.0 | 59.5 | [[pdf](http://statmt.org/wmt18/pdf/WMT070.pdf)] |
 | Delbrouck et al., 2018 | UMONS Submission for WMT18 Multimodal Translation Task | 31.1 | 51.6 | 39.4 | 60.1 | [[pdf](http://statmt.org/wmt18/pdf/WMT071.pdf)] |
 | Caglayan et al., 2019| Probing the Need for Visual Context in Multimodal Machine Translation | - | - | - | 68.9 | [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] |
 | Calixto et al., 2019 | Latent Variable Model for Multi-modal Translation | 30.1 | 49.9 | - | - | [[pdf](https://www.aclweb.org/anthology/P19-1642)] |
+| Hirasawa et al., 2019 | Debiasing Word Embedding Improves Multimodal Machine Translation | 34.8\* | 53.9\* | 56.3\* | 72.2\* | [[pdf](https://arxiv.org/pdf/1905.10464.pdf)] |
 
 > The dataset used in the evaluation is assumed Multi30K, unless indicated. Furthermore, the framework is generally evaluated on the year's MWT shared task, e.g. 2018 framework on WMT'18. Only the best results are recorded, and more comprehensive results refer to original paper.
+
+> Hirasawa et al., 2019 reported their results on uni-directional translation tasks: En2Ge and En2Fr.
 
 ### Multitask Learning
 
@@ -47,10 +52,11 @@ According to the category introduced in [the PPT of Barrault](https://www.clsp.j
 | --      | --    | :--:        | :--:           | :--:        | :--:           | --    |
 | Elliott et al., 2017 | Imagination improves Multimodal Translation | 36.8\* | 55.8\* | - | - | [[pdf](https://arxiv.org/pdf/1705.04350.pdf)] 
 | Helcl et al., 2018 | CUNI System for the WMT18 Multimodal Translation Task | 30.2 | 51.7 | 40.4 | 60.7 | [[pdf](http://statmt.org/wmt18/pdf/WMT068.pdf)] | 
+| Hirasawa et al., 2019 | Debiasing Word Embedding Improves Multimodal Machine Translation | 36.6\* | 55.4\* | 58.1\* | 73.2\* | [[pdf](https://arxiv.org/pdf/1905.10464.pdf)] |
 
 > The dataset used in the evaluation is assumed Multi30K, unless indicated. Furthermore, the framework is generally evaluated on the year's MWT shared task, e.g. 2018 framework on WMT'18. Only the best results are recorded, and more comprehensive results refer to original paper.
 
-> Elliott et al., 2017 reported their translation results only on Multi30K En2De.
+> Elliott et al., 2017 reported their translation results only on Multi30K En2De. Hirasawa et al., 2019 reported their results on uni-directional translation tasks: En2Ge and En2Fr.
 
 ### Visual Pivot
 

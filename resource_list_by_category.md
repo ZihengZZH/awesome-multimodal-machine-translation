@@ -24,6 +24,7 @@
 | 2019 | Dai et al., | ACL'19 | Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context | [[pdf](https://arxiv.org/pdf/1901.02860.pdf)] [[github](https://github.com/kimiyoung/transformer-xl)] |
 | 2019 | Yang et al., | arXiv | XLNet: Generalized Autoregressive Pretraining for Language Understanding | [[pdf](https://arxiv.org/pdf/1906.08237.pdf)] [[github](https://github.com/zihangdai/xlnet)] |
 | 2019 | Liu et al., | ACL'19 | Hierarchical Transformers for Multi-Document Summarization | [[pdf](https://www.aclweb.org/anthology/P19-1500)] [[github](https://github.com/nlpyang/hiersumm)] | 
+| 2019 | Pourdamghani et al., | ACL'19 | Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation | [[pdf](https://arxiv.org/pdf/1906.05683.pdf)] |
 
 #### Multimodal Language Models
 
@@ -52,6 +53,7 @@
 | 2017 | Chen et al., | arXiv | A Teacher-Student Framework for Zero-Resource Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1705.00753.pdf)] |
 | 2017 | Elliott et al., | arXiv | Imagination improves Multimodal Translation | [[pdf](https://arxiv.org/pdf/1705.04350.pdf)] |
 | 2017 | Elliott et al., | WMT'17 | Findings of the Second Shared Task on Multimodal Machine Translation and Multilingual Image Description | [[pdf](https://arxiv.org/abs/1710.07177)] |
+| 2017 | Calixto et al., | arXiv | Doubly-Attentive Decoder for Multi-modal Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1702.01287.pdf)] [[github](https://github.com/iacercalixto/MultimodalNMT)] |
 | 2018 | Barrault et al., | WMT'18 | Findings of the Third Shared Task on Multimodal Machine Translation | [[pdf](http://statmt.org/wmt18/pdf/WMT029.pdf)] |
 | 2018 | Caglayan et al., | WMT'18 | LIUM-CVC Submissions for WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT065.pdf)] |
 | 2018 | Gronroos et al., | WMT'18 | The MeMAD Submission to the WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT066.pdf)] | 
@@ -68,11 +70,15 @@
 | 2019 | Ive et al., | ACL'19 | Distilling Translations with Visual Awareness | [[pdf](https://arxiv.org/pdf/1906.07701.pdf)] [[github](https://github.com/ImperialNLP/MMT-Delib)] |
 | 2019 | Calixto et al., | ACL'19 | Latent Variable Model for Multi-modal Translation | [[pdf](https://www.aclweb.org/anthology/P19-1642)] |
 | 2019 | Chen et al., | IJCAI'19 | From Words to Sentences: A Progressive Learning Approach for Zero-resource Machine Translation with Visual Pivots | [[pdf](https://arxiv.org/pdf/1906.00872.pdf)] |
+| 2019 | Hirasawa et al., | ACL'19 | Debiasing Word Embedding Improves Multimodal Machine Translation | [[pdf](https://arxiv.org/pdf/1905.10464.pdf)] |
+| 2019 | Mogadala et al., | arXiv | Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods | [[pdf](https://arxiv.org/pdf/1907.09358.pdf)] |
+| 2019 | Calixto et al., | Springer | An Error Analysis for Image-based Multi-modal Neural Machine Translation | [[pdf](https://link.springer.com/content/pdf/10.1007%2Fs10590-019-09226-9.pdf)] |
+
 
 ## Datasets
 
 | _Dataset_ | _Authors_ | _Paper_ | _Links_ |
-| --      | --      | --    | --    |
+| --        | --        | --      | --      |
 | Flickr30K | Young et al., | From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions | [[pdf](https://www.aclweb.org/anthology/Q14-1006)] [[web](http://shannon.cs.illinois.edu/DenotationGraph/)] |
 | Flickr30K Entities | Plummer et al., | Flickr30K Entities: Collecting Region-to-Phrase Correspondences for Richer Image-to-Sentence Models | [[pdf](https://arxiv.org/pdf/1505.04870.pdf)] [[web](http://bryanplummer.com/Flickr30kEntities/)] [[github](https://github.com/BryanPlummer/flickr30k_entities)] | 
 | Multi30K | Elliott et al., | Multi30K: Multilingual English-German Image Descriptions | [[pdf](https://arxiv.org/pdf/1605.00459.pdf)] [[github](https://github.com/multi30k/dataset)] |
