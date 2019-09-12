@@ -25,6 +25,7 @@
 | 2019 | Yang et al. | arXiv | XLNet: Generalized Autoregressive Pretraining for Language Understanding | [[pdf](https://arxiv.org/pdf/1906.08237.pdf)] [[github](https://github.com/zihangdai/xlnet)] |
 | 2019 | Liu et al. | ACL'19 | Hierarchical Transformers for Multi-Document Summarization | [[pdf](https://www.aclweb.org/anthology/P19-1500)] [[github](https://github.com/nlpyang/hiersumm)] | 
 | 2019 | Pourdamghani et al. | ACL'19 | Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation | [[pdf](https://arxiv.org/pdf/1906.05683.pdf)] |
+| 2019 | Zhou et al. | arXiv | Synchronous Bidirectional Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1905.04847.pdf)] [[github](https://github.com/wszlong/sb-nmt)] |
 
 #### Multimodal Language Models
 
@@ -76,7 +77,6 @@
 | 2019 | Mogadala et al. | arXiv | Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods | [[pdf](https://arxiv.org/pdf/1907.09358.pdf)] |
 | 2019 | Calixto et al. | Springer | An Error Analysis for Image-based Multi-modal Neural Machine Translation | [[pdf](https://link.springer.com/content/pdf/10.1007%2Fs10590-019-09226-9.pdf)] |
 
-
 ## Datasets
 
 | _Dataset_ | _Authors_ | _Paper_ | _Links_ |
@@ -85,6 +85,7 @@
 | Flickr30K Entities | Plummer et al. | Flickr30K Entities: Collecting Region-to-Phrase Correspondences for Richer Image-to-Sentence Models | [[pdf](https://arxiv.org/pdf/1505.04870.pdf)] [[web](http://bryanplummer.com/Flickr30kEntities/)] [[github](https://github.com/BryanPlummer/flickr30k_entities)] | 
 | Multi30K | Elliott et al. | Multi30K: Multilingual English-German Image Descriptions | [[pdf](https://arxiv.org/pdf/1605.00459.pdf)] [[github](https://github.com/multi30k/dataset)] |
 | IAPR-TC12 | Grubinger et al. | The IAPR TC-12 Benchmark: A New Evaluation Resource for Visual Information Systems | [[pdf](http://thomas.deselaers.de/publications/papers/grubinger_lrec06.pdf)] [[web](https://www.imageclef.org/photodata)] |
+| VATEX | Wang et al. | VATEX: A Large-Scale, High-Quality Multilingual Dataset for Video-and-Language Research | [[pdf](https://arxiv.org/pdf/1904.03493.pdf)] [[web](http://vatex.org/main/download.html)] |
 
 ## Metrics
 
