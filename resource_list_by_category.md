@@ -64,7 +64,7 @@
 | 2018 | Helcl et al. | WMT'18 | CUNI System for the WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT068.pdf)] | 
 | 2018 | Lala et al. | WMT'18 | Sheffield Submissions for WMT18 Multimodal Translation Shared Task | [[pdf](http://statmt.org/wmt18/pdf/WMT069.pdf)] |
 | 2018 | Zheng et al. | WMT'18 | Ensemble Sequence Level Training for Multimodal MT: OSU-Baidu WMT18 Multimodal Translation System Report | [[pdf](http://statmt.org/wmt18/pdf/WMT070.pdf)] |
-| 2018 | Delbrouck et al. | WMT'18 | UMONS Submission for WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT071.pdf)] |
+| 2018 | Delbrouck et al. | WMT'18 | UMONS Submission for WMT18 Multimodal Translation Task | [[pdf](http://statmt.org/wmt18/pdf/WMT071.pdf)] [[github](https://github.com/jbdel/WMT18_MNMT)] |
 | 2018 | Libovicky et al. | WMT'18 | Input Combination Strategies for Multi-Source Transformer Decoder | [[pdf](https://www.aclweb.org/anthology/W18-6326)] |
 | 2018 | Shin et al. | WMT'18 | Multi-encoder Transformer Network for Automatic Post-Editing | [[pdf](https://www.aclweb.org/anthology/W18-6470)] |
 | 2018 | Zhou et al. | ACL'18 | A Visual Attention Grounding Neural Model for Multimodal Machine Translation | [[pdf](https://www.aclweb.org/anthology/D18-1400)] |
@@ -76,6 +76,8 @@
 | 2019 | Hirasawa et al. | ACL'19 | Debiasing Word Embedding Improves Multimodal Machine Translation | [[pdf](https://arxiv.org/pdf/1905.10464.pdf)] |
 | 2019 | Mogadala et al. | arXiv | Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods | [[pdf](https://arxiv.org/pdf/1907.09358.pdf)] |
 | 2019 | Calixto et al. | Springer | An Error Analysis for Image-based Multi-modal Neural Machine Translation | [[pdf](https://link.springer.com/content/pdf/10.1007%2Fs10590-019-09226-9.pdf)] |
+| 2019 | Hirasawa et al. | arXiv | Multimodal Machine Translation with Embedding Prediction | [[pdf](https://arxiv.org/pdf/1904.00639.pdf)] [[github](https://github.com/toshohirasawa/nmtpytorch-emb-pred)] |
+
 
 ## Datasets
 

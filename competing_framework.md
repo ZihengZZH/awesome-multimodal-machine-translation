@@ -39,7 +39,7 @@ According to the category introduced in [the introduction slides by Barrault](ht
 | Gronroos et al. 2018 | The MeMAD Submission to the WMT18 Multimodal Translation Task | 38.5 | 56.6 | 44.1 | 64.3 | [[pdf](http://statmt.org/wmt18/pdf/WMT066.pdf)] |
 | Lala et al. 2018 | Sheffield Submissions for WMT18 Multimodal Translation Shared Task | 30.5 | 50.7 | 38.8 | 59.8 | [[pdf](http://statmt.org/wmt18/pdf/WMT069.pdf)] |
 | Zheng et al. 2018 | Ensemble Sequence Level Training for Multimodal MT: OSU-Baidu WMT18 Multimodal Translation System Report | 32.3 | 50.9 | 39.0 | 59.5 | [[pdf](http://statmt.org/wmt18/pdf/WMT070.pdf)] |
-| Delbrouck et al. 2018 | UMONS Submission for WMT18 Multimodal Translation Task | 31.1 | 51.6 | 39.4 | 60.1 | [[pdf](http://statmt.org/wmt18/pdf/WMT071.pdf)] |
+| Delbrouck et al. 2018 | UMONS Submission for WMT18 Multimodal Translation Task | 31.1 | 51.6 | 39.4 | 60.1 | [[pdf](http://statmt.org/wmt18/pdf/WMT071.pdf)] [[github](https://github.com/jbdel/WMT18_MNMT)] |
 | Caglayan et al. 2019| Probing the Need for Visual Context in Multimodal Machine Translation | - | - | - | 68.9 | [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] |
 | Calixto et al. 2019 | Latent Variable Model for Multi-modal Translation | 30.1 | 49.9 | - | - | [[pdf](https://www.aclweb.org/anthology/P19-1642)] |
 | Hirasawa et al. 2019 | Debiasing Word Embedding Improves Multimodal Machine Translation | 34.8\* | 53.9\* | 56.3\* | 72.2\* | [[pdf](https://arxiv.org/pdf/1905.10464.pdf)] |

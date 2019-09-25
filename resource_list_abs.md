@@ -1,7 +1,6 @@
 **Resource List w/ abstract**
 
 - [Paper](#paper)
-    - [Doubly-Attentive Decoder for Multi-modal Neural Machine Translation [pdf] [github]](#doubly-attentive-decoder-for-multi-modal-neural-machine-translation-pdf-github)
 - [Datasets](#datasets)
 - [Metrics](#metrics)
 - [Tutorials](#tutorials)
@@ -118,7 +117,7 @@
   * arXiv
   * We decompose multimodal translation into two sub-tasks: learning to translate and learning visually grounded representations. In a multitask learning framework, translations are learned in an attention-based encoder-decoder, and grounded representations are learned through image representation prediction. Our approach improves translation performance compared to the state of the art on the Multi30K dataset. Furthermore, it is equally effective if we train the image prediction task on the external MS COCO dataset, and we find improvements if we train the translation model on the external News Commentary parallel text.
 
-#### Doubly-Attentive Decoder for Multi-modal Neural Machine Translation [[pdf](https://arxiv.org/pdf/1702.01287.pdf)] [[github](https://github.com/iacercalixto/MultimodalNMT)] <!-- omit in =toc -->
+#### Doubly-Attentive Decoder for Multi-modal Neural Machine Translation [[pdf](https://arxiv.org/pdf/1702.01287.pdf)] [[github](https://github.com/iacercalixto/MultimodalNMT)] <!-- omit in toc -->
   * Calixto et al. (2017)
   * arXiv
   * We introduce a Multi-modal Neural Machine Translation model in which a doubly-attentive decoder naturally incorporates spatial visual features obtained using pre-trained convolutional neural networks, bridging the gap between image description and translation. Our decoder learns to attend to source-language words and parts of an image independently by means of two separate attention mechanisms as it generates words in the target language. We find that our model can efficiently exploit not just back-translated in-domain multi-modal data but also large general-domain text-only MT corpora. We also report state-of-the-art results on the Multi30K data set.
@@ -170,9 +169,9 @@
   * WMT'18
   * This paper describes multimodal machine translation systems developed jointly by Oregon State University and Baidu Research for WMT 2018 Shared Task on multimodal translation. In this paper, we introduce a simple approach to incorporate image information by feeding image features to the decoder side. We also explore different sequence level training methods including scheduled sampling and reinforcement learning which lead to substantial improvements. Our systems ensemble several models using different architectures and training methods and achieve the best performance for three subtasks: En-De and En-Cs in task 1 and (En+De+Fr)-Cs task 1B.
 
-#### UMONS Submission for WMT18 Multimodal Translation Task [[pdf](http://statmt.org/wmt18/pdf/WMT071.pdf)] <!-- omit in toc -->
+#### UMONS Submission for WMT18 Multimodal Translation Task [[pdf](http://statmt.org/wmt18/pdf/WMT071.pdf)] [[github](https://github.com/jbdel/WMT18_MNMT)] <!-- omit in toc -->
   * Delbrouck et al. (2018)
-  * WMT'18
+  * WMT'18 
   * This paper describes the UMONS solution for the Multimodal Machine Translation Task presented at the third conference on machine translation (WMT18). We explore a novel architecture, called deepGRU, based on recent findings in the related task of Neural Image Captioning (NIC). The models presented in the following sections lead to the best METEOR translation score for both constrained (English, image) -> German and (English, image) -> French sub-tasks.
 
 #### Input Combination Strategies for Multi-Source Transformer Decoder [[pdf](https://www.aclweb.org/anthology/W18-6326)] <!-- omit in toc -->
@@ -215,7 +214,7 @@
   * CVPR'18
   * Top-down visual attention mechanisms have been used extensively in image captioning and visual question answering (VQA) to enable deeper image understanding through fine-grained analysis and even multiple steps of reasoning. In this work, we propose a combined bottom-up and top-down attention mechanism that enables attention to be calculated at the level of objects and other salient image regions. This is the natural basis for attention to be considered. Within our approach, the bottom-up mechanism (based on Faster R-CNN) proposes image regions, each with an associated feature vector, while the top-down mechanism determines feature weightings. Applying this approach to image captioning, our results on the MSCOCO test server establish a new state-of-the-art for the task, achieving CIDEr / SPICE / BLEU-4 scores of 117.9, 21.5 and 36.9, respectively. Demonstrating the broad applicability of the method, applying the same approach to VQA we obtain first place in the 2017 VQA Challenge.
 
-**2019** {#14}
+**2019** {#15}
 
 #### Probing the Need for Visual Context in Multimodal Machine Translation [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] <!-- omit in toc -->
   * Caglayan et al. (2019)
@@ -282,10 +281,15 @@
   * Springer 
   * In this article, we conduct an extensive quantitative error analysis of different multi-modal neural machine translation (MNMT) models which integrate visual features into different parts of both the encoder and the decoder. We investigate the scenario where models are trained on an in-domain training data set of parallel sentence pairs with images. We analyse two different types of MNMT models, that use global and local image features: the latter encode an image globally, i.e. there is one feature vector representing an entire image, whereas the former encode spatial information, i.e. there are multiple feature vectors, each encoding different portions of the image. We conduct an error analysis of translation generated by different MNMT models as well as text-only baselines, where we study how multi-modal models compares when translating both visual and non-visual terms. In general, we find that the additional multi-modal signals consistently improve translations, even more so when using simpler MNMT models that use global visual features. We also find that not only translations of terms with a strong visual connotation are improved, but almost all kinds of errors decreased when using multi-modal models.
 
-### Synchronous Bidirectional Neural Machine Translation [[pdf](https://arxiv.org/pdf/1905.04847.pdf)] [[github](https://github.com/wszlong/sb-nmt)] <!-- omit in toc -->
+#### Synchronous Bidirectional Neural Machine Translation [[pdf](https://arxiv.org/pdf/1905.04847.pdf)] [[github](https://github.com/wszlong/sb-nmt)] <!-- omit in toc -->
   * Zhou et al. (2019)
   * arXiv
   * Existing approaches to neural machine translation (NMT) generate the target language sequence token by token from left to right. However, this kind of unidirectional decoding framework cannot make full use of the target-side future contexts which can be produced in a right-to-left decoding direction, and thus suffers from the issus of unbalanced outputs. In this paper, we introduce a synchronous bidirectional neural machine translation (SB-NMT) that predicts its outputs using left-to-right and right-to-left decoding simultaneously and interactively, in order to leverage both of the history and future information at the same time. Specifically, we first propose a new algorithm that enables synchronous bidirectional decoding in a single model. Then, we present an interactive decoding model in which left-to-right (right-to-left) generation does not only depend on its previously generated outputs, but also relies on future contexts predicted by right-to-left (right-to-left) decoding. We extensively evaluate the proposed SB-NMT model on large-scale NIST Chinese-English, WMT14 English-German, and WMT18 Russian-English translation tasks. Experimental results demonstrate that our model achieves significant improvements over the strong Transformer model by 3.92, 1.49 and 1.04 BLEU points respectively, and obtains the state-of-the-art performance on Chinese-English and English-German translation tasks.
+
+#### Multimodal Machine Translation with Embedding Prediction [[pdf](https://arxiv.org/pdf/1904.00639.pdf)] [[github](https://github.com/toshohirasawa/nmtpytorch-emb-pred)] <!-- omit in toc -->
+  * Hirasawa et al. (2019)
+  * arXiv
+  * Multimodal machine translation is an attractive application of neural machine translation (NMT). It helps computers to deeply understand visual objects and their relations with natural languages. However, multimodal NMT systems suffer from a shortage of available training data, resulting in poor performance for translating rare words. In NMT, pretrained word embeddings have been shown to improve NMT of low-resource domains, and a search-based approach is proposed to address the rare word problem. In this study, we effectively combine these two approaches in the context of multimodal NMT and explore how we can take full advantage of pretrained word embeddings to better translate rare words. We report overall performance improvements of 1.24 METEOR and 2.49 BLEU and achieve and improvement of 7.67 F-score for rare word translation.
 
 ## Datasets
 
