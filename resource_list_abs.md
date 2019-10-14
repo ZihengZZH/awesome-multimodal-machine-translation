@@ -43,7 +43,7 @@
   * EMNLP'15
   * Integrating vision and language has long been a dream in work of artificial intelligence (AI). In the past two years, we have witnessed an explosion of work that brings together vision and language from images to videos and beyond. The available corpora have played a crucial role in advancing this area of research. In this paper, we propose a set of quality metrics for evaluating and analyzing the vision & language datasets and categorize them accordingly. Our analyses show that the most recent datasets have been using more complex language and more abstract concepts, however, there are different strengths and weaknesses in each
 
-**2016** {#6}
+**2016** {#7}
 
 #### Does Multimodality Help Human and Machine for Translation and Image Captioning? [[pdf](https://arxiv.org/pdf/1605.09186.pdf)] <!-- omit in toc -->
   * Caglayan et al. (2016)
@@ -74,6 +74,11 @@
   * You et al. (2016)
   * CVPR'16
   * Automatically generating a natural language description of an image has attracted interests recently both because of its importance in practical applications and because it connects two major artificial intelligence fields: computer vision and natural language processing. Existing approaches are either top-down, which start from a gist of an image and convert it into words, or bottom-up, which come up with words describing various aspects of an image and then combine them. In this paper, we propose a new algorithm that combines both approaches through a model of semantic attention. Our algorithm learns to selectively attend to semantic concept proposals and fuse them into hidden states and outputs of recurrent neural networks. The selection and fusion form a feedback connecting the top-down and bottom-up computation. We evaluate our algorithm on two public benchmarks: Microsoft COCO and Flickr30K. Experimental results show that our algorithm significantly outperforms the state-of-the-art approaches consistently across different evaluation metrics.
+
+#### Multi-Source Neural Translation [[pdf](https://pdfs.semanticscholar.org/e4c3/aa6fef525c9ed4688125ef932a2afbbae851.pdf)] <!-- omit in toc -->
+  * Zoph et al. (2016)
+  * arXiv
+  * We build a multi-source machine translation model and train it to maximize the probability of a target English string given French and German sources. Using the neural encoder-decoder framework, we explore several combination methods and report up to +4.8 BLEU increases on top of a very strong attention-based neural translation model.
 
 **2017** {#10}
 
@@ -132,7 +137,7 @@
   * EMNLP'17
   * We introduce multi-modal, attention-based Neural Machine Translation (NMT) models which incorporate visual features into different parts of both the encoder and the decoder. Global image features are extracted using a pre-trained convolutional neural network and are incorporated (i) as words in the source sentence, (ii) to initialise the encoder hidden state, and (iii) as additional data to initialise the decoder hidden state. In our experiments, we evaluate translations into English and German, how different strategies to incorporate global image features compare and which ones perform best. We also study the impact that adding synthetic multi-modal, multilingual data brings and find that the additional data have a positive impact on multi-modal models. We report new state-of-the-art results and our best models also significantly improve on a comparable Phrase-Based Statistical MT (PBSMT) model trained on the Multi30K data set according to all metrics evaluated. To the best of our knowledge, it is the first time a purely neural model significantly improves over a PBSMT model on all metrics evaluated on this data set.
 
-**2018** {#16}
+**2018** {#18}
 
 #### Findings of the Third Shared Task on Multimodal Machine Translation [[pdf](http://statmt.org/wmt18/pdf/WMT029.pdf)] <!-- omit in toc -->
   * Barrault et al. (2018)
@@ -213,6 +218,16 @@
   * Anderson et al. (2018)
   * CVPR'18
   * Top-down visual attention mechanisms have been used extensively in image captioning and visual question answering (VQA) to enable deeper image understanding through fine-grained analysis and even multiple steps of reasoning. In this work, we propose a combined bottom-up and top-down attention mechanism that enables attention to be calculated at the level of objects and other salient image regions. This is the natural basis for attention to be considered. Within our approach, the bottom-up mechanism (based on Faster R-CNN) proposes image regions, each with an associated feature vector, while the top-down mechanism determines feature weightings. Applying this approach to image captioning, our results on the MSCOCO test server establish a new state-of-the-art for the task, achieving CIDEr / SPICE / BLEU-4 scores of 117.9, 21.5 and 36.9, respectively. Demonstrating the broad applicability of the method, applying the same approach to VQA we obtain first place in the 2017 VQA Challenge.
+
+#### Multimodal Machine Translation with Reinforcement Learning [[pdf](https://arxiv.org/pdf/1805.02356.pdf)] <!-- omit in toc --> 
+  * Qian et al. (2018)
+  * arXiv
+  * Multimodal machine translation is one of the applications that integrates computer vision and language processing. It is a unique task given that in the field of machine translation, many state-of-the-arts algorithms still only employ textual information. In this work, we explore the effectiveness of reinforcement learning in multimodal machine translation. We present a novel algorithm based on the Advantage Actor-Critic (A2C) algorithm that specifically cater to the multimodal machine translation task of the EMNLP 2018 Third Conference on Machine Translation (WMT18). We experiment our proposed algorithm on the Multi30K multilingual English-German image description dataset and the Flickr30K image entity dataset. Our model takes two channels of inputs, images and text, uses translation evaluation metrics as training rewards, and achieves better results than supervised learning MLR baseline models. Furthermore, we discuss the prospects and limitations of using reinforcement learning for machine translation. Our experiment results suggest a promising reinforcement learning solution to the general task of multimodal sequence to sequence learning.
+
+#### Improved Fusion of Visual and Language Representations by Dense Symmetric Co-Attention for Visual Question Answering [[pdf](https://arxiv.org/pdf/1804.00775.pdf)] <!-- omit in toc -->
+  * Nguyen et al. (2018)
+  * CVPR'18
+  * A key solution to visual question answering (VQA) exists in how to fuse visual and language features extracted from an input image and question. We show that an attention mechanism that enables dense, bi-directional interactions between the two modalities contributes to boost accuracy of prediction of answers. Specifically, we present a simple architecture that is fully symmetric between visual and language representations, in which each question word attends on image regions and each image region attends on question words. It can be stacked to form a hierarchy for multi-step interactions between an image-question pair. We show through experiments that the proposed architecture achieves a new state-of-the-art on VQA and VQA 2.0 despite its small size. We also present qualitative evaluation, demonstrating how the proposed attention mechanism can generate reasonable attention maps on images and questions, which leads to the correct answer prediction.
 
 **2019** {#15}
 

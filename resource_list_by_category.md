@@ -15,6 +15,7 @@
 | _Year_ | _Authors_ | _Conf._ | _Title_ | _Links_ |
 | :-:    | --        | --      | --      | --      |
 | 2016 | Yang et al. | NAACL-HLT'16 | Hierarchical Attention Networks for Document Classification | [[pdf](https://www.cs.cmu.edu/~./hovy/papers/16HLT-hierarchical-attention-networks.pdf)] |
+| 2016 | Zoph et al. | arXiv | Multi-Source Neural Translation | [[pdf](https://pdfs.semanticscholar.org/e4c3/aa6fef525c9ed4688125ef932a2afbbae851.pdf)] |
 | 2017 | Vaswani et al. | NIPS'17 | Attention Is All You Need | [[pdf](https://arxiv.org/pdf/1706.03762.pdf)] [[github](https://github.com/tensorflow/tensor2tensor)] |
 | 2017 | Xia et al. | NIPS'17 | Deliberation Networks: Sequence Generation Beyond One-Pass Decoding | [[pdf](https://papers.nips.cc/paper/6775-deliberation-networks-sequence-generation-beyond-one-pass-decoding.pdf)] [[github](https://github.com/ustctf/delibnet)] |
 | 2018 | Miculicich et al. | EMNLP'18 | Document-Level Neural Machine Translation with Hierarchical Attention Networks | [[pdf](https://www.aclweb.org/anthology/D18-1325)] |
@@ -39,6 +40,7 @@
 | 2016 | Yang et al. | NIPS'16 | Review Networks for Caption Generation | [[pdf](https://arxiv.org/pdf/1605.07912.pdf)] [[github](https://github.com/kimiyoung/review_net)] |
 | 2016 | You et al. | CVPR'16 | Image Captioning with Semantic Attention | [[pdf](http://openaccess.thecvf.com/content_cvpr_2016/papers/You_Image_Captioning_With_CVPR_2016_paper.pdf)] |
 | 2018 | Anderson et al. | CVPR'18 | Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering | [[pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Anderson_Bottom-Up_and_Top-Down_CVPR_2018_paper.pdf)] |
+| 2018 | Nguyen et al. | CVPR'18 | Improved Fusion of Visual and Language Representations by Dense Symmetric Co-Attention for Visual Question Answering | [[pdf](https://arxiv.org/pdf/1804.00775.pdf)] |
 | 2019 | Qin et al. | CVPR'19 | Look Back and Predict Forward in Image Captioning | [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_Look_Back_and_Predict_Forward_in_Image_Captioning_CVPR_2019_paper.pdf)] |
 
 #### Multimodal Machine Translation
@@ -68,6 +70,7 @@
 | 2018 | Libovicky et al. | WMT'18 | Input Combination Strategies for Multi-Source Transformer Decoder | [[pdf](https://www.aclweb.org/anthology/W18-6326)] |
 | 2018 | Shin et al. | WMT'18 | Multi-encoder Transformer Network for Automatic Post-Editing | [[pdf](https://www.aclweb.org/anthology/W18-6470)] |
 | 2018 | Zhou et al. | ACL'18 | A Visual Attention Grounding Neural Model for Multimodal Machine Translation | [[pdf](https://www.aclweb.org/anthology/D18-1400)] |
+| 2018 | Qian et al. | arXiv | Multimodal Machine Translation with Reinforcement Learning | [[pdf](https://arxiv.org/pdf/1805.02356.pdf)] |
 | 2019 | Caglayan et al. | NAACL-HLT'19 | Probing the Need for Visual Context in Multimodal Machine Translation | [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] |
 | 2019 | Su et al. | CVPR'19 | Unsupervised Multi-modal Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1811.11365.pdf)] |
 | 2019 | Ive et al. | ACL'19 | Distilling Translations with Visual Awareness | [[pdf](https://arxiv.org/pdf/1906.07701.pdf)] [[github](https://github.com/ImperialNLP/MMT-Delib)] |
