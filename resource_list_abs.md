@@ -43,7 +43,7 @@
   * EMNLP'15
   * Integrating vision and language has long been a dream in work of artificial intelligence (AI). In the past two years, we have witnessed an explosion of work that brings together vision and language from images to videos and beyond. The available corpora have played a crucial role in advancing this area of research. In this paper, we propose a set of quality metrics for evaluating and analyzing the vision & language datasets and categorize them accordingly. Our analyses show that the most recent datasets have been using more complex language and more abstract concepts, however, there are different strengths and weaknesses in each
 
-**2016** {#7}
+**2016** {#8}
 
 #### Does Multimodality Help Human and Machine for Translation and Image Captioning? [[pdf](https://arxiv.org/pdf/1605.09186.pdf)] <!-- omit in toc -->
   * Caglayan et al. (2016)
@@ -79,6 +79,11 @@
   * Zoph et al. (2016)
   * arXiv
   * We build a multi-source machine translation model and train it to maximize the probability of a target English string given French and German sources. Using the neural encoder-decoder framework, we explore several combination methods and report up to +4.8 BLEU increases on top of a very strong attention-based neural translation model.
+
+#### Hierarchical Question-Image Co-Attention for Visual Question Answering [[pdf](https://arxiv.org/pdf/1606.00061.pdf)] [[github](https://github.com/jiasenlu/HieCoAttenVQA)] <!-- omit in toc -->
+  * Lu et al. (2016)
+  * NIPS'16
+  * A number of recent works have proposed attention models for Visual Question Answering (VQA) that generate spatial maps highlighting image regions relevant to answering this question. In this paper, we argue that in addition to modelling "where to look" or visual attention, it is equally important to model "what words to listen to" or question attention. We present a novel co-attention model for VQA that jointly reasons about the image and question attention. In addition, our model reasons about the question (and consequently the image via the co-attention mechanism) in a hierarchical fashion via a novel 1-dimension convolution neural networks (CNN). Our model improves the state-of-the-art on the VQA dataset from 60.3% to 60.5%, and from 61.6% to 63.3% on the COCO-QA dataset. By using ResNet, the performance is further improved to 62.1% for VQA and 65.4$ for COCO-QA.
 
 **2017** {#10}
 
@@ -229,7 +234,7 @@
   * CVPR'18
   * A key solution to visual question answering (VQA) exists in how to fuse visual and language features extracted from an input image and question. We show that an attention mechanism that enables dense, bi-directional interactions between the two modalities contributes to boost accuracy of prediction of answers. Specifically, we present a simple architecture that is fully symmetric between visual and language representations, in which each question word attends on image regions and each image region attends on question words. It can be stacked to form a hierarchy for multi-step interactions between an image-question pair. We show through experiments that the proposed architecture achieves a new state-of-the-art on VQA and VQA 2.0 despite its small size. We also present qualitative evaluation, demonstrating how the proposed attention mechanism can generate reasonable attention maps on images and questions, which leads to the correct answer prediction.
 
-**2019** {#15}
+**2019** {#16}
 
 #### Probing the Need for Visual Context in Multimodal Machine Translation [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] <!-- omit in toc -->
   * Caglayan et al. (2019)
@@ -305,6 +310,11 @@
   * Hirasawa et al. (2019)
   * arXiv
   * Multimodal machine translation is an attractive application of neural machine translation (NMT). It helps computers to deeply understand visual objects and their relations with natural languages. However, multimodal NMT systems suffer from a shortage of available training data, resulting in poor performance for translating rare words. In NMT, pretrained word embeddings have been shown to improve NMT of low-resource domains, and a search-based approach is proposed to address the rare word problem. In this study, we effectively combine these two approaches in the context of multimodal NMT and explore how we can take full advantage of pretrained word embeddings to better translate rare words. We report overall performance improvements of 1.24 METEOR and 2.49 BLEU and achieve and improvement of 7.67 F-score for rare word translation.
+
+#### Beyond RNNs: Positional Self-Attention with Co-Attention for Video Question Answering [[pdf](https://pdfs.semanticscholar.org/5653/59aac8914505e6b02db05822ee63d3ffd03a.pdf?_ga=2.221376792.1635135941.1571362744-1866174129.1565321067)] <!-- omit in toc -->
+  * Li et al. (2019)
+  * AAAI'19
+  * Most of the recent progresses on visual question answering are based on recurrent neural networks (RNNs) with attention. Despite the success, these models are often time-consuming and having difficulties in modeling long range dependencies due to the sequential nature of RNNs. We propose a new architecture, Positional Self-Attention with Co-attention (PSAC), which does not require RNNs for video question answering. Specifically, inspired by the success of self-attention in machine translation task, we propose a Positional Self-Attention to calculate the response at each position by attending to all positions within the same sequence, and then add representations of absolute positions. Therefore, PSAC can exploit the global dependencies of question and temporal information in the video, and make the process of question and video encoding executed in parallel. Furthermore, in addition to attending to the video features relevant to the given questions (i.e., video attention), we utilize the co-attention mechanism by simultaneously modeling "what words to listen to" (question attention). To the best of our knowledge, this is the first work of replacing RNNs with self-attention for the task of visual question answering. Experimental results of four tasks on the benchmark dataset show that our model significantly outperforms the state-of-the-art on three tasks and attains comparable result on the Count task. Our model requires less computation time and achieves better performance compared with the RNNs-based methods. Additional ablation study demonstrates the effect of each component of our proposed model.
 
 ## Datasets
 

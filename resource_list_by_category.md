@@ -39,9 +39,11 @@
 | 2015 | Mao et al. | ICLR'15 | Deep Captioning with Multimodal Recurrent Neural Networks (m-RNN) | [[pdf](https://arxiv.org/pdf/1412.6632.pdf)] [[github](https://github.com/mjhucla/mRNN-CR)] |
 | 2016 | Yang et al. | NIPS'16 | Review Networks for Caption Generation | [[pdf](https://arxiv.org/pdf/1605.07912.pdf)] [[github](https://github.com/kimiyoung/review_net)] |
 | 2016 | You et al. | CVPR'16 | Image Captioning with Semantic Attention | [[pdf](http://openaccess.thecvf.com/content_cvpr_2016/papers/You_Image_Captioning_With_CVPR_2016_paper.pdf)] |
+| 2016 | Lu et al. | NIPS'16 | Hierarchical Question-Image Co-Attention for Visual Question Answering | [[pdf](https://arxiv.org/pdf/1606.00061.pdf)] [[github](https://github.com/jiasenlu/HieCoAttenVQA)] |
 | 2018 | Anderson et al. | CVPR'18 | Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering | [[pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Anderson_Bottom-Up_and_Top-Down_CVPR_2018_paper.pdf)] |
 | 2018 | Nguyen et al. | CVPR'18 | Improved Fusion of Visual and Language Representations by Dense Symmetric Co-Attention for Visual Question Answering | [[pdf](https://arxiv.org/pdf/1804.00775.pdf)] |
 | 2019 | Qin et al. | CVPR'19 | Look Back and Predict Forward in Image Captioning | [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_Look_Back_and_Predict_Forward_in_Image_Captioning_CVPR_2019_paper.pdf)] |
+| 2019 | Li et al. | AAAI'19 | Beyond RNNs: Positional Self-Attention with Co-Attention for Video Question Answering | [[pdf](https://pdfs.semanticscholar.org/5653/59aac8914505e6b02db05822ee63d3ffd03a.pdf?_ga=2.221376792.1635135941.1571362744-1866174129.1565321067)] |
 
 #### Multimodal Machine Translation
 
