@@ -142,7 +142,7 @@
   * EMNLP'17
   * We introduce multi-modal, attention-based Neural Machine Translation (NMT) models which incorporate visual features into different parts of both the encoder and the decoder. Global image features are extracted using a pre-trained convolutional neural network and are incorporated (i) as words in the source sentence, (ii) to initialise the encoder hidden state, and (iii) as additional data to initialise the decoder hidden state. In our experiments, we evaluate translations into English and German, how different strategies to incorporate global image features compare and which ones perform best. We also study the impact that adding synthetic multi-modal, multilingual data brings and find that the additional data have a positive impact on multi-modal models. We report new state-of-the-art results and our best models also significantly improve on a comparable Phrase-Based Statistical MT (PBSMT) model trained on the Multi30K data set according to all metrics evaluated. To the best of our knowledge, it is the first time a purely neural model significantly improves over a PBSMT model on all metrics evaluated on this data set.
 
-**2018** {#18}
+**2018** {#19}
 
 #### Findings of the Third Shared Task on Multimodal Machine Translation [[pdf](http://statmt.org/wmt18/pdf/WMT029.pdf)] <!-- omit in toc -->
   * Barrault et al. (2018)
@@ -234,7 +234,12 @@
   * CVPR'18
   * A key solution to visual question answering (VQA) exists in how to fuse visual and language features extracted from an input image and question. We show that an attention mechanism that enables dense, bi-directional interactions between the two modalities contributes to boost accuracy of prediction of answers. Specifically, we present a simple architecture that is fully symmetric between visual and language representations, in which each question word attends on image regions and each image region attends on question words. It can be stacked to form a hierarchy for multi-step interactions between an image-question pair. We show through experiments that the proposed architecture achieves a new state-of-the-art on VQA and VQA 2.0 despite its small size. We also present qualitative evaluation, demonstrating how the proposed attention mechanism can generate reasonable attention maps on images and questions, which leads to the correct answer prediction.
 
-**2019** {#16}
+#### Object Counts! Bringing Explicit Detections Back into Image Captioning [[pdf](https://www.aclweb.org/anthology/N18-1198/)] <!-- omit in toc -->
+  * Wang et al. (2018)
+  * NAACL'18
+  * The use of explicit object detectors as an intermediate step to image captioning – which used to constitute an essential stage in early work – is often bypassed in the currently dominant end-to-end approaches, where the language model is conditioned directly on a mid-level image embedding. We argue that explicit detections provide rich semantic information, and can thus be used as an interpretable representation to better understand why end-to-end image captioning systems work well. We provide an in-depth analysis of end-to-end image captioning by exploring a variety of cues that can be derived from such object detections. Our study reveals that end-to-end image captioning systems rely on matching image representations to generate captions, and that encoding the frequency, size and position of objects are complementary and all play a role in forming a good image representation. It also reveals that different object categories contribute in different ways towards image captioning.
+
+**2019** {#17}
 
 #### Probing the Need for Visual Context in Multimodal Machine Translation [[pdf](https://arxiv.org/pdf/1903.08678.pdf)] <!-- omit in toc -->
   * Caglayan et al. (2019)
@@ -315,6 +320,11 @@
   * Li et al. (2019)
   * AAAI'19
   * Most of the recent progresses on visual question answering are based on recurrent neural networks (RNNs) with attention. Despite the success, these models are often time-consuming and having difficulties in modeling long range dependencies due to the sequential nature of RNNs. We propose a new architecture, Positional Self-Attention with Co-attention (PSAC), which does not require RNNs for video question answering. Specifically, inspired by the success of self-attention in machine translation task, we propose a Positional Self-Attention to calculate the response at each position by attending to all positions within the same sequence, and then add representations of absolute positions. Therefore, PSAC can exploit the global dependencies of question and temporal information in the video, and make the process of question and video encoding executed in parallel. Furthermore, in addition to attending to the video features relevant to the given questions (i.e., video attention), we utilize the co-attention mechanism by simultaneously modeling "what words to listen to" (question attention). To the best of our knowledge, this is the first work of replacing RNNs with self-attention for the task of visual question answering. Experimental results of four tasks on the benchmark dataset show that our model significantly outperforms the state-of-the-art on three tasks and attains comparable result on the Count task. Our model requires less computation time and achieves better performance compared with the RNNs-based methods. Additional ablation study demonstrates the effect of each component of our proposed model.
+
+#### Deep Modular Co-Attention Networks for Visual Question Answering [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yu_Deep_Modular_Co-Attention_Networks_for_Visual_Question_Answering_CVPR_2019_paper.pdf)] <!-- omit in toc -->
+  * Yu et al. (2019)
+  * CVPR'19
+  * Visual Question Answering (VQA) requires a fine-grained and simultaneous understanding of both the visual content of images and the textual content of questions. Therefore, designing an effective "co-attention" model to associate key words in questions with key objects in images is central to VQA performance. So far, most successful attempts at co-attention learning have been achieved by using shallow models, and deep co-attention models show little improvement over their shallow counterparts. In this paper, we propose a deep Modular Co-Attention Network (MCAN) that consists of Modular Co-Attention (MCA) layers cascaded in depth. Each MCA layer models the self-attention of questions and images, as well as the question-guided-attention of images jointly using a modular composition of two basic attention units. We quantitatively and qualitatively evaluate MCAN on the benchmark VQA-v2 dataset and conduct extensive ablation studies to explore the reasons behind MCAN's effectiveness. Experimental results demonstrate that MCAN significantly outperforms the previous state-of-the-art. Our best single model delivers 70.63% overall accuracy on the test-dev set.
 
 ## Datasets
 

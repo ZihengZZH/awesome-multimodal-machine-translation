@@ -42,8 +42,10 @@
 | 2016 | Lu et al. | NIPS'16 | Hierarchical Question-Image Co-Attention for Visual Question Answering | [[pdf](https://arxiv.org/pdf/1606.00061.pdf)] [[github](https://github.com/jiasenlu/HieCoAttenVQA)] |
 | 2018 | Anderson et al. | CVPR'18 | Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering | [[pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Anderson_Bottom-Up_and_Top-Down_CVPR_2018_paper.pdf)] |
 | 2018 | Nguyen et al. | CVPR'18 | Improved Fusion of Visual and Language Representations by Dense Symmetric Co-Attention for Visual Question Answering | [[pdf](https://arxiv.org/pdf/1804.00775.pdf)] |
+| 2018 | Wang et al. | NAACL'18 | Object Counts! Bringing Explicit Detections Back into Image Captioning | [[pdf](https://www.aclweb.org/anthology/N18-1198/)] |
 | 2019 | Qin et al. | CVPR'19 | Look Back and Predict Forward in Image Captioning | [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_Look_Back_and_Predict_Forward_in_Image_Captioning_CVPR_2019_paper.pdf)] |
 | 2019 | Li et al. | AAAI'19 | Beyond RNNs: Positional Self-Attention with Co-Attention for Video Question Answering | [[pdf](https://pdfs.semanticscholar.org/5653/59aac8914505e6b02db05822ee63d3ffd03a.pdf?_ga=2.221376792.1635135941.1571362744-1866174129.1565321067)] |
+| 2019 | Yu et al. | CVPR'19 | Deep Modular Co-Attention Networks for Visual Question Answering | [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yu_Deep_Modular_Co-Attention_Networks_for_Visual_Question_Answering_CVPR_2019_paper.pdf)] |
 
 #### Multimodal Machine Translation
 
@@ -82,7 +84,6 @@
 | 2019 | Mogadala et al. | arXiv | Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods | [[pdf](https://arxiv.org/pdf/1907.09358.pdf)] |
 | 2019 | Calixto et al. | Springer | An Error Analysis for Image-based Multi-modal Neural Machine Translation | [[pdf](https://link.springer.com/content/pdf/10.1007%2Fs10590-019-09226-9.pdf)] |
 | 2019 | Hirasawa et al. | arXiv | Multimodal Machine Translation with Embedding Prediction | [[pdf](https://arxiv.org/pdf/1904.00639.pdf)] [[github](https://github.com/toshohirasawa/nmtpytorch-emb-pred)] |
-
 
 ## Datasets
 
