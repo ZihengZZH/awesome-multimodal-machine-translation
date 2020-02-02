@@ -84,6 +84,7 @@
 | 2019 | Mogadala et al. | arXiv | Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods | [[pdf](https://arxiv.org/pdf/1907.09358.pdf)] |
 | 2019 | Calixto et al. | Springer | An Error Analysis for Image-based Multi-modal Neural Machine Translation | [[pdf](https://link.springer.com/content/pdf/10.1007%2Fs10590-019-09226-9.pdf)] |
 | 2019 | Hirasawa et al. | arXiv | Multimodal Machine Translation with Embedding Prediction | [[pdf](https://arxiv.org/pdf/1904.00639.pdf)] [[github](https://github.com/toshohirasawa/nmtpytorch-emb-pred)] |
+| 2020.01| Park et al. | WACV'20 | MHSAN: Multi-Head Self-Attention Network for Visual Semantic Embedding | [[pdf](https://arxiv.org/pdf/2001.03712.pdf)] [[repo](paper/park2020mhsan.pdf)] |
 
 ## Datasets
 
