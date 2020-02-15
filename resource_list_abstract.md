@@ -1,5 +1,10 @@
 **Resource List w/ Abstract**
 
+> [pdf]: paper PDF online link  
+> [repo]: paper PDF repo link  
+> [github]: github link  
+> [web]: website link
+
 - [Paper](#paper)
     - [Learning Cross-modality Similarity for Multinomial Data](#learning-cross-modality-similarity-for-multinomial-data)
     - [Explain Images with Multimodal Recurrent Neural Networks](#explain-images-with-multimodal-recurrent-neural-networks)
