@@ -18,7 +18,7 @@
 #### Neural Machine Translation
 
 | _Year_ | <div style="width:120px">_Authors_</div> | <div style="width:120px">_Conf._</div> | _Title_ | _Links_ |
-| :-:    | --                                       | --                                     | --      | --      |
+| :----: | ---------------------------------------- | -------------------------------------- | ------- | ------- |
 | 2016.06| Yang et al. | NAACL-HLT'16 | Hierarchical Attention Networks for Document Classification | [[pdf](https://www.cs.cmu.edu/~./hovy/papers/16HLT-hierarchical-attention-networks.pdf)] [[repo](paper/yang2016hierarchical.pdf)] |
 | 2016.06| Zoph et al. | arXiv | Multi-Source Neural Translation | [[pdf](https://pdfs.semanticscholar.org/e4c3/aa6fef525c9ed4688125ef932a2afbbae851.pdf)] [[repo](paper/zoph2016multi.pdf)] |
 | 2017.12| Vaswani et al. | NIPS'17 | Attention Is All You Need | [[pdf](https://arxiv.org/pdf/1706.03762.pdf)] [[repo](paper/vaswani2017attention.pdf)] [[github](https://github.com/tensorflow/tensor2tensor)] |
@@ -36,7 +36,7 @@
 #### Multimodal Language Models
 
 | _Year_ | <div style="width:120px">_Authors_</div> | <div style="width:120px">_Conf._</div> | _Title_ | _Links_ |
-| :-:    | --                                       | --                                     | --      | --      |
+| :----: | ---------------------------------------- | -------------------------------------- | ------- | ------- |
 | 2011.11| Jia et al. | ICCV'11 | Learning Cross-modality Similarity for Multinomial Data | [[pdf](https://people.eecs.berkeley.edu/~trevor/iccv11-mm.pdf)] [[repo](paper/jia2011learning.pdf)] | 
 | 2014.10| Mao et al. | arXiv | Explain Images with Multimodal Recurrent Neural Networks | [[pdf](https://arxiv.org/pdf/1410.1090.pdf)] [[repo](paper/mao2014explain.pdf)] |
 | 2014.11| Kiros et al. | arXiv | Unifying Visual-Semantic Embeddings with Multimodal Neural Language Models | [[pdf](https://arxiv.org/pdf/1411.2539.pdf)] [[repo](paper/kiros2014unifying.pdf)] | 
@@ -49,16 +49,19 @@
 | 2018.06| Wang et al. | NAACL'18 | Object Counts! Bringing Explicit Detections Back into Image Captioning | [[pdf](https://www.aclweb.org/anthology/N18-1198/)] [[repo](paper/wang2018object.pdf)] |
 | 2018.06| Anderson et al. | CVPR'18 | Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering | [[pdf](http://openaccess.thecvf.com/content_cvpr_2018/papers/Anderson_Bottom-Up_and_Top-Down_CVPR_2018_paper.pdf)] [[repo](paper/anderson2018bottom.pdf)] |
 | 2018.06| Nguyen et al. | CVPR'18 | Improved Fusion of Visual and Language Representations by Dense Symmetric Co-Attention for Visual Question Answering | [[pdf](https://arxiv.org/pdf/1804.00775.pdf)] [[repo](paper/nguyen2018improved.pdf)] |
+| 2018.10| Zhu et al. | EMNLP'18 | MSMO: Multimodal Summarization with Multimodal Output | [[pdf](https://www.aclweb.org/anthology/D18-1448.pdf)] [[repo](paper/zhu2018MSMO.pdf)] |
 | 2019.02| Li et al. | AAAI'19 | Beyond RNNs: Positional Self-Attention with Co-Attention for Video Question Answering | [[pdf](https://pdfs.semanticscholar.org/5653/59aac8914505e6b02db05822ee63d3ffd03a.pdf?_ga=2.221376792.1635135941.1571362744-1866174129.1565321067)] [[repo](paper/li2019beyond.pdf)] |
 | 2019.06| Qin et al. | CVPR'19 | Look Back and Predict Forward in Image Captioning | [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_Look_Back_and_Predict_Forward_in_Image_Captioning_CVPR_2019_paper.pdf)] [[repo](paper/qin2019look.pdf)] |
 | 2019.06| Yu et al. | CVPR'19 | Deep Modular Co-Attention Networks for Visual Question Answering | [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yu_Deep_Modular_Co-Attention_Networks_for_Visual_Question_Answering_CVPR_2019_paper.pdf)] [[repo](paper/yu2019deep.pdf)] |
-| 2019.12| Mai et al. | AAAI'20 | Modality to Modality Translation: An Adversarial Representation Learning and Graph Fusion Network for Multimodal Fusion | [[pdf](https://arxiv.org/pdf/1911.07848.pdf)] [[repo](paper/mai2019modality.pdf)] |
 | 2020.01| Park et al. | WACV'20 | MHSAN: Multi-Head Self-Attention Network for Visual Semantic Embedding | [[pdf](https://arxiv.org/pdf/2001.03712.pdf)] [[repo](paper/park2020mhsan.pdf)] |
+| 2020.02| Mai et al. | AAAI'20 | Modality to Modality Translation: An Adversarial Representation Learning and Graph Fusion Network for Multimodal Fusion | [[pdf](https://arxiv.org/pdf/1911.07848.pdf)] [[repo](paper/mai2020modality.pdf)] |
+| 2020.02| Sun et al. | AAAI'20 | Learning Relationships between Text, Audio, and Video via Deep Canonical Correlation for Multimodal Language Analysis | [[pdf](https://arxiv.org/pdf/1911.05544.pdf)] [[repo](paper/sun2020learning.pdf)] |
+| 2020.02| Zhang et al. | AAAI'20 | Learning Long- and Short-Term User Literal Preference with Multimodal Hierarchical Transformer Network for Personalized Image Caption | [[pdf](https://weizhangltt.github.io/paper/zhang-aaai20.pdf)] [[repo](paper/zhang2020learning.pdf)] |
 
 #### Multimodal Machine Translation
 
 | _Year_ | <div style="width:120px">_Authors_</div> | <div style="width:120px">_Conf._</div> | _Title_ | _Links_ |
-| :-:    | --                                       | --                                     | --      | --      |
+| :----: | ---------------------------------------- | -------------------------------------- | ------- | ------- |
 | 2016.08| Huang et al. | WMT'16 | Attention-based Multimodal Neural Machine Translation | [[pdf](https://www.aclweb.org/anthology/W16-2360)] [[repo](paper/huang2016attention.pdf)] |
 | 2016.08| Caglayan et al. | WMT'16 | Does Multimodality Help Human and Machine for Translation and Image Captioning? | [[pdf](https://arxiv.org/pdf/1605.09186.pdf)]  [[repo](paper/caglayan2016multimodality.pdf)] |
 | 2016.09| Caglayan et al. | arXiv | Multimodal Attention for Neural Machine Translation | [[pdf](https://arxiv.org/pdf/1609.03976.pdf)] [[repo](paper/caglayan2016multimodal.pdf)] |
@@ -92,12 +95,12 @@
 | 2019.07| Ive et al. | ACL'19 | Distilling Translations with Visual Awareness | [[pdf](https://arxiv.org/pdf/1906.07701.pdf)] [[repo](paper/ive2019distilling.pdf)] [[github](https://github.com/ImperialNLP/MMT-Delib)] |
 | 2019.07| Hirasawa et al. | ACL'19 | Debiasing Word Embedding Improves Multimodal Machine Translation | [[pdf](https://arxiv.org/pdf/1905.10464.pdf)] [[repo](paper/hirasawa2019debiasing.pdf)] |
 | 2019.07| Mogadala et al. | arXiv | Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods | [[pdf](https://arxiv.org/pdf/1907.09358.pdf)] [[repo](paper/mogadala2019trends.pdf)] |
-| 2019.12| Yang et al. | AAAI'20 | Visual Agreement Regularized Training for Multi-Modal Machine Translation | [[pdf](https://arxiv.org/pdf/1912.12014.pdf)] [[repo](paper/yang2019visual.pdf)] |
+| 2020.02| Yang et al. | AAAI'20 | Visual Agreement Regularized Training for Multi-Modal Machine Translation | [[pdf](https://arxiv.org/pdf/1912.12014.pdf)] [[repo](paper/yang2020visual.pdf)] |
 
 ## Datasets
 
 | _Dataset_ | <div style="width:120px">_Authors_</div> | _Paper_ | _Links_ |
-| --        | --                                       | --      | --      |
+| --------- | ---------------------------------------- | ------- | ------- |
 | Flickr30K | Young et al. | From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions | [[pdf](https://www.aclweb.org/anthology/Q14-1006)] [[repo](datasets/Flickr30K.pdf)] [[web](http://shannon.cs.illinois.edu/DenotationGraph/)] |
 | Flickr30K Entities | Plummer et al. | Flickr30K Entities: Collecting Region-to-Phrase Correspondences for Richer Image-to-Sentence Models | [[pdf](https://arxiv.org/pdf/1505.04870.pdf)] [[repo](datasets/Flickr30K_entities.pdf)] [[web](http://bryanplummer.com/Flickr30kEntities/)] [[github](https://github.com/BryanPlummer/flickr30k_entities)] | 
 | Multi30K | Elliott et al. | Multi30K: Multilingual English-German Image Descriptions | [[pdf](https://arxiv.org/pdf/1605.00459.pdf)] [[repo](datasets/Multi30K.pdf)] [[github](https://github.com/multi30k/dataset)] |
@@ -107,7 +110,7 @@
 ## Metrics
 
 | _Metric_ | <div style="width:120px">_Authors_</div> | _Paper_ | _Links_ |
-| --       | --                                       | --      | --      |
+| -------- | ---------------------------------------- | ------- | ------- |
 | BLEU | Papineni et al. | BLEU: a Method for Automatic Evaluation of Machine Translation | [[pdf](https://www.aclweb.org/anthology/P02-1040)] [[repo](metrics/papineni2002bleu.pdf)] |
 | METEOR | Banerjee et al. | METEOR: An Automatic Metric for MT Evaluation with Improved Correlation with Human Judgments | [[pdf](http://www.cs.cmu.edu/~alavie/METEOR/pdf/Banerjee-Lavie-2005-METEOR.pdf)] [[repo](metrics/banerjee2005meteor.pdf)] [[web](http://www.cs.cmu.edu/~alavie/METEOR/)] |
 | METEOR 1.5 | Denkowski et al. | METEOR Universal: Language Specific Translation Evaluation for Any Target Language | [[pdf](https://www.cs.cmu.edu/~alavie/METEOR/pdf/meteor-1.5.pdf)] [[repo](metrics/denkowski2014meteor-1.5.pdf)] [[web](http://www.cs.cmu.edu/~alavie/METEOR/)] | 
@@ -116,7 +119,7 @@
 ## Tutorials
 
 | _Year_ | _Authors_ | _Title_ | _Links_ |
-| :-:    | --        | --      | --      |
+| :----: | --------- | ------- | ------- |
 | 2016 | Elliott et al. | Multimodal Learning and Reasoning | [[pdf](https://github.com/MultimodalNLP/MultimodalNLP.github.io/raw/master/mlr_tutorial.pdf)] [[repo](tutorials/elliott2016multimodal.pdf)] |
 | 2017 | Lucia Specia | Multimodal Machine Translation | [[pdf](https://mtm2017.unbabel.com/assets/images/slides/lucia_specia.pdf)] [[repo](tutorials/specia2017multimodal.pdf)] |
 | 2018 | Loic Barrault | Introduction to Multimodal Machine Translation | [[pdf](https://www.clsp.jhu.edu/wp-content/uploads/sites/75/2018/06/2018-06-22-Barrault-Multimodal-MT.pdf)] [[repo](tutorials/barrault2018introduction.pdf)] |

@@ -49,6 +49,7 @@
     - [Input Combination Strategies for Multi-Source Transformer Decoder](#input-combination-strategies-for-multi-source-transformer-decoder)
     - [Multi-encoder Transformer Network for Automatic Post-Editing](#multi-encoder-transformer-network-for-automatic-post-editing)
     - [Document-Level Neural Machine Translation with Hierarchical Attention Networks](#document-level-neural-machine-translation-with-hierarchical-attention-networks)
+    - [MSMO: Multimodal Summarization with Multimodal Output](#msmo-multimodal-summarization-with-multimodal-output)
     - [Beyond RNNs: Positional Self-Attention with Co-Attention for Video Question Answering](#beyond-rnns-positional-self-attention-with-co-attention-for-video-question-answering)
     - [An Error Analysis for Image-based Multi-modal Neural Machine Translation](#an-error-analysis-for-image-based-multi-modal-neural-machine-translation)
     - [Multimodal Machine Translation with Embedding Prediction](#multimodal-machine-translation-with-embedding-prediction)
@@ -67,9 +68,11 @@
     - [Debiasing Word Embedding Improves Multimodal Machine Translation](#debiasing-word-embedding-improves-multimodal-machine-translation)
     - [Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation](#translating-translationese-a-two-step-approach-to-unsupervised-machine-translation)
     - [Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods](#trends-in-integration-of-vision-and-language-research-a-survey-of-tasks-datasets-and-methods)
-    - [Modality to Modality Translation: An Adversarial Representation Learning and Graph Fusion Network for Multimodal Fusion](#modality-to-modality-translation-an-adversarial-representation-learning-and-graph-fusion-network-for-multimodal-fusion)
-    - [Visual Agreement Regularized Training for Multi-Modal Machine Translation](#visual-agreement-regularized-training-for-multi-modal-machine-translation)
     - [MHSAN: Multi-Head Self-Attention Network for Visual Semantic Embedding](#mhsan-multi-head-self-attention-network-for-visual-semantic-embedding)
+    - [Modality to Modality Translation: An Adversarial Representation Learning and Graph Fusion Network for Multimodal Fusion](#modality-to-modality-translation-an-adversarial-representation-learning-and-graph-fusion-network-for-multimodal-fusion)
+    - [Learning Relationships between Text, Audio, and Video via Deep Canonical Correlation for Multimodal Language Analysis](#learning-relationships-between-text-audio-and-video-via-deep-canonical-correlation-for-multimodal-language-analysis)
+    - [Visual Agreement Regularized Training for Multi-Modal Machine Translation](#visual-agreement-regularized-training-for-multi-modal-machine-translation)
+    - [Learning Long- and Short-Term User Literal Preference with Multimodal Hierarchical Transformer Network for Personalized Image Caption](#learning-long--and-short-term-user-literal-preference-with-multimodal-hierarchical-transformer-network-for-personalized-image-caption)
 - [Datasets](#datasets)
     - [Flickr30K](#flickr30k)
     - [Flickr30K Entities](#flickr30k-entities)
@@ -249,7 +252,7 @@
   * NIPS'17
   * The encoder-decoder framework has achieved promising progress for many sequence generation tasks, including machine translation, text summarization, dialog system, image captioning, etc. Such a framework adopts an one-pass forward process while decoding the generating a sequence, but lacks the deliberation process: A generated sequence is directly used as final output without further polishing. However, deliberation is a common behaviour in human's daily life like reading news and writing papers/articles/books. In this work, we introduce the deliberation process into the encoder-decoder framework and propose deliberation networks for sequence generation. A deliberation network has two levels of decoders, where the first-pass decoder generates a raw sequence and the second-pass decoder polishes and refines the raw sentence with deliberation. Since the second-pass deliberation decoder has global information about what the sequence to be generated might be, it has the potential to generate a better sequence by looking into future words in the raw sentence. Experiments on neural machine translation and text summarization demonstrate the effectiveness of the proposed deliberation networks. On the WMT 2014 English-to-French translation task, our model establishes a new state-of-the-art BLEU score of 41.5.
 
-**2018** {#18}
+**2018** {#19}
 
 #### Improving Neural Machine Translation with Conditional Sequence Generative Adversarial Nets 
   * [[pdf](https://arxiv.org/pdf/1703.04887.pdf)] [[repo](paper/yang2018improving.pdf)]
@@ -359,7 +362,13 @@
   * EMNLP'18
   * Neural Machine Translation (NMT) can be improved by including document-level contextual information. For this purpose, we propose a hierarchical attention model to capture the context in a structured and dynamic manner. The model is integrated in the original NMT architecture as another level of abstraction, conditioning on the NMT model's own previous hidden state. Experiments show that hierarchical attention significantly improves the BLEU score over a strong NMT baseline with the state-of-the-art in context-aware methods, and that both the encoder and decoder benefit from context in complementary ways.
 
-**2019** {#20}
+#### MSMO: Multimodal Summarization with Multimodal Output
+  * [[pdf](https://www.aclweb.org/anthology/D18-1448.pdf)] [[repo](paper/zhu2018MSMO.pdf)]
+  * Zhu et al. (2018.10)
+  * EMNLP'18
+  * Multimodal summarization has drawn much attention due to the rapid growth of multimedia data. The output of the current multimodal summarization systems is usually represented in texts. However, we have found through experiments that multimodal output can significantly improve user satisfication for informativeness of summaries. In this paper, we propose a novel task, multimodal summarization with multimodal output (MSMO). To handle this task, we first collect a large-scale dataset for MSMO research. We then propose a multimodal attention model to jointly generate text and select the most relevant image from the multimodal input. Finally, to evaluate multimodal outputs, we construct a novel multimodal automatic evaluation (MMAE) method which considers both intramodality salience and intermodality relevance. The experiement results show the effectiveness of MMAE.
+
+**2019** {#18}
 
 #### Beyond RNNs: Positional Self-Attention with Co-Attention for Video Question Answering 
   * [[pdf](https://pdfs.semanticscholar.org/5653/59aac8914505e6b02db05822ee63d3ffd03a.pdf?_ga=2.221376792.1635135941.1571362744-1866174129.1565321067)] [[repo](paper/li2019beyond.pdf)]
@@ -469,25 +478,37 @@
   * arXiv
   * Integration of vision and language tasks has been a significant growth in the recent times due to surge of interest from multi-disciplinary communities such as deep learning, computer vision, and natural language processing. In this survey, we focus on then different vision and language integration tasks in terms of their problem formulation, methods, existing datasets, evaluation measures, and comparison of results achieved with the corresponding state-of-the-art methods. This goes beyond earlier surveys which are either task-specific or concentrate only on one type of visual content i.e., image or video. We then conclude the survey by discussing some possible future directions for integration of vision and language research. 
 
-#### Modality to Modality Translation: An Adversarial Representation Learning and Graph Fusion Network for Multimodal Fusion
-  * [[pdf](https://arxiv.org/pdf/1911.07848.pdf)] [[repo](paper/mai2019modality.pdf)]
-  * Mai et al. (2019.12)
-  * AAAI'20
-  * Learning joint embedding space for various modalities is of vital importance for multimodal fusion. Mainstream modality fusion approaches fail to achieve this goal, leaving a modality gap which heavily affects cross-modal fusion. In this paper, we propose a novel adversarial encoder-decoder-classifier framework to learn a modality invariant embedding space. Since the distributions of various modalities vary in nature, to reduce the modality gap, we translate the distributions of source modalities into that of target modality via their respective encoders using adversarial training. Furthermore, we exert additional constraints on embedding space by introducing reconstruction loss and classification loss. Then we fuse the encoded representations using hierarchical graph neural network which explicitly explores unimodal, bimodal and trimodal interactions in multi-stage. Our method achieves state-of-the-art performance on multiple datasets. Visualization of the learned embeddings suggests that the joint embedding space learned by our method is discriminative. 
-
-#### Visual Agreement Regularized Training for Multi-Modal Machine Translation
-  * [[pdf](https://arxiv.org/pdf/1912.12014.pdf)] [[repo](paper/yang2019visual.pdf)]
-  * Yang et al. (2019.12)
-  * AAAI'20
-  * Multi-modal machine translation aims at translating the source sentence into a different language in the presence of the paired image. Previous work suggests that additional visual information only provides dispensable help to translation, which is needed in several very special cases such as translating ambiguous words. To make better use of visual information, this work presents visual agreement regularized training. The proposed approach jointly trains the source-to-target and target-to-source translation models and encourages them to share the same focus on the visual information when generating semantically equivalent visual words (e.g. "ball" in English and "ballon" in French). Besides, a simple yet effective multi-head co-attention model is also introduced to capture interactions between visual and textual features. The results show that our approaches can outperform competitive baselines by a large margin on the Multi30K dataset. Further analysis demonstrates that the proposed regularized training can effectively improve the agreement of attention on the image, leading to better use of visual information.
-
-**2020** {#1}
+**2020** {#5}
 
 #### MHSAN: Multi-Head Self-Attention Network for Visual Semantic Embedding
   * [[pdf](https://arxiv.org/pdf/2001.03712.pdf)] [[repo](paper/park2020mhsan.pdf)]
   * Park et al. (2020.01)
   * WACV'20
   * Visual-semantic embedding enables various tasks such as image-text retrieval, image captioning, and visual question answering. The key to successful visual-semantic embedding is to express visual and textual data properly by accounting for their intricate relationship. While previous studies have achieved much advance by encoding the visual and textual data into a joint space where similar concepts are closely located, they often represent data by a single vector ignoring the presence of multiple important components in an image or text. Thus, in addition to the joint embedding space, we propose a novel multi-head self-attention network to capture various components of visual and textual data by attending to important parts in data. Our approach achieves the new state-of-the-art results in image-text retrieval tasks on MS-COCO and Flickr30K datasets. Through the visualization of the attention maps that capture distinct semantic components at multiple positions in the image and the text, we demonstrate that our method achieves an effective and interpretable visual-semantic joint space.
+
+#### Modality to Modality Translation: An Adversarial Representation Learning and Graph Fusion Network for Multimodal Fusion
+  * [[pdf](https://arxiv.org/pdf/1911.07848.pdf)] [[repo](paper/mai2020modality.pdf)]
+  * Mai et al. (2020.02)
+  * AAAI'20
+  * Learning joint embedding space for various modalities is of vital importance for multimodal fusion. Mainstream modality fusion approaches fail to achieve this goal, leaving a modality gap which heavily affects cross-modal fusion. In this paper, we propose a novel adversarial encoder-decoder-classifier framework to learn a modality invariant embedding space. Since the distributions of various modalities vary in nature, to reduce the modality gap, we translate the distributions of source modalities into that of target modality via their respective encoders using adversarial training. Furthermore, we exert additional constraints on embedding space by introducing reconstruction loss and classification loss. Then we fuse the encoded representations using hierarchical graph neural network which explicitly explores unimodal, bimodal and trimodal interactions in multi-stage. Our method achieves state-of-the-art performance on multiple datasets. Visualization of the learned embeddings suggests that the joint embedding space learned by our method is discriminative. 
+
+#### Learning Relationships between Text, Audio, and Video via Deep Canonical Correlation for Multimodal Language Analysis
+  * [[pdf](https://arxiv.org/pdf/1911.05544.pdf)] [[repo](paper/sun2020learning.pdf)]
+  * Sun et al. (2020.02)
+  * AAAI'20
+  * Multimodal language analysis often considers relationships between features based on text and those based on acoustical and visual properties. Text features typically outperform non-text features in sentiment analysis or emotion recognition tasks in part because the text features are derived from advanced language models or word embeddings trained on massive data sources while audio and video features are human-engineered and comparatively underdeveloped. Given that the text, audio, and video are describing the same utterance in different ways, we hypothesize that the multimodal sentiment analysis and emotion recognition can be improved by learning (hidden) correlations between features extracted from the outer product of text and audio (we call this text-based audio) and analogous text-based video. This paper proposes a novel model, the Interaction Canonical Correlation Network (ICCN), to learn such multimodal embeddings. ICCN learns correlations between all three models via deep canonical correlation analysis (DCCA) and the proposed embeddings are then tested on several benchmark datasets and against other state-of-the-art multimodal embedding algorithms. Empirical results and ablation studies confirm the effectiveness of ICCN in capturing useful information from all three views.
+
+#### Visual Agreement Regularized Training for Multi-Modal Machine Translation
+  * [[pdf](https://arxiv.org/pdf/1912.12014.pdf)] [[repo](paper/yang2020visual.pdf)]
+  * Yang et al. (2020.02)
+  * AAAI'20
+  * Multi-modal machine translation aims at translating the source sentence into a different language in the presence of the paired image. Previous work suggests that additional visual information only provides dispensable help to translation, which is needed in several very special cases such as translating ambiguous words. To make better use of visual information, this work presents visual agreement regularized training. The proposed approach jointly trains the source-to-target and target-to-source translation models and encourages them to share the same focus on the visual information when generating semantically equivalent visual words (e.g. "ball" in English and "ballon" in French). Besides, a simple yet effective multi-head co-attention model is also introduced to capture interactions between visual and textual features. The results show that our approaches can outperform competitive baselines by a large margin on the Multi30K dataset. Further analysis demonstrates that the proposed regularized training can effectively improve the agreement of attention on the image, leading to better use of visual information.
+
+#### Learning Long- and Short-Term User Literal Preference with Multimodal Hierarchical Transformer Network for Personalized Image Caption
+  * [[pdf](https://weizhangltt.github.io/paper/zhang-aaai20.pdf)] [[repo](paper/zhang2020learning.pdf)]
+  * Zhang et al. (2020.02)
+  * AAAI'20
+  * Personalized image caption, a natural extension of the standard image caption task, requires to generate brief image descriptions tailored for users' writing style and traits, and is more practical to meet users' real demands. Only a few recent studies shed light on this crucial task and learn static user representations to capture their long-term literal-preference. However, it is insufficient to achieve satisfactory performance due to the intrinsic existence of not only long-term user literal-preference, but also short-term literal-preference which is associated with users' recent states. To bridge this gap, we develop a novel multimodal hierarchical transformer network (MHTN) for personalized image caption in this paper. It learns short-term user literal-preference based on users' recent captions through a short-term user encoder at the low level. And at the high level, the multimodal encoder integrates target image representations with short-term literal-preference, as well as long-term literal-preference learned from user IDs. These two encoders enjoy the advantages of the powerful transformer networks. Extensive experiments on two real datasets show the effectiveness of considering two types of user literal-preference simultaneously and better performance over the state-of-the-art models.
 
 ## Datasets
 
