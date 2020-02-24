@@ -68,6 +68,9 @@
     - [Debiasing Word Embedding Improves Multimodal Machine Translation](#debiasing-word-embedding-improves-multimodal-machine-translation)
     - [Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation](#translating-translationese-a-two-step-approach-to-unsupervised-machine-translation)
     - [Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods](#trends-in-integration-of-vision-and-language-research-a-survey-of-tasks-datasets-and-methods)
+    - [Aligning Linguistic Words and Visual Semantic Units for Image Captioning](#aligning-linguistic-words-and-visual-semantic-units-for-image-captioning)
+    - [Walking with MIND: Mental Imagery eNhanceD Embodied QA](#walking-with-mind-mental-imagery-enhanced-embodied-qa)
+    - [Editing Text in the Wild](#editing-text-in-the-wild)
     - [MHSAN: Multi-Head Self-Attention Network for Visual Semantic Embedding](#mhsan-multi-head-self-attention-network-for-visual-semantic-embedding)
     - [Modality to Modality Translation: An Adversarial Representation Learning and Graph Fusion Network for Multimodal Fusion](#modality-to-modality-translation-an-adversarial-representation-learning-and-graph-fusion-network-for-multimodal-fusion)
     - [Learning Relationships between Text, Audio, and Video via Deep Canonical Correlation for Multimodal Language Analysis](#learning-relationships-between-text-audio-and-video-via-deep-canonical-correlation-for-multimodal-language-analysis)
@@ -368,7 +371,7 @@
   * EMNLP'18
   * Multimodal summarization has drawn much attention due to the rapid growth of multimedia data. The output of the current multimodal summarization systems is usually represented in texts. However, we have found through experiments that multimodal output can significantly improve user satisfication for informativeness of summaries. In this paper, we propose a novel task, multimodal summarization with multimodal output (MSMO). To handle this task, we first collect a large-scale dataset for MSMO research. We then propose a multimodal attention model to jointly generate text and select the most relevant image from the multimodal input. Finally, to evaluate multimodal outputs, we construct a novel multimodal automatic evaluation (MMAE) method which considers both intramodality salience and intermodality relevance. The experiement results show the effectiveness of MMAE.
 
-**2019** {#18}
+**2019** {#21}
 
 #### Beyond RNNs: Positional Self-Attention with Co-Attention for Video Question Answering 
   * [[pdf](https://pdfs.semanticscholar.org/5653/59aac8914505e6b02db05822ee63d3ffd03a.pdf?_ga=2.221376792.1635135941.1571362744-1866174129.1565321067)] [[repo](paper/li2019beyond.pdf)]
@@ -477,6 +480,24 @@
   * Mogadala et al. (2019.07)
   * arXiv
   * Integration of vision and language tasks has been a significant growth in the recent times due to surge of interest from multi-disciplinary communities such as deep learning, computer vision, and natural language processing. In this survey, we focus on then different vision and language integration tasks in terms of their problem formulation, methods, existing datasets, evaluation measures, and comparison of results achieved with the corresponding state-of-the-art methods. This goes beyond earlier surveys which are either task-specific or concentrate only on one type of visual content i.e., image or video. We then conclude the survey by discussing some possible future directions for integration of vision and language research. 
+
+#### Aligning Linguistic Words and Visual Semantic Units for Image Captioning
+  * [[pdf](https://arxiv.org/pdf/1908.02127.pdf)] [[repo](paper/guo2019aligning.pdf)] [[github](https://github.com/ltguo19/VSUA-Captioning)]
+  * Guo et al. (2019.10)
+  * ACM-MM'19
+  * Image captioning attempts to generate a sentence composed of several linguistic words, which are used to describe objects, attributes, and interactions in an image, denoted as visual semantic units in this paper. Based on this view, we propose to explicitly model the object interactions in semantics and geometry based on Graph Convolutional Networks (GCNs), and fully exploit the alignment between linguistic words and visual semantic units for image captioning. Particularly, we construct a semantic graph and a geometry graph, where each node corresponds to a visual semantic unit, i.e., an object, an attribute, or a semantic (geometrical) interaction between two objects. Accordingly, the semantic (geometrical) context-aware embeddings for each unit are obtained through the corresponding GCN learning processors. At each time step, a context gated attention module takes as inputs the embeddings of the visual semantic units and hierarchically align the current word with these units by first deciding which type of visual semantic unit (object, attribute, or interaction) the current word is about, and then finding the most correlated visual semantic units under this type. Extensive experiments are conducted on the challenging MS-COCO image cpationing dataset, and superior results are reported when comparing to state-of-the-art approaches. The code is publicly available at https://github.com/ltguo19/VSUA-Captioning.
+
+#### Walking with MIND: Mental Imagery eNhanceD Embodied QA
+  * [[pdf](https://arxiv.org/pdf/1908.01482.pdf)] [[repo](paper/li2019walking.pdf)]
+  * Li et al. (2019.10)
+  * ACM-MM'19
+  * The Embodied QA is a task of training an embodied agent by intelligently navigating in a simulated environment and gathering visual information to answer questions. Existing approaches fail to explicitly model the mental imagery function of the agent, while the mental imagery is crucial to embodied coginition, and has a close relation to many high-level meta-skills such as generalization and interpretation. In this paper, we propose a novel Mental Imagery eNhanceD (MIND) module for the embodied agent, as well as a relevant deep reinforcement framework for training. The MIND module can not only model the dynamics of the environment but also help the agent to create a better understanding of the environment. Such knowledge makes the agent a faster and better learner in locating a feasible policy with only a few trails. Furthermore, the MIND module can generate mental images that are treated as short-term subgoals by our proposed deep reinforcement framework. These mental images facilitate policy learning since short-term subgoals are easy to achieve and reusable. This yields better planning efficiency than other algorithms that learn a policy directly from primitive actions. Finally, the mental images visualize the agent's intentions in a way that human can understand, and this endows our agent's actions with more interpretability. The experimental results and further analysis prove that the agent with the MIND module is superior to its counterparts not only in EQA performance but in many other aspects such as route planning, behavioral interpretation, and the ability to generalize from a few examples.
+
+#### Editing Text in the Wild
+  * [[pdf](https://arxiv.org/pdf/1908.03047.pdf)] [[repo](paper/wu2019editing.pdf)]
+  * Wu et al. (2019.10)
+  * ACM-MM'19
+  * In this paper, we are interested in editing text in natural images, which aims to replace or modify a word in the source image with another one while maintaining its realistic look. This task is challenging, as the styles of both background and text need to be preserved so that the edited image is visually indistinguishable from the source image. Specifically, we propose an end-to-end trainable style retention network (SRNet) that consists of three modules: text conversion module, background inpainting module and fusion module. The text conversion module changes the text content of the source image into the target text while keeping the original text style. The background inpanting modules erases the original text, and fills the text region with appropriate texture. The fusion module combines the information from the two former modules, and generates the edited text images. To our knowledge, this work is the first attempt to edit text in natural images at the word level. Both visual effects and quantitative results on synthetic and real-world dataset (ICDAR 2013) fully confirm the importance and necessity of modular decomposition. We also conduct extensive experiments to validate the usefulness of our method in various real-world applications such as text image synthesis, augmented reality (AR) translation, information hiding, etc.
 
 **2020** {#5}
 
