@@ -68,14 +68,20 @@
     - [Debiasing Word Embedding Improves Multimodal Machine Translation](#debiasing-word-embedding-improves-multimodal-machine-translation)
     - [Translating Translationese: A Two-Step Approach to Unsupervised Machine Translation](#translating-translationese-a-two-step-approach-to-unsupervised-machine-translation)
     - [Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods](#trends-in-integration-of-vision-and-language-research-a-survey-of-tasks-datasets-and-methods)
+    - [Supervised Multimodal Bitransformers for Classifying Images and Text](#supervised-multimodal-bitransformers-for-classifying-images-and-text)
     - [Aligning Linguistic Words and Visual Semantic Units for Image Captioning](#aligning-linguistic-words-and-visual-semantic-units-for-image-captioning)
     - [Walking with MIND: Mental Imagery eNhanceD Embodied QA](#walking-with-mind-mental-imagery-enhanced-embodied-qa)
     - [Editing Text in the Wild](#editing-text-in-the-wild)
+    - [Multimodal Neural Graph Memory Networks for Visual Question Answering](#multimodal-neural-graph-memory-networks-for-visual-question-answering)
     - [MHSAN: Multi-Head Self-Attention Network for Visual Semantic Embedding](#mhsan-multi-head-self-attention-network-for-visual-semantic-embedding)
     - [Modality to Modality Translation: An Adversarial Representation Learning and Graph Fusion Network for Multimodal Fusion](#modality-to-modality-translation-an-adversarial-representation-learning-and-graph-fusion-network-for-multimodal-fusion)
     - [Learning Relationships between Text, Audio, and Video via Deep Canonical Correlation for Multimodal Language Analysis](#learning-relationships-between-text-audio-and-video-via-deep-canonical-correlation-for-multimodal-language-analysis)
     - [Visual Agreement Regularized Training for Multi-Modal Machine Translation](#visual-agreement-regularized-training-for-multi-modal-machine-translation)
     - [Learning Long- and Short-Term User Literal Preference with Multimodal Hierarchical Transformer Network for Personalized Image Caption](#learning-long--and-short-term-user-literal-preference-with-multimodal-hierarchical-transformer-network-for-personalized-image-caption)
+    - [Clue: Cross-modal Coherence Modeling for Caption Generation](#clue-cross-modal-coherence-modeling-for-caption-generation)
+    - [Sentiment and Emotion help Sarcasm? A Multi-task Learning Framework for Multi-Modal Sacrasm, Sentiment and Emotion Analysis](#sentiment-and-emotion-help-sarcasm-a-multi-task-learning-framework-for-multi-modal-sacrasm-sentiment-and-emotion-analysis)
+    - [Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting](#unsupervised-multimodal-neural-machine-translation-with-pseudo-visual-pivoting)
+    - [A Recipe for Creating Multimodal Aligned Datasets for Sequential Tasks](#a-recipe-for-creating-multimodal-aligned-datasets-for-sequential-tasks)
 - [Datasets](#datasets)
     - [Flickr30K](#flickr30k)
     - [Flickr30K Entities](#flickr30k-entities)
@@ -371,7 +377,7 @@
   * EMNLP'18
   * Multimodal summarization has drawn much attention due to the rapid growth of multimedia data. The output of the current multimodal summarization systems is usually represented in texts. However, we have found through experiments that multimodal output can significantly improve user satisfication for informativeness of summaries. In this paper, we propose a novel task, multimodal summarization with multimodal output (MSMO). To handle this task, we first collect a large-scale dataset for MSMO research. We then propose a multimodal attention model to jointly generate text and select the most relevant image from the multimodal input. Finally, to evaluate multimodal outputs, we construct a novel multimodal automatic evaluation (MMAE) method which considers both intramodality salience and intermodality relevance. The experiement results show the effectiveness of MMAE.
 
-**2019** {#21}
+**2019** {#23}
 
 #### Beyond RNNs: Positional Self-Attention with Co-Attention for Video Question Answering 
   * [[pdf](https://pdfs.semanticscholar.org/5653/59aac8914505e6b02db05822ee63d3ffd03a.pdf?_ga=2.221376792.1635135941.1571362744-1866174129.1565321067)] [[repo](paper/li2019beyond.pdf)]
@@ -481,6 +487,12 @@
   * arXiv
   * Integration of vision and language tasks has been a significant growth in the recent times due to surge of interest from multi-disciplinary communities such as deep learning, computer vision, and natural language processing. In this survey, we focus on then different vision and language integration tasks in terms of their problem formulation, methods, existing datasets, evaluation measures, and comparison of results achieved with the corresponding state-of-the-art methods. This goes beyond earlier surveys which are either task-specific or concentrate only on one type of visual content i.e., image or video. We then conclude the survey by discussing some possible future directions for integration of vision and language research. 
 
+#### Supervised Multimodal Bitransformers for Classifying Images and Text
+  * [[pdf](https://vigilworkshop.github.io/static/papers/40.pdf)] [[repo](paper/kiela2019supervised.pdf)] [[github](https://github.com/facebookresearch/mmbt/)]
+  * Kiela et al. (2019.09)
+  * arXiv
+  * Self-supervised bidirectional transformer models such as BERT have led to dramatic improvements in a wide variety of textual classification tasks. The modern digital world is increasingly multimodal, however, and textual information is often accompanied by other modalities such as images. We introduce a supervised multimodal bitransformer model that fuses information from text and image encoders, and obtain at or near state-of-the-art performance on various multimodal classification benchmark tasks, outperforming strong baselines, including on hard test sets specifically designed to measure multimodal performance. Surprisingly, we find that our straightforward method is competitive on these tasks with self-supervised ViBERT, a multimodal "BERT for vision-and language" approach.
+
 #### Aligning Linguistic Words and Visual Semantic Units for Image Captioning
   * [[pdf](https://arxiv.org/pdf/1908.02127.pdf)] [[repo](paper/guo2019aligning.pdf)] [[github](https://github.com/ltguo19/VSUA-Captioning)]
   * Guo et al. (2019.10)
@@ -499,7 +511,13 @@
   * ACM-MM'19
   * In this paper, we are interested in editing text in natural images, which aims to replace or modify a word in the source image with another one while maintaining its realistic look. This task is challenging, as the styles of both background and text need to be preserved so that the edited image is visually indistinguishable from the source image. Specifically, we propose an end-to-end trainable style retention network (SRNet) that consists of three modules: text conversion module, background inpainting module and fusion module. The text conversion module changes the text content of the source image into the target text while keeping the original text style. The background inpanting modules erases the original text, and fills the text region with appropriate texture. The fusion module combines the information from the two former modules, and generates the edited text images. To our knowledge, this work is the first attempt to edit text in natural images at the word level. Both visual effects and quantitative results on synthetic and real-world dataset (ICDAR 2013) fully confirm the importance and necessity of modular decomposition. We also conduct extensive experiments to validate the usefulness of our method in various real-world applications such as text image synthesis, augmented reality (AR) translation, information hiding, etc.
 
-**2020** {#5}
+#### Multimodal Neural Graph Memory Networks for Visual Question Answering
+  * [[pdf](https://grlearning.github.io/papers/32.pdf)] [[repo](paper/khademi2019multimodal.pdf)]
+  * Khademi et al. (2019.12)
+  * NIPS'19
+  * We introduce a new neural network architecture, Multimodal Neural Graph Memeory Network (MN-GMN), for visual question answering (VQA). MN-GMN uses graph structure with different region features as node attributes and applies the recently proposed Graph Network (GN) to reason about objects and their interactions in the scene context. The MN-GMN has four modules. The input module generates a set of visual feature vectors plus a set of encoded region-grounded captions (RGCs) for the image. The RGCs capture object attributes and their relationships. Each visual feature vector/RGC is specified with a bounding-box. Two GNs are constructed from the input module using the visual feature vectors and RGCs. Each node in a GN iteratively computes a question-guided contextualized representation of the visual/textual information assigned to it. To combine the information from both GNs, each node writes the updated representations to a spatial memory. The final state of the memory cells are fed into an answer module to predict an answer. Experiments show MN-GCN outperforms the state-of-the-art on VQA dataset.
+
+**2020** {#9}
 
 #### MHSAN: Multi-Head Self-Attention Network for Visual Semantic Embedding
   * [[pdf](https://arxiv.org/pdf/2001.03712.pdf)] [[repo](paper/park2020mhsan.pdf)]
@@ -530,6 +548,30 @@
   * Zhang et al. (2020.02)
   * AAAI'20
   * Personalized image caption, a natural extension of the standard image caption task, requires to generate brief image descriptions tailored for users' writing style and traits, and is more practical to meet users' real demands. Only a few recent studies shed light on this crucial task and learn static user representations to capture their long-term literal-preference. However, it is insufficient to achieve satisfactory performance due to the intrinsic existence of not only long-term user literal-preference, but also short-term literal-preference which is associated with users' recent states. To bridge this gap, we develop a novel multimodal hierarchical transformer network (MHTN) for personalized image caption in this paper. It learns short-term user literal-preference based on users' recent captions through a short-term user encoder at the low level. And at the high level, the multimodal encoder integrates target image representations with short-term literal-preference, as well as long-term literal-preference learned from user IDs. These two encoders enjoy the advantages of the powerful transformer networks. Extensive experiments on two real datasets show the effectiveness of considering two types of user literal-preference simultaneously and better performance over the state-of-the-art models.
+
+#### Clue: Cross-modal Coherence Modeling for Caption Generation
+  * [[pdf](https://arxiv.org/pdf/2005.00908.pdf)] [[repo](paper/alikhani2020clue.pdf)]
+  * Alikhani et al. (2020.07)
+  * ACL'20
+  * We use coherence relations inspired by computational models of discourse to study the information needs and goals of image captioning. Using an annotation protocol specifically devised for capturing image-caption coherence relations, we annotate 10,000 instances from publicly-available image-caption pairs. We introduce a new task for learning inferences in imagery and texts, coherence relation prediction, and show that these coherence annotations can be exploited to learn relation classifiers as an intermediary step, and also train coherence-aware, controllable image captioning models. The results show a dramatic improvement in the consistency and quality of the generated captions with respect to information needs specified via coherence relations.
+
+#### Sentiment and Emotion help Sarcasm? A Multi-task Learning Framework for Multi-Modal Sacrasm, Sentiment and Emotion Analysis
+  * [[pdf](https://www.iitp.ac.in/~ai-nlp-ml/papers/acl20-multiSA.pdf)] [[repo](paper/chauhan2020sentiment.pdf)]
+  * Chauhan et al. (2020.07)
+  * ACL'20
+  * In this paper, we hypothesize that sarcasm is closely related to sentiment and emotion, and thereby propose a multi-task deep learning framework to solve all these three problems simultaneously in a multi-modal conversational scenario. We, at first, manually annotate the recently released multi-modal MUStARD sarcasm dataset with sentiment and emotion classes, both implicit and explicit. For multi-tasking, we propose two attention mechanisms, viz. Inter-segment Inter-modal Attention (Ie Attention) and Intra-segment Inter-modal Attention (Ia Attention). The main motivation of Ie Attention is to learn the relationship between the different segments of these sentence across the modalities. In contrast, Ia Attention focuses within the same segment of the sentence across the modalities. Finally, representations from both the attentions are concatenated and shared across the five classes(i.e., sarcasm, implicit sentiment, explicit sentiment, implicit emotion, explicit emotion) for multi-tasking. Experimental results on the extended version of the MUStARD dataset show the efficacy of our proposed approach for sarcasm detection over the existing state-of-the-art systems. The evaluation also shows that the proposed multi-task framework yields better performance for the primary task, i.e., sarcasm detection, with the help of two secondary tasks, emotion and sentiment analysis.
+
+#### Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting
+  * [[pdf](https://arxiv.org/pdf/2005.03119.pdf)] [[repo](paper/huang2020unsupervised.pdf)]
+  * Huang et al. (2020.07)
+  * ACL'20
+  * Unsupervised machine translation (MT) has recently achieved impressive results with monolingual corpora only. However, it is still challenging to associate source-target sentences in a latent space. As people speak different biologically share similar visual systems, the potential of achieving better alignment through visual content is promising yet under-explored in unsupervised multimodal MT (MMT). In this paper, we investigate how to utilize visual content for disambiguation and promoting latent space alignment in unsupervised MMT. Our model employs multimodal back-translation and features pseudo visual pivoting in which we learn a shared multilingual visual-semantic embedding space and incorporate visually-pivoted captioning as additional weak supervision. The experimental results on the widely used Multi30K dataset show that the proposed model significantly improves over the state-of-the-art methods and generalizes well when the images are not available at the testing time.
+
+#### A Recipe for Creating Multimodal Aligned Datasets for Sequential Tasks
+  * [[pdf](https://arxiv.org/pdf/2005.09606.pdf)] [[repo](paper/lin2020recipe.pdf)] [[github](https://github.com/microsoft/multimodal-aligned-recipe-corpus)]
+  * Lin et al. (2020.07)
+  * ACL'20
+  * Many high-level procedural tasks can be decomposed into sequences of instructions that vary in their order and choice of tools. In the cooking domain, the web offers many partially-overlapping text and video recipes (i.e. procedures) that describe how to make the same dish (i.e. high-level task). Aligning instructions for the same dish across different sources can yield descriptive visual explanations that are far richer semantically than conventional textual instructions, providing commonsense insight into how real-world procedures are structured. Learning to align these different instruction sets is challenging because: a) different recipes vary in their order of instructions and use of ingredients; and b) video instructions can be noisy and tend to contain far more information than text instructions. To address these challenges, we first use an unsupervised alignment algorithm that learns pairwise alignments between instructions of different recipes for the same dish. We then use a graph algorithm to derive a joint alignment between multiple text and multiple video recipes for the same dish. We release the MICROSOFT RESEARCH MULTIMODAL ALIGNED RECIPE CORPUS containing ~150K pairwise alignments between recipes across 4,262 dishes with rich commonsense information.
 
 ## Datasets
 

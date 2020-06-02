@@ -53,6 +53,7 @@
 | 2019.07| Hirasawa et al. | ACL'19 | Debiasing Word Embedding Improves Multimodal Machine Translation | [[pdf](https://arxiv.org/pdf/1905.10464.pdf)] [[repo](paper/hirasawa2019debiasing.pdf)] |
 | 2019.07| Mogadala et al. | arXiv | Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods | [[pdf](https://arxiv.org/pdf/1907.09358.pdf)] [[repo](paper/mogadala2019trends.pdf)] |
 | 2020.02| Yang et al. | AAAI'20 | Visual Agreement Regularized Training for Multi-Modal Machine Translation | [[pdf](https://arxiv.org/pdf/1912.12014.pdf)] [[repo](paper/yang2020visual.pdf)] |
+| 2020.07| Huang et al. | ACL'20 | Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting | [[pdf](https://arxiv.org/pdf/2005.03119.pdf)] [[repo](paper/huang2020unsupervised.pdf)] |
 
 #### Multimodal Language Models
 
@@ -74,13 +75,18 @@
 | 2019.02| Li et al. | AAAI'19 | Beyond RNNs: Positional Self-Attention with Co-Attention for Video Question Answering | [[pdf](https://pdfs.semanticscholar.org/5653/59aac8914505e6b02db05822ee63d3ffd03a.pdf?_ga=2.221376792.1635135941.1571362744-1866174129.1565321067)] [[repo](paper/li2019beyond.pdf)] |
 | 2019.06| Qin et al. | CVPR'19 | Look Back and Predict Forward in Image Captioning | [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_Look_Back_and_Predict_Forward_in_Image_Captioning_CVPR_2019_paper.pdf)] [[repo](paper/qin2019look.pdf)] |
 | 2019.06| Yu et al. | CVPR'19 | Deep Modular Co-Attention Networks for Visual Question Answering | [[pdf](http://openaccess.thecvf.com/content_CVPR_2019/papers/Yu_Deep_Modular_Co-Attention_Networks_for_Visual_Question_Answering_CVPR_2019_paper.pdf)] [[repo](paper/yu2019deep.pdf)] |
+| 2019.09| Kiela et al. | arXiv | Supervised Multimodal Bitransformers for Classifying Images and Text | [[pdf](https://vigilworkshop.github.io/static/papers/40.pdf)] [[repo](paper/kiela2019supervised.pdf)] [[github](https://github.com/facebookresearch/mmbt/)] |
 | 2019.10| Guo et al. | ACM-MM'19 | Aligning Linguistic Words and Visual Semantic Units for Image Captioning | [[pdf](https://arxiv.org/pdf/1908.02127.pdf)] [[repo](paper/guo2019aligning.pdf)] [[github](https://github.com/ltguo19/VSUA-Captioning)] |
 | 2019.10| Li et al. | ACM-MM'19 | Walking with MIND: Mental Imagery eNhanceD Embodied QA | [[pdf](https://arxiv.org/pdf/1908.01482.pdf)] [[repo](paper/li2019walking.pdf)] |
 | 2019.10| Wu et al. | ACM-MM'19 | Editing Text in the Wild | [[pdf](https://arxiv.org/pdf/1908.03047.pdf)] [[repo](paper/wu2019editing.pdf)] |
+| 2019.12| Khademi et al. | NIPS'19 | Multimodal Neural Graph Memory Networks for Visual Question Answering | [[pdf](https://grlearning.github.io/papers/32.pdf)] [[repo](paper/khademi2019multimodal.pdf)] |
 | 2020.01| Park et al. | WACV'20 | MHSAN: Multi-Head Self-Attention Network for Visual Semantic Embedding | [[pdf](https://arxiv.org/pdf/2001.03712.pdf)] [[repo](paper/park2020mhsan.pdf)] |
 | 2020.02| Mai et al. | AAAI'20 | Modality to Modality Translation: An Adversarial Representation Learning and Graph Fusion Network for Multimodal Fusion | [[pdf](https://arxiv.org/pdf/1911.07848.pdf)] [[repo](paper/mai2020modality.pdf)] |
 | 2020.02| Sun et al. | AAAI'20 | Learning Relationships between Text, Audio, and Video via Deep Canonical Correlation for Multimodal Language Analysis | [[pdf](https://arxiv.org/pdf/1911.05544.pdf)] [[repo](paper/sun2020learning.pdf)] |
 | 2020.02| Zhang et al. | AAAI'20 | Learning Long- and Short-Term User Literal Preference with Multimodal Hierarchical Transformer Network for Personalized Image Caption | [[pdf](https://weizhangltt.github.io/paper/zhang-aaai20.pdf)] [[repo](paper/zhang2020learning.pdf)] |
+| 2020.07| Alikhani et al. | ACL'20 | Clue: Cross-modal Coherence Modeling for Caption Generation | [[pdf](https://arxiv.org/pdf/2005.00908.pdf)] [[repo](paper/alikhani2020clue.pdf)] |
+| 2020.07| Chauhan et al. | ACL'20 | Sentiment and Emotion help Sarcasm? A Multi-task Learning Framework for Multi-Modal Sacrasm, Sentiment and Emotion Analysis | [[pdf](https://www.iitp.ac.in/~ai-nlp-ml/papers/acl20-multiSA.pdf)] [[repo](paper/chauhan2020sentiment.pdf)] |
+| 2020.07| Lin et al. | ACL'20 | A Recipe for Creating Multimodal Aligned Datasets for Sequential Tasks | [[pdf](https://arxiv.org/pdf/2005.09606.pdf)] [[repo](paper/lin2020recipe.pdf)] [[github](https://github.com/microsoft/multimodal-aligned-recipe-corpus)] |
 
 #### Neural Machine Translation
 
