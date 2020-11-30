@@ -87,6 +87,11 @@
 | 2020.07| Alikhani et al. | ACL'20 | Clue: Cross-modal Coherence Modeling for Caption Generation | [[pdf](https://arxiv.org/pdf/2005.00908.pdf)] [[repo](paper/alikhani2020clue.pdf)] |
 | 2020.07| Chauhan et al. | ACL'20 | Sentiment and Emotion help Sarcasm? A Multi-task Learning Framework for Multi-Modal Sacrasm, Sentiment and Emotion Analysis | [[pdf](https://www.iitp.ac.in/~ai-nlp-ml/papers/acl20-multiSA.pdf)] [[repo](paper/chauhan2020sentiment.pdf)] |
 | 2020.07| Lin et al. | ACL'20 | A Recipe for Creating Multimodal Aligned Datasets for Sequential Tasks | [[pdf](https://arxiv.org/pdf/2005.09606.pdf)] [[repo](paper/lin2020recipe.pdf)] [[github](https://github.com/microsoft/multimodal-aligned-recipe-corpus)] |
+| 2020.11| Cho et al. | EMNLP'20 | X-LXMERT: Paint, Caption and Answer Questions with Multi-Modal Transformers | [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.707.pdf)] [[repo](paper/cho2020XLXMERT.pdf)] [[web](https://prior.allenai.org/projects/x-lxmert)] |
+| 2020.11| Jin et al. | EMNLP'20 | Dual Low-Rank Multimodal Fusion | [[pdf](https://www.aclweb.org/anthology/2020.findings-emnlp.35.pdf)] [[repo](paper/jin2020dual.pdf)] |
+| 2020.11| Khan et al. | EMNLP'20 | MMFT-BERT: Multimodal Fusion Transformer with BERT Encodings for Visual Question Answering | [[pdf](https://www.aclweb.org/anthology/2020.findings-emnlp.417.pdf)] [[repo](paper/khan2020MMFT.pdf)] |
+| 2020.11| Tsai et al. | EMNLP'20 | Multimodal Routing: Improving Local and Global Interpretability of Multimodal Language Analysis | [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.143.pdf)] [[repo](paper/tsai2020multimodal.pdf)] [[github](https://github.com/martinmamql/multimodal_routing)] |
+| 2020.11| Wang et al. | EMNLP'20 | MAF: Multimodal Alignment Framework for Weakly-Supervised Phrase Grounding | [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.159.pdf)] [[repo](paper/wang2020MAF.pdf)] |
 
 #### Neural Machine Translation
 

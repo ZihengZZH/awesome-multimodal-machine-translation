@@ -82,6 +82,11 @@
     - [Sentiment and Emotion help Sarcasm? A Multi-task Learning Framework for Multi-Modal Sacrasm, Sentiment and Emotion Analysis](#sentiment-and-emotion-help-sarcasm-a-multi-task-learning-framework-for-multi-modal-sacrasm-sentiment-and-emotion-analysis)
     - [Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting](#unsupervised-multimodal-neural-machine-translation-with-pseudo-visual-pivoting)
     - [A Recipe for Creating Multimodal Aligned Datasets for Sequential Tasks](#a-recipe-for-creating-multimodal-aligned-datasets-for-sequential-tasks)
+    - [X-LXMERT: Paint, Caption and Answer Questions with Multi-Modal Transformers](#x-lxmert-paint-caption-and-answer-questions-with-multi-modal-transformers)
+    - [Dual Low-Rank Multimodal Fusion](#dual-low-rank-multimodal-fusion)
+    - [MMFT-BERT: Multimodal Fusion Transformer with BERT Encodings for Visual Question Answering](#mmft-bert-multimodal-fusion-transformer-with-bert-encodings-for-visual-question-answering)
+    - [Multimodal Routing: Improving Local and Global Interpretability of Multimodal Language Analysis](#multimodal-routing-improving-local-and-global-interpretability-of-multimodal-language-analysis)
+    - [MAF: Multimodal Alignment Framework for Weakly-Supervised Phrase Grounding](#maf-multimodal-alignment-framework-for-weakly-supervised-phrase-grounding)
 - [Datasets](#datasets)
     - [Flickr30K](#flickr30k)
     - [Flickr30K Entities](#flickr30k-entities)
@@ -517,7 +522,7 @@
   * NIPS'19
   * We introduce a new neural network architecture, Multimodal Neural Graph Memeory Network (MN-GMN), for visual question answering (VQA). MN-GMN uses graph structure with different region features as node attributes and applies the recently proposed Graph Network (GN) to reason about objects and their interactions in the scene context. The MN-GMN has four modules. The input module generates a set of visual feature vectors plus a set of encoded region-grounded captions (RGCs) for the image. The RGCs capture object attributes and their relationships. Each visual feature vector/RGC is specified with a bounding-box. Two GNs are constructed from the input module using the visual feature vectors and RGCs. Each node in a GN iteratively computes a question-guided contextualized representation of the visual/textual information assigned to it. To combine the information from both GNs, each node writes the updated representations to a spatial memory. The final state of the memory cells are fed into an answer module to predict an answer. Experiments show MN-GCN outperforms the state-of-the-art on VQA dataset.
 
-**2020** {#9}
+**2020** {#10}
 
 #### MHSAN: Multi-Head Self-Attention Network for Visual Semantic Embedding
   * [[pdf](https://arxiv.org/pdf/2001.03712.pdf)] [[repo](paper/park2020mhsan.pdf)]
@@ -573,33 +578,63 @@
   * ACL'20
   * Many high-level procedural tasks can be decomposed into sequences of instructions that vary in their order and choice of tools. In the cooking domain, the web offers many partially-overlapping text and video recipes (i.e. procedures) that describe how to make the same dish (i.e. high-level task). Aligning instructions for the same dish across different sources can yield descriptive visual explanations that are far richer semantically than conventional textual instructions, providing commonsense insight into how real-world procedures are structured. Learning to align these different instruction sets is challenging because: a) different recipes vary in their order of instructions and use of ingredients; and b) video instructions can be noisy and tend to contain far more information than text instructions. To address these challenges, we first use an unsupervised alignment algorithm that learns pairwise alignments between instructions of different recipes for the same dish. We then use a graph algorithm to derive a joint alignment between multiple text and multiple video recipes for the same dish. We release the MICROSOFT RESEARCH MULTIMODAL ALIGNED RECIPE CORPUS containing ~150K pairwise alignments between recipes across 4,262 dishes with rich commonsense information.
 
+#### X-LXMERT: Paint, Caption and Answer Questions with Multi-Modal Transformers
+  * [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.707.pdf)] [[repo](paper/cho2020XLXMERT.pdf)] [[web](https://prior.allenai.org/projects/x-lxmert)]
+  * Cho et al. (2020.11)
+  * EMNLP'20
+  * Mirroring the success of masked language models, vision-and-language counterparts like VILBERT, LXMERT, and UNITER have achieved state of the art performance on a variety of multimodal discriminative tasks like visual question answering and visual grounding. Recent work has also successfully adapted such models towards the generative task of image captioning. This begs the questions: Can these models go the other way and generate images from pieces of text? Our analysis of a popular representative from this model family - LXMERT - finds that it is unable to generate rich and semantically meaningful imagery with its current training setup. We introduce X-LXMERT, an extension to LXMERT with training refinements including: discretizing visual representations, using uniform masking with a large range of masking ratios and aligning the right pre-training datasets to the right objectives which enables it to paint. X-LXMERT's image generation capabilities rival state of the art generative models while its question answering and captioning abilities remains comparable to LXMERT. Finally, we demonstrate the generality of these training refinements by adding image generation capabilities into UNITER to produce X-UNITER.
+
+#### Dual Low-Rank Multimodal Fusion
+  * [[pdf](https://www.aclweb.org/anthology/2020.findings-emnlp.35.pdf)] [[repo](paper/jin2020dual.pdf)]
+  * Jin et al. (2020.11)
+  * EMNLP'20
+  * Tensor-based fusion methods have been proven effective in multimodal fusion tasks. However, existing tensor-based methods make a poor use of the fine-grained temporal dynamics of multimodal sequential features. Motivated by this observation, this paper proposes a novel multimodal fusion method called Fine-Grained Temporal Low-Rank Multimodal Fusion (FT-LMF). FT-LMF correlates the features of individual time steps between multiple modalities, while it involves multiplications of high-order tensors in its calculation. This paper further proposes Dual Low-Rank Multimodal Fusion (Dual-LMF) to reduce the computational complexity of FT-LMF through low-rank tensor approximation along dual dimensions of input features. Dual-LMF is conceptually simple and practically effective and efficient. Empirical studies on benchmark multimodal analysis tasks show that our proposed methods outperform the state-of-the-art tensor-based fusion methods with a similar computational complexity.
+
+#### MMFT-BERT: Multimodal Fusion Transformer with BERT Encodings for Visual Question Answering
+  * [[pdf](https://www.aclweb.org/anthology/2020.findings-emnlp.417.pdf)] [[repo](paper/khan2020MMFT.pdf)]
+  * Khan et al. (2020.11)
+  * EMNLP'20
+  * We present MMFT-BERT (MultiModal Fusion Transformer with BERT encodings), to solve Visual Question Answering (VQA) ensuring individual and combined processing of multiple input modalities. Our approach benefits from processing multimodal data (video and text) adopting the BERT encodings individually and using a novel transformer-based fusion method to fuse them together. Our method decomposes the different sources of modalities, into different BERT instances with similar architectures, but variable weights. This achieves SOTA results on the TVQA dataset. Additionally, we provide TVQA-Visual, an isolated diagnostic subset of TVQA, which strictly requires the knowledge of visual (V) modality based on a human annotator's judgment. This set of questions helps us to study the model's behaviour and the challenges TVQA poses to prevent the achievement of super human performance. Extensive experiments show the effectiveness and superiority of our method.
+
+#### Multimodal Routing: Improving Local and Global Interpretability of Multimodal Language Analysis
+  * [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.143.pdf)] [[repo](paper/tsai2020multimodal.pdf)] [[github](https://github.com/martinmamql/multimodal_routing)]
+  * Tsai et al. (2020.11)
+  * EMNLP'20
+  * The human language can be expressed through multiple sources of information known as modalities, including tones of voice, facial gestures, and spoken language. Recent multimodal learning with strong performances on human-centric tasks such as sentiment analysis and emotion recognition are often block-box, with very limited interpretability. In this paper we propose Multimodal Routing, which dynamically adjusts weights between input modalities and output representations differently for each input sample. Multimodal routing can identify relative importance of both individual modalities and cross-modality features. Moreover, the weight assignment by routing allows us interpret modality-prediction relationships not only globally (i.e. general trends over the whole dataset), but also locally for each single input sample, meanwhile keeping competitive performance compared to state-of-the-art methods.
+
+#### MAF: Multimodal Alignment Framework for Weakly-Supervised Phrase Grounding
+  * [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.159.pdf)] [[repo](paper/wang2020MAF.pdf)]
+  * Wang et al. (2020.11)
+  * EMNLP'20
+  * Phrase localization is a task that studies the mapping from textual phrases to regions of an image. Given difficulities in annotating phrase-to-object datasets at scale, we develop a Multimodal Alignment Framework (MAF) to leverage more widely-avaiable caption-image datasets, which can then be used as a form of weak supervision. We first present algorithms to model phrase-object relevance by leveraging fine-grained visual representations and visually-aware language representations. By adopting a contrastive objective, our method uses information in caption-image pairs to boost the performance in weakly-supervised scenarios. Experiments conducted on the widely-adopted Flickr30k dataset show a significant improvement over existing weakly-supervised methods. With the help of the visually-aware language representations, we can also improve the previous best unsupervised result by 5.56%. We conduct ablation studies to show that both our novel model and our weakly-supervised strategies significantly contribute to our strong results.
+
 ## Datasets
 
-#### Flickr30K 
+#### Flickr30K
   * [[pdf](https://www.aclweb.org/anthology/Q14-1006)] [[repo](datasets/Flickr30K.pdf)] [[web](http://shannon.cs.illinois.edu/DenotationGraph/)]
   * From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
   * Young et al. (2014)
   * We propose to use the visual denotations of linguistic expressions (i.e. the set of images they describe) to define novel denotational similarity metrics, which we show to be at least beneficial as distributional similarities for two tasks that require semantic inference. To compute these denotational similarities, we construct a denotation graph, i.e. a subsumption hierarchy over constituents and their denotations, based on a large corpus of 30K images and 150K descriptive captions.
 
-#### Flickr30K Entities 
-  * [[pdf](https://arxiv.org/pdf/1505.04870.pdf)] [[repo](datasets/Flickr30K_entities.pdf)] [[web](http://bryanplummer.com/Flickr30kEntities/)] [[github](https://github.com/BryanPlummer/flickr30k_entities)] 
+#### Flickr30K Entities
+  * [[pdf](https://arxiv.org/pdf/1505.04870.pdf)] [[repo](datasets/Flickr30K_entities.pdf)] [[web](http://bryanplummer.com/Flickr30kEntities/)] [[github](https://github.com/BryanPlummer/flickr30k_entities)]
   * Flickr30K Entities: Collecting Region-to-Phrase Correspondences for Richer Image-to-Sentence Models
   * Plummer et al. (2016)
   * The Flickr30K dataset has become a standard benchmark for sentence-based image description. This paper presents Flickr30K Entities, which augments the 158k captions from Flickr30K with 244k coreference chains, linking mentions of the same entities across different captions for the same image, and associating them with 276k manually annotated bounding boxes. Such annotations are essential for continued progress in automatic image description and grounded language understanding. They enable us to define a new benchmark for localization of textual entity mentions in an image. We present a strong baseline for this task that combines an image-text embedding, detectors for common objects, a color classifier, and a bias towards selecting larger objects. While our baseline rivals in accuracy more complex state-of-the-art models, we show that its gains cannot be easily parlayed into improvements on such tasks as image-sentence retrieval, thus underlining the limitations of current methods and the need for further research.
 
-#### Multi30K 
+#### Multi30K
   * [[pdf](https://arxiv.org/pdf/1605.00459.pdf)] [[repo](datasets/Multi30K.pdf)] [[github](https://github.com/multi30k/dataset)]
   * Multi30K: Multilingual English-German Image Descriptions
   * Elliott et al. (2016)
   * We introduce the **Multi30K** dataset to simulate multilingual multimodal research. Recent advances in image description have been demonstrated on English-language datasets almost exclusively, but image description should not be limited to English. This dataset extends the Flicker30K dataset with i) German translations created by professional translators over a subset of the English descriptions. We outline how the data can be used for multilingual image description and multimodal machine translation, but we anticipate the data will be useful for a broader range of tasks.
 
-#### IAPR-TC12 
+#### IAPR-TC12
   * [[pdf](http://thomas.deselaers.de/publications/papers/grubinger_lrec06.pdf)] [[repo](datasets/IAPR-TC12.pdf)] [[web](https://www.imageclef.org/photodata)]
   * The IAPR TC-12 Benchmark: A New Evaluation Resource for Visual Information Systems
   * Grubinger et al. (2006)
   * In this paper, we describe an image collection created for the CLEF cross-language image retrieval task (ImageCLEF). This image retrieval benchmark (referred to as the IAPR TC-12 Benchmark) has developed from an initiative started by the Technical Committee 12 (TC-12) of the International Association of Pattern Recognition (IAPR). The collection consists of 20,000 images from a private photographic image collection. The construction and composition of the IAPR TC-12 Benchmark is described, including its associated text captions which are expressed in multiple languages, making the collection well-suited for evaluating the effectiveness of both text-based and visual retrieval methods. We also discuss the current and expected uses of the collection, including its use to benchmark and compare different image retrieval systems in ImageCLEF 2006.
 
-#### VATEX 
+#### VATEX
   * [[pdf](https://arxiv.org/pdf/1904.03493.pdf)] [[repo](datasets/VATEX.pdf)] [[web](http://vatex.org/main/download.html)]
   * VATEX: A Large-Scale, High-Quality Multilingual Dataset for Video-and-Language Research
   * Wang et al. (2019)
@@ -607,25 +642,25 @@
 
 ## Metrics
 
-#### BLEU 
+#### BLEU
   * [[pdf](https://www.aclweb.org/anthology/P02-1040)] [[repo](metrics/papineni2002bleu.pdf)]
   * BLEU: a Method for Automatic Evaluation of Machine Translation
   * Papineni et al. (2002)
   * Human evaluations of machine translation are extensive but expensive. Human evaluations can take months to finish and involve human labor that cannot be reused. We propose a method of automatic machine translation evaluation that is quick, inexpensive, and language-independent, that correlates highly with human evaluation, and that has little marginal cost per run. We present this method as an automated understudy to skilled human judges which substitutes for them when there is need for quick or frequent evaluations.
 
-#### METEOR 
+#### METEOR
   * [[pdf](http://www.cs.cmu.edu/~alavie/METEOR/pdf/Banerjee-Lavie-2005-METEOR.pdf)] [[repo](metrics/banerjee2005meteor.pdf)] [[web](http://www.cs.cmu.edu/~alavie/METEOR/)]
   * METEOR: An Automatic Metric for MT Evaluation with Improved Correlation with Human Judgments
   * Banerjee et al. (2005)
   * We describe METEOR, an automatic metric for machine translation evaluation that is based on a generalized concept of unigram matching between the machine-produced translation and human-produced reference translations. Unigrams can be matched based on their surface forms, stemmed forms, and meanings; furthermore, METEOR can be easily extended to include more advanced matching strategies. Once all generalized unigram matches between the two strings have been found, METEOR computes a score for this matching using a combination of unigram-precision, unigram-recall, and a measure of fragmentation that is designed to directly capture how well-ordered the matched words in the machine translation are in relation to the reference. We evaluate METEOR by measuring the correlation between the metric scores and human judgments of translation quality. We compute the Pearson R correlation value between its scores and human quality assessment of teh LDC TIDES 2003 Arabic-to-English and Chinese-to-English datasets. We perform segment-by-segment correlation, and show that METEOR gets an R correlation value of 0.347 on the Arabic data and 0.331 on the Chinese data. This is shown to be an improvement on using simply unigram-precision, unigram-recall and their harmonic F1 combination. We also perform experiments to show the relative contributions of the various mapping modules.
 
-#### METEOR 1.5 
+#### METEOR 1.5
   * [[pdf](https://www.cs.cmu.edu/~alavie/METEOR/pdf/meteor-1.5.pdf)] [[repo](metrics/denkowski2014meteor-1.5.pdf)] [[web](http://www.cs.cmu.edu/~alavie/METEOR/)]
   * METEOR Universal: Language Specific Translation Evaluation for Any Target Language
   * Denkowski et al. (2014)
   * This paper describes METEOR Universal, released for the 2014 ACL Workshop on Statistical Machine Translation. METEOR Universal brings language specific evaluation to previously unsupported target language by (1) automatically extracting linguistic resources (paraphrase tables and function word lists) from the bitext used to train MT systems and (2) using a universal parameter set learned from pooling human judgments of translation quality from several language directions. METEOR Universal is shown to significantly outperform baseline BLEU on two new languages, Russian (WMT13) and Hindi (WMT14).
 
-#### TER 
+#### TER
   * [[pdf](https://www.cs.umd.edu/~snover/pub/amta06/ter_amta.pdf)] [[repo](metrics/snover2006ter.pdf)]
   * A study of Translation Edit Rate with Targeted Human Annotation
   * Snover et al. (2006)
@@ -633,19 +668,19 @@
 
 ## Tutorials
 
-#### Multimodal Learning and Reasoning 
+#### Multimodal Learning and Reasoning
   * [[pdf](https://github.com/MultimodalNLP/MultimodalNLP.github.io/raw/master/mlr_tutorial.pdf)] [[repo](tutorials/elliott2016multimodal.pdf)]
   * Elliott et al. University of Amsterdam (2016)
 
-#### Multimodal Machine Translation 
+#### Multimodal Machine Translation
   * [[pdf](https://mtm2017.unbabel.com/assets/images/slides/lucia_specia.pdf)] [[repo](tutorials/specia2017multimodal.pdf)]
   * Lucia Specia, University of Sheffield (2017)
 
-#### Introduction to Multimodal Machine Translation 
+#### Introduction to Multimodal Machine Translation
   * [[pdf](https://www.clsp.jhu.edu/wp-content/uploads/sites/75/2018/06/2018-06-22-Barrault-Multimodal-MT.pdf)] [[repo](tutorials/barrault2018introduction.pdf)]
   * Loic Barrault, University of Le Mans (2018)
 
-#### Understanding Visual Scenes 
+#### Understanding Visual Scenes
   * [[pdf](http://tcci.ccf.org.cn/conference/2017/dldoc/invtalk01_mL.pdf)] [[repo](tutorials/lapata2018understanding.pdf)]
   * Mirella Lapata, University of Edinburgh (2018)
 
