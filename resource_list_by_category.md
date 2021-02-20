@@ -54,6 +54,7 @@
 | 2019.07| Mogadala et al. | arXiv | Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods | [[pdf](https://arxiv.org/pdf/1907.09358.pdf)] [[repo](paper/mogadala2019trends.pdf)] |
 | 2020.02| Yang et al. | AAAI'20 | Visual Agreement Regularized Training for Multi-Modal Machine Translation | [[pdf](https://arxiv.org/pdf/1912.12014.pdf)] [[repo](paper/yang2020visual.pdf)] |
 | 2020.07| Huang et al. | ACL'20 | Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting | [[pdf](https://arxiv.org/pdf/2005.03119.pdf)] [[repo](paper/huang2020unsupervised.pdf)] |
+| 2021.02| Wang et al. | AAAI'21 | Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding | [[pdf](https://arxiv.org/pdf/2101.05208.pdf)] [[repo](paper/wang2021efficient.pdf)] |
 
 #### Multimodal Language Models
 
@@ -92,6 +93,7 @@
 | 2020.11| Khan et al. | EMNLP'20 | MMFT-BERT: Multimodal Fusion Transformer with BERT Encodings for Visual Question Answering | [[pdf](https://www.aclweb.org/anthology/2020.findings-emnlp.417.pdf)] [[repo](paper/khan2020MMFT.pdf)] |
 | 2020.11| Tsai et al. | EMNLP'20 | Multimodal Routing: Improving Local and Global Interpretability of Multimodal Language Analysis | [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.143.pdf)] [[repo](paper/tsai2020multimodal.pdf)] [[github](https://github.com/martinmamql/multimodal_routing)] |
 | 2020.11| Wang et al. | EMNLP'20 | MAF: Multimodal Alignment Framework for Weakly-Supervised Phrase Grounding | [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.159.pdf)] [[repo](paper/wang2020MAF.pdf)] |
+| 2021.02| Yu et al. | AAAI'21 | Learning Modality-Specific Representations with Self-Supervised Multi-Task Learning for Multimodal Sentiment Analysis | [[pdf](https://arxiv.org/pdf/2102.04830.pdf)] [[repo](paper/yu2021learning.pdf)] [[github](https://github.com/thuiar/Self-MM)] |
 
 #### Neural Machine Translation
 

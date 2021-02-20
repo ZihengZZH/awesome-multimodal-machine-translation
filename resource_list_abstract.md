@@ -87,6 +87,8 @@
     - [MMFT-BERT: Multimodal Fusion Transformer with BERT Encodings for Visual Question Answering](#mmft-bert-multimodal-fusion-transformer-with-bert-encodings-for-visual-question-answering)
     - [Multimodal Routing: Improving Local and Global Interpretability of Multimodal Language Analysis](#multimodal-routing-improving-local-and-global-interpretability-of-multimodal-language-analysis)
     - [MAF: Multimodal Alignment Framework for Weakly-Supervised Phrase Grounding](#maf-multimodal-alignment-framework-for-weakly-supervised-phrase-grounding)
+    - [Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding](#efficient-object-level-visual-context-modeling-for-multimodal-machine-translation-masking-irrelevant-objects-helps-grounding)
+    - [Learning Modality-Specific Representations with Self-Supervised Multi-Task Learning for Multimodal Sentiment Analysis](#learning-modality-specific-representations-with-self-supervised-multi-task-learning-for-multimodal-sentiment-analysis)
 - [Datasets](#datasets)
     - [Flickr30K](#flickr30k)
     - [Flickr30K Entities](#flickr30k-entities)
@@ -522,7 +524,7 @@
   * NIPS'19
   * We introduce a new neural network architecture, Multimodal Neural Graph Memeory Network (MN-GMN), for visual question answering (VQA). MN-GMN uses graph structure with different region features as node attributes and applies the recently proposed Graph Network (GN) to reason about objects and their interactions in the scene context. The MN-GMN has four modules. The input module generates a set of visual feature vectors plus a set of encoded region-grounded captions (RGCs) for the image. The RGCs capture object attributes and their relationships. Each visual feature vector/RGC is specified with a bounding-box. Two GNs are constructed from the input module using the visual feature vectors and RGCs. Each node in a GN iteratively computes a question-guided contextualized representation of the visual/textual information assigned to it. To combine the information from both GNs, each node writes the updated representations to a spatial memory. The final state of the memory cells are fed into an answer module to predict an answer. Experiments show MN-GCN outperforms the state-of-the-art on VQA dataset.
 
-**2020** {#10}
+**2020** {#14}
 
 #### MHSAN: Multi-Head Self-Attention Network for Visual Semantic Embedding
   * [[pdf](https://arxiv.org/pdf/2001.03712.pdf)] [[repo](paper/park2020mhsan.pdf)]
@@ -534,7 +536,7 @@
   * [[pdf](https://arxiv.org/pdf/1911.07848.pdf)] [[repo](paper/mai2020modality.pdf)]
   * Mai et al. (2020.02)
   * AAAI'20
-  * Learning joint embedding space for various modalities is of vital importance for multimodal fusion. Mainstream modality fusion approaches fail to achieve this goal, leaving a modality gap which heavily affects cross-modal fusion. In this paper, we propose a novel adversarial encoder-decoder-classifier framework to learn a modality invariant embedding space. Since the distributions of various modalities vary in nature, to reduce the modality gap, we translate the distributions of source modalities into that of target modality via their respective encoders using adversarial training. Furthermore, we exert additional constraints on embedding space by introducing reconstruction loss and classification loss. Then we fuse the encoded representations using hierarchical graph neural network which explicitly explores unimodal, bimodal and trimodal interactions in multi-stage. Our method achieves state-of-the-art performance on multiple datasets. Visualization of the learned embeddings suggests that the joint embedding space learned by our method is discriminative. 
+  * Learning joint embedding space for various modalities is of vital importance for multimodal fusion. Mainstream modality fusion approaches fail to achieve this goal, leaving a modality gap which heavily affects cross-modal fusion. In this paper, we propose a novel adversarial encoder-decoder-classifier framework to learn a modality invariant embedding space. Since the distributions of various modalities vary in nature, to reduce the modality gap, we translate the distributions of source modalities into that of target modality via their respective encoders using adversarial training. Furthermore, we exert additional constraints on embedding space by introducing reconstruction loss and classification loss. Then we fuse the encoded representations using hierarchical graph neural network which explicitly explores unimodal, bimodal and trimodal interactions in multi-stage. Our method achieves state-of-the-art performance on multiple datasets. Visualization of the learned embeddings suggests that the joint embedding space learned by our method is discriminative.
 
 #### Learning Relationships between Text, Audio, and Video via Deep Canonical Correlation for Multimodal Language Analysis
   * [[pdf](https://arxiv.org/pdf/1911.05544.pdf)] [[repo](paper/sun2020learning.pdf)]
@@ -607,6 +609,20 @@
   * Wang et al. (2020.11)
   * EMNLP'20
   * Phrase localization is a task that studies the mapping from textual phrases to regions of an image. Given difficulities in annotating phrase-to-object datasets at scale, we develop a Multimodal Alignment Framework (MAF) to leverage more widely-avaiable caption-image datasets, which can then be used as a form of weak supervision. We first present algorithms to model phrase-object relevance by leveraging fine-grained visual representations and visually-aware language representations. By adopting a contrastive objective, our method uses information in caption-image pairs to boost the performance in weakly-supervised scenarios. Experiments conducted on the widely-adopted Flickr30k dataset show a significant improvement over existing weakly-supervised methods. With the help of the visually-aware language representations, we can also improve the previous best unsupervised result by 5.56%. We conduct ablation studies to show that both our novel model and our weakly-supervised strategies significantly contribute to our strong results.
+
+**2021** {#2}
+
+#### Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding
+  * [[pdf](https://arxiv.org/pdf/2101.05208.pdf)] [[repo](paper/wang2021efficient.pdf)]
+  * Wang et al. (2021.02)
+  * AAAI'21
+  * Visual context provides grounding information for multimodal machine translation (MMT). However, previous MMT models and probing studies on visual features suggest that visual information is less explored in MMT as it is often redundant to textual information. In this paper, we propose an object-level visual context modeling framework (OVC) to efficiently capture and explore visual information for multimodal machine translation. With detected objects, the proposed visual objects by masking irrelevant objects in the visual modality. We equip the proposed with an additional object-masking loss to achieve this goal. The object-masking loss is estimated according to the similarity between masked objects and the source texts so as to encourage masking source-irrelevant objects. Additionally, in order to generate vision-consistent target words, we further propose a vision-weighted translation loss for OVC. Experiments on MMT datasets demonstrate that the proposed OVC model outperforms state-of-the-art MMT models and analyses show that masking irrelevant objects helps grounding in MMT.
+
+#### Learning Modality-Specific Representations with Self-Supervised Multi-Task Learning for Multimodal Sentiment Analysis
+  * [[pdf](https://arxiv.org/pdf/2102.04830.pdf)] [[repo](paper/yu2021learning.pdf)] [[github](https://github.com/thuiar/Self-MM)]
+  * Yu et al. (2021.02)
+  * AAAI'21
+  * Representation Learning is a siginificant and challenging task in multimodal learning. Effective modality representations should contain two parts of characteristics: the consistency and the difference. Due to the unified multimodal annotation, existing methods are restricted in capturing differentiated information. However, additional uni-modal annotations are high time- and labor-cost. In this paper, we design a label generation module based on the self-supervised learning strategy to acquire independent unimodal supervisions. Then, joint training the multi-modal and uni-modal tasks to learn the consistency and difference, respectively. Moreover, during the training stage, we design a weight-adjustment strategy to balance the learning progress among different subtasks. That is to guide the subtasks to focus on samples with a larger difference between modality supervisions. Last, we conduct extensive experiments on three public multimodal baseline datasets. The experimental results validate the reliability and stability of auto-generated unimodal supervisions. On MOSI and MOSEI datasets, our method surpasses the current state-of-the-art methods. On the SIMS dataset, our method achieves comparable performance than human-annotated unimodal labels.
 
 ## Datasets
 
