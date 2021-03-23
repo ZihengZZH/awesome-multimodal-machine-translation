@@ -54,6 +54,7 @@
 | 2019.07| Mogadala et al. | arXiv | Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods | [[pdf](https://arxiv.org/pdf/1907.09358.pdf)] [[repo](paper/mogadala2019trends.pdf)] |
 | 2020.02| Yang et al. | AAAI'20 | Visual Agreement Regularized Training for Multi-Modal Machine Translation | [[pdf](https://arxiv.org/pdf/1912.12014.pdf)] [[repo](paper/yang2020visual.pdf)] |
 | 2020.07| Huang et al. | ACL'20 | Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting | [[pdf](https://arxiv.org/pdf/2005.03119.pdf)] [[repo](paper/huang2020unsupervised.pdf)] |
+| 2020.08| Sulubacak et al. | Machine Translation | Multimodal Machine Translation through Visuals and Speech | [[pdf](https://link.springer.com/content/pdf/10.1007/s10590-020-09250-0.pdf)] [[repo](paper/sulubacak2020multimodal.pdf)] |
 | 2021.02| Wang et al. | AAAI'21 | Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding | [[pdf](https://arxiv.org/pdf/2101.05208.pdf)] [[repo](paper/wang2021efficient.pdf)] |
 
 #### Multimodal Language Models
@@ -85,9 +86,11 @@
 | 2020.02| Mai et al. | AAAI'20 | Modality to Modality Translation: An Adversarial Representation Learning and Graph Fusion Network for Multimodal Fusion | [[pdf](https://arxiv.org/pdf/1911.07848.pdf)] [[repo](paper/mai2020modality.pdf)] |
 | 2020.02| Sun et al. | AAAI'20 | Learning Relationships between Text, Audio, and Video via Deep Canonical Correlation for Multimodal Language Analysis | [[pdf](https://arxiv.org/pdf/1911.05544.pdf)] [[repo](paper/sun2020learning.pdf)] |
 | 2020.02| Zhang et al. | AAAI'20 | Learning Long- and Short-Term User Literal Preference with Multimodal Hierarchical Transformer Network for Personalized Image Caption | [[pdf](https://weizhangltt.github.io/paper/zhang-aaai20.pdf)] [[repo](paper/zhang2020learning.pdf)] |
+| 2020.06| Kim et al. | CVPR'20 | Hypergraph Attention Networks for Multimodal Learning | [[pdf](https://openaccess.thecvf.com/content_CVPR_2020/papers/Kim_Hypergraph_Attention_Networks_for_Multimodal_Learning_CVPR_2020_paper.pdf)] [[repo](paper/kim2020hypergraph.pdf)] |
 | 2020.07| Alikhani et al. | ACL'20 | Clue: Cross-modal Coherence Modeling for Caption Generation | [[pdf](https://arxiv.org/pdf/2005.00908.pdf)] [[repo](paper/alikhani2020clue.pdf)] |
 | 2020.07| Chauhan et al. | ACL'20 | Sentiment and Emotion help Sarcasm? A Multi-task Learning Framework for Multi-Modal Sacrasm, Sentiment and Emotion Analysis | [[pdf](https://www.iitp.ac.in/~ai-nlp-ml/papers/acl20-multiSA.pdf)] [[repo](paper/chauhan2020sentiment.pdf)] |
 | 2020.07| Lin et al. | ACL'20 | A Recipe for Creating Multimodal Aligned Datasets for Sequential Tasks | [[pdf](https://arxiv.org/pdf/2005.09606.pdf)] [[repo](paper/lin2020recipe.pdf)] [[github](https://github.com/microsoft/multimodal-aligned-recipe-corpus)] |
+| 2020.09| Luo et al. | arXiv | UniVL: A Unified Video and Language Pre-Training Model for Multimodal Understanding and Generation | [[pdf](https://arxiv.org/pdf/2002.06353.pdf)] [[repo](paper/luo2020UniVL.pdf)] |
 | 2020.11| Cho et al. | EMNLP'20 | X-LXMERT: Paint, Caption and Answer Questions with Multi-Modal Transformers | [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.707.pdf)] [[repo](paper/cho2020XLXMERT.pdf)] [[web](https://prior.allenai.org/projects/x-lxmert)] |
 | 2020.11| Jin et al. | EMNLP'20 | Dual Low-Rank Multimodal Fusion | [[pdf](https://www.aclweb.org/anthology/2020.findings-emnlp.35.pdf)] [[repo](paper/jin2020dual.pdf)] |
 | 2020.11| Khan et al. | EMNLP'20 | MMFT-BERT: Multimodal Fusion Transformer with BERT Encodings for Visual Question Answering | [[pdf](https://www.aclweb.org/anthology/2020.findings-emnlp.417.pdf)] [[repo](paper/khan2020MMFT.pdf)] |
