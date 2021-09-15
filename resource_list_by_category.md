@@ -56,6 +56,8 @@
 | 2020.07| Huang et al. | ACL'20 | Unsupervised Multimodal Neural Machine Translation with Pseudo Visual Pivoting | [[pdf](https://arxiv.org/pdf/2005.03119.pdf)] [[repo](paper/huang2020unsupervised.pdf)] |
 | 2020.08| Sulubacak et al. | Machine Translation | Multimodal Machine Translation through Visuals and Speech | [[pdf](https://link.springer.com/content/pdf/10.1007/s10590-020-09250-0.pdf)] [[repo](paper/sulubacak2020multimodal.pdf)] |
 | 2021.02| Wang et al. | AAAI'21 | Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding | [[pdf](https://arxiv.org/pdf/2101.05208.pdf)] [[repo](paper/wang2021efficient.pdf)] |
+| 2021.04| Caglayan et al. | EACL'21 | Cross-lingual Visual Pre-training for Multimodal Machine Translation | [[pdf](https://aclanthology.org/2021.eacl-main.112v2.pdf)] [[repo](paper/caglayan2021cross.pdf)] |
+| 2021.04| Ive et al. | EACL'21 | Exploiting Multimodal Reinforcement Learning for Simultaneous Machine Translation | [[pdf](https://aclanthology.org/2021.eacl-main.281.pdf)] [[repo](paper/ive2021exploiting.pdf)] |
 
 #### Multimodal Language Models
 
@@ -97,6 +99,7 @@
 | 2020.11| Tsai et al. | EMNLP'20 | Multimodal Routing: Improving Local and Global Interpretability of Multimodal Language Analysis | [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.143.pdf)] [[repo](paper/tsai2020multimodal.pdf)] [[github](https://github.com/martinmamql/multimodal_routing)] |
 | 2020.11| Wang et al. | EMNLP'20 | MAF: Multimodal Alignment Framework for Weakly-Supervised Phrase Grounding | [[pdf](https://www.aclweb.org/anthology/2020.emnlp-main.159.pdf)] [[repo](paper/wang2020MAF.pdf)] |
 | 2021.02| Yu et al. | AAAI'21 | Learning Modality-Specific Representations with Self-Supervised Multi-Task Learning for Multimodal Sentiment Analysis | [[pdf](https://arxiv.org/pdf/2102.04830.pdf)] [[repo](paper/yu2021learning.pdf)] [[github](https://github.com/thuiar/Self-MM)] |
+| 2021.04| Sahu et al. | EACL'21 | Adaptive Fusion Techniques for Multimodal Data | [[pdf](https://aclanthology.org/2021.eacl-main.275.pdf)] [[repo](paper/sahu2021adaptive.pdf)] [[github](https://github.com/demfier/philo/)] |
 
 #### Neural Machine Translation
 

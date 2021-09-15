@@ -92,6 +92,9 @@
     - [MAF: Multimodal Alignment Framework for Weakly-Supervised Phrase Grounding](#maf-multimodal-alignment-framework-for-weakly-supervised-phrase-grounding)
     - [Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding](#efficient-object-level-visual-context-modeling-for-multimodal-machine-translation-masking-irrelevant-objects-helps-grounding)
     - [Learning Modality-Specific Representations with Self-Supervised Multi-Task Learning for Multimodal Sentiment Analysis](#learning-modality-specific-representations-with-self-supervised-multi-task-learning-for-multimodal-sentiment-analysis)
+    - [Adaptive Fusion Techniques for Multimodal Data](#adaptive-fusion-techniques-for-multimodal-data)
+    - [Cross-lingual Visual Pre-training for Multimodal Machine Translation](#cross-lingual-visual-pre-training-for-multimodal-machine-translation)
+    - [Exploiting Multimodal Reinforcement Learning for Simultaneous Machine Translation](#exploiting-multimodal-reinforcement-learning-for-simultaneous-machine-translation)
 - [Datasets](#datasets)
     - [Flickr30K](#flickr30k)
     - [Flickr30K Entities](#flickr30k-entities)
@@ -631,7 +634,7 @@
   * EMNLP'20
   * Phrase localization is a task that studies the mapping from textual phrases to regions of an image. Given difficulities in annotating phrase-to-object datasets at scale, we develop a Multimodal Alignment Framework (MAF) to leverage more widely-avaiable caption-image datasets, which can then be used as a form of weak supervision. We first present algorithms to model phrase-object relevance by leveraging fine-grained visual representations and visually-aware language representations. By adopting a contrastive objective, our method uses information in caption-image pairs to boost the performance in weakly-supervised scenarios. Experiments conducted on the widely-adopted Flickr30k dataset show a significant improvement over existing weakly-supervised methods. With the help of the visually-aware language representations, we can also improve the previous best unsupervised result by 5.56%. We conduct ablation studies to show that both our novel model and our weakly-supervised strategies significantly contribute to our strong results.
 
-**2021** {#2}
+**2021** {#5}
 
 #### Efficient Object-Level Visual Context Modeling for Multimodal Machine Translation: Masking Irrelevant Objects Helps Grounding
   * [[pdf](https://arxiv.org/pdf/2101.05208.pdf)] [[repo](paper/wang2021efficient.pdf)]
@@ -644,6 +647,24 @@
   * Yu et al. (2021.02)
   * AAAI'21
   * Representation Learning is a siginificant and challenging task in multimodal learning. Effective modality representations should contain two parts of characteristics: the consistency and the difference. Due to the unified multimodal annotation, existing methods are restricted in capturing differentiated information. However, additional uni-modal annotations are high time- and labor-cost. In this paper, we design a label generation module based on the self-supervised learning strategy to acquire independent unimodal supervisions. Then, joint training the multi-modal and uni-modal tasks to learn the consistency and difference, respectively. Moreover, during the training stage, we design a weight-adjustment strategy to balance the learning progress among different subtasks. That is to guide the subtasks to focus on samples with a larger difference between modality supervisions. Last, we conduct extensive experiments on three public multimodal baseline datasets. The experimental results validate the reliability and stability of auto-generated unimodal supervisions. On MOSI and MOSEI datasets, our method surpasses the current state-of-the-art methods. On the SIMS dataset, our method achieves comparable performance than human-annotated unimodal labels.
+
+#### Adaptive Fusion Techniques for Multimodal Data
+  * [[pdf](https://aclanthology.org/2021.eacl-main.275.pdf)] [[repo](paper/sahu2021adaptive.pdf)] [[github](https://github.com/demfier/philo/)]
+  * Sahu et al. (2021.04)
+  * EACL'21
+  * Effective fusion of data from multiple modalities, such as video, speech, and text, is challenging due to the heterogeneous nature of multimodal data. In this paper, we propose adaptive fusion techniques that aim to model context from different modalities effectively. Instead of defining a deterministic fusion operation, such as concatenation, for the network, we let the network decide how to combine a given set of multimodal features more effectively. We propose two networks: 1) Auto-Fusion, which learns to compress information from different modalities while preserving the context, and 2) GAN-Fusion, which regularizes the learned latent space given context from complementing modalities. A quantitative evaluation on the tasks of multimodal machine translation and emotion recognition suggests that our lightweight, adaptive networks can better model context from other modalities than existing methods, many of which employ massive transformer-based networks.
+
+#### Cross-lingual Visual Pre-training for Multimodal Machine Translation
+  * [[pdf](https://aclanthology.org/2021.eacl-main.112v2.pdf)] [[repo](paper/caglayan2021cross.pdf)]
+  * Caglayan et al. (2021.04)
+  * EACL'21
+  * Pre-trained language models have been shown to improve performance in many natural languages tasks substantially. Although the early focus of such models was single language pre-training, recent advances have resulted in cross-lingual and visual pre-training methods. In this paper, we combine these two approaches to learn visually-grounded cross-lingual representations. Specifically, we extend the translation language modelling with masked region classification and perform pre-training with three-way parallel vision & language corpora. We show that when fine-tuned for multimodal machine translation, these models obtain state-of-the-art performance. We also provide qualitative insights into the usefulness of the learned grounded representations.
+
+#### Exploiting Multimodal Reinforcement Learning for Simultaneous Machine Translation
+  * [[pdf](https://aclanthology.org/2021.eacl-main.281.pdf)] [[repo](paper/ive2021exploiting.pdf)]
+  * Ive et al. (2021.04)
+  * EACL'21
+  * This paper addresses the problem of simultaneous machine translation (SiMT) by exploring two main concepts: (a) adaptive policies to learn a good trade-off between high translation quality and low latency; and (b) visual information to support this process by providing additional (visual) contextual information which may be available before the textual input is produced. For that, we propose a multimodal approach to simultaneous machine translation using reinforcement learning, with strategies to integrate visual and textual information in both the agent and the environment. We provide an exploration on how different types of visual information and integration strategies affect the quality and latency of simultaneous translation models, and demonstrate that visual cues lead to higher quality while keeping the latency low.
 
 ## Datasets
 
